@@ -1,0 +1,101 @@
+﻿Mapa de servicios para personas refugiadas y migrantes
+Estación Migratoria Siglo XXI Carretera Nueva Alemania, Km. 1.5
+Centro de salud Nuevo Milenio Centro de salud Raymundo Enríquez
+Chedraui
+Mercado San Juan
+Bodega Aurrerá
+LOMAS DEL SOCONUSCO
+Parque Miguel Hidalgo
+CENTRO
+LOMAS DE SAYULA
+cy Parque f .gr Bicentenario £
+Carretera a Tuxtla chico Cacahoatán - Unión Juárez
+Plaza Cristal
+LA ANTORCHA
+Parque Los Laureles
+JARDINES DEL CAHOACÁN
+^ Instituto Tecnológico * de Tapachula
+Hospital General de Tapachula
+Parque Los Cerritos
+SAN ANTONIO CAHOACÁN
+# INDECO
+JOAQUIN DEL PINO
+SANTA CLARA
+Plaza Galerías
+TRANSPORTE
+El costo del viaje en las combis es de $ 7.00 mx pesos
+^^ Albergue Belén
+fifi
+Organización
+ACNUR
+Niñez y juventud
+Derechos Humanos
+j Institución pública
+Salud
+(D
+Violencia sexual
+Servicio
+Albergue ^
+Derechos Humanos
+
+Institución pública
+m
+ACNUR
+w
+Organización <jnf|
+Salud
+
+Violencia sexual
+tt
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+*Ruta desde el Parque Central Miguel Hidalgo
+Nombre
+Dirección
+Teléfono
+Horario
+Ruta
+Albergue Belén	Avenida Hidalgo No. 2, Col. San Antonio Cahoacán.	962-6254812 962-6206176	Diariamente 8:00 -20:00 hrs.	Venustiano Carranza
+Comisión Estatal de los Derechos Humanos (CEDH)	139 Avenida Norte No. 87, entre 19a y 2ia Calle Oriente, Col. Centro.	962-6261041	Lunes a viernes, 8:30-16:00 hrs.	Bonanza por 3era. FOVISSTE
+Comisión Nacional de los Derechos Humanos (CNDH)	159 Oriente No. 20, entre 35 y Avenida Norte, Col. Centro.	962-6201466	Lunes a viernes, 9:00-14:30 y 17:00 a 19:00 hrs.	Lomas del Soconusco
+Instituto Federal de la Defensoría Publica (IFDP)	3a Oriente No. 12, entre la y 3a calle Norte, Col. Centro.	962-6257837 01-800-2018671	Lunes a viernes, 8:30-16:00 hrs.	A pie
+Comisión Mexicana de Ayuda a Refugiados (COMAR)	8a Avenida Sur esquina 4a Poniente, Col.Centro	962-6425318 962-6425319	Lunes a viernes, 8:30-16:00 hrs.	A pie
+INM Regularización Migratoria	Vialidad No. 435, Col. Las Vegas.		Lunes a viernes, 8:30-16:00 hrs.	COBACH Solidaridad 2000
+Fiscalía Especializada en Delitos Cometidos en Contra de Inmigrantes	Boulevard Díaz Ordáz No.9, Col. Lomas de Sayula	962-6267633	Lunes a viernes, 09:00-15:00 y 18:00-21:00 hrs. Sábados, 10:00-14:00 hrs	FOVISSTE Bonanza por 3era.
+Procuraduría Regional de Protección de los Derechos de Niñas, Niños y Adolescentes en Materia Migrante	Carretera a Puerto Madero km 3.5 esquina con Ayuntamiento, Col. Joaquín del Pino.	962-6281382	Lunes a viernes, 8:00-16:00 hrs.	Tapachulteco
+Centro de Atención a Niños, Niñas y Jóvenes Migrantes (Centro de Día)	5a Privada Sur esquina 42 Oriente, Col. Centro.	962-1180949	Lunes a viernes, 9:00-17:00 hrs.	A pie
+ACNUR, la Agencia de la ONU para los Refugiados	2U Oriente No. 22, entre 9a y lia Avenida Norte, Col. Lomas del Soconusco.	962-6425198 962-6425199	Lunes a viernes, 8:30-16:00 hrs.	Lomas del Soconusco FOVISSTE
+Centro de Derechos Humanos Fray Matías de Cordova	4^ Avenida Sur No. 6, Col. Centro.	962-6425098	Lunes a viernes, 9:00-14:00 y 15:00-17:00 hrs.	A pie
+Servicio Jesuíta a Refugiados (SJR)	19a Oriente No. 38, entre 7a y 92 Norte.	962-1963717	Lunes a viernes, 9:00-14:00 hrs.	Lomas del Soconusco FOVISSTE
+RET Internacional	3^ Norte No. 1, entre Central y l9 Oriente, Col. Centro.	962-6287705 934-1106095	Lunes a viernes, 8:30-16:00 hrs.	A pie
+Centro de Atención Pastoral a Personas Migrantes y Refugiadas	17^ calle Poniente s/n, entre 4a y 6§ Avenida Norte, Col. Centro.	962-6253235	Lunes a viernes, 10:00-14:00 hrs.	A pie
+Por la Superación de la Mujer A.C.	Avenida Niños Heroes Mz 15 It 35, Fraccionamiento la Antorcha Tercera Etapa.	962-6283759	Sábado 9:00 a 14:00	Libertad El Carmen
+Una Mano Amiga en la Lucha contra el Sida (UMA)	Central Norte No. 168, Col. 5 de Febrero	962-6267896	Lunes a viernes, 8:00-20:00 hrs.	Galaxias
+Centro de salud Tapachula	8- Avenida Norte entre 19a y 2ia Calle Poniente, Col. 5 de febrero	962-6265294	Diariamente, 8:00-20:00 hrs.	5 de Febrero
+Centro de salud Santa Clara	Prolongación Duraznos s/n, Col. Santa Clara	962-6426087	Diariamente, 8:00-20:00 hrs.	Laureles 2
+Centro de salud de Indeco	Avenida Juan Aldama No. 6, Col. Indeco	962-6424214	Diariamente, 8:00-20:00 hrs.	Indeco
+Centro de salud Villa de las Flores	Jacarandas s/n, Col. Cerrada de las Villa Flores.		Diariamente, 8:00-20:00 hrs.	Emiliano Zapata
+Centro de salud Nuevo Milenio	Obregón s/n entre avenida San Ramón y San Isidro, Col. Libertad.		Diariamente, 8:00-20:00 hrs.	Nuevo Milenio
+Centro de salud Raymundo Enríquez	Camino a Raymundo Enríquez		Diariamente, 8:00-20:00 hrs.	Raymundo Enriquez
+Cruz Roja Mexicana	I* Calle Oriente entre 7a y 9a Avenida Norte, Col. Centro.	962-6261949	Abierto las 24 hrs.	Periférico Derecha
+Hospital General de Tapachula	Carretera Antiguo Aeropuerto, Col. Los Cerritos	962-6281050 962-6281070	Abierto las 24 hrs.	COBACH Solidaridad 2000
+Centros Ambulatorios de Prevención y Atención en SIDA e ITS (CAPASITS)	Prolongación Boulevard Akishino, esquina Vicente Guerrero s/n, Col. La Antorcha, Etapa 4.	962-6284076	Lunes a viernes, 8:00-20:00 hrs.	Nuevo Milenio Cafetales
+Jurisdicción Sanitaria VII	la Norte No. 9, entre Calle Central y 1" Oriente, Col Centro.	962-6286886	Lunes a viernes, 8:00-20:00 hrs.	A pie
+Comisión Ejecutiva de Atención a Víctimas (CEAV)	25 Avenida Norte No. 1, entre Central y l9 Poniente, Col. Centro.	962-6428691	Lunes a viernes, 9:00-15:00 y 16:00-18:00 hrs.	A pie
+TAPACHULA, CHIAPAS
+\UNHCR JACNUR
+La Agencia de la ONU para los Refugiados
