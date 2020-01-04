@@ -1,349 +1,222 @@
 
 {
-    1. ACNUR
-Agencia de la ONU para los refugiados 21 Oriente N° 22, entre 9a y 11a Norte, Colonia Lomas del Soconusco.
-
-    Place ID: ChIJxZtCNsUOjoURYX6XtDZ7UWs
-ACNUR, Agencia De La Onu., 21A. Oriente, Los Naranjos, Lomas del Soconusco, Tapachula, Chis., Mexico
-    https://www.google.com/maps/place/ACNUR,+Agencia+De+La+Onu./@14.9118819,-92.2556985,17z/data=!4m8!1m2!2m1!1sACNUR+tapachula+mexico!3m4!1s0x0:0x6b517b36b4977e61!8m2!3d14.9146801!4d-92.2525057
   "placemarks": [
     {
-2. OIM
-Organización Internacional para las Migraciones
-Blvd. Díaz Ordaz N° 11, Planta Baja,
-Colonia Cedros de Erika,
-(962) 642 5674.
-	"name": "Agencia de la ONU para los Refugiados (ACNUR)",
-      "google_place_id": "",
-      "type": "",
+      "name": "Agencia de la ONU para los Refugiados (ACNUR)",
+      "google_place_id": "ChIJxZtCNsUOjoURYX6XtDZ7UWs",
+      "type": "ONG",
       "features": [],
-      "coordinates": [],
-      "address": "21 Oriente  #22, entre 9a y 11a Avenida Norte, Colonia Lomas del Soconusco, Tapachula, MX",
-      "phones": [962-6425198 962-6425199],
+      "coordinates": [-92.2556985,14.9118819],
+      "address": "21a Oriente  #22, entre 9a y 11a Avenida Norte, Colonia Lomas del Soconusco, Tapachula, Chiapas, MX",
+      "phones": ["+52 962 642 5198", "+52 962 642 5199"],
       "description": "",
-	"hours": "Lunes a viernes, 8:30-16:00 hrs",
-	"ruta": "Lomas del Soconusco, FOVISSTE"
-    }, {
+      "hours": "Lunes a viernes, 8:30-16:00 hrs",
+      "ruta": "Lomas del Soconusco, FOVISSTE"
+    },{
       "name": "Organización Internacional para las Migraciones",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      "address": "Gustavo Díaz Ordaz 11, Los Naranjos, Bonanza, 30779 Tapachula de Córdova y Ordoñez, Chis., MX",
-      "phones": ["+52 962 642 5674"],
-      962 625 6311
-      https://www.google.com/maps/place/Secretar%C3%ADa+para+el+Desarrollo+de+la+Frontera+Sur+y+Enlace+para+la+Coperaci%C3%B3n+Internacional/@14.8992854,-92.2443442,17z/data=!3m1!4b1!4m5!3m4!1s0x858e0ec1f59dee21:0x9458031c66d3425d!8m2!3d14.8992854!4d-92.2443442
+      "type": "ONG",
+      "coordinates": [-92.2443442,14.8992854],
+      "address": "Gustavo Díaz Ordaz #11, Los Naranjos, Bonanza, 30779 Tapachula de Córdova y Ordoñez, Chis., MX",
+      "phones": ["+52 962 642 5674", " +52  962 625 6311"],
       "description": "",
       "hours": ""
     },{
-	3. CENTRO DE DERECHOS HUMANOS FRAY MATIAS DE CÓRDOVA AC 4a Avenida Sur N° 6, entre central y 2a Poniente, Colonia Centro. Lunes a Viernes, 9 a 14 h.
-
       "name": "CENTRO DE DERECHOS HUMANOS FRAY MATIAS DE CÓRDOVA AC",
-      "google_place_id": "",
-      "type": "",
+      "google_place_id": "ChIJQSXRVCAPjoURPN1IZ7JG_xE",
+      "type": "ONG",
       "features": [],
-      "coordinates": [],
-      https://www.google.com/maps/place/Human+Rights+Center+Fray+Matias+de+Cordova+B.C./@14.907095,-92.2654745,17z/data=!3m1!4b1!4m5!3m4!1s0x858e0f2054d12541:0x11ff46b26748dd3c!8m2!3d14.907095!4d-92.2654745
-
-Human Rights Center Fray Matias de Cordova B.C.
-Place ID: ChIJQSXRVCAPjoURPN1IZ7JG_xE
-
-	"address": "4 Avenida Sur #6, Colonia Centro, Tapachula de Córdova y Ordoñez, Chis.",
-      "phones": [962-6425098],
+      "coordinates": [-92.2654745, 14.907095],
+      "address": "4a Avenida Sur #6, Colonia Centro, Tapachula de Córdova y Ordoñez, Chis.",
+      "phones": ["+52 962 642 5098"],
       "description": "",
       "hours": "Lunes a Viernes, 9 a 17 h."
-    },{
-
-4. CENTRO DE ATENCIÓN PASTORAL A PERSONAS MIGRANTES Y REFUGIADAS 17 Calle Ponientes s/n entre 4a y 6a Av. Norte, Colonia Centro. Lunes a Viernes, 10 a 14 h.
-
-	"name": "CENTRO DE ATENCIÓN PASTORAL A PERSONAS MIGRANTES Y REFUGIADAS",
+    },	{
+      "name": "Servicio Jesuíta a Refugiados (SJR)",
       "google_place_id": "",
-      "type": "",
+      "type": "ONG",
       "features": [],
-      "coordinates": [],
-      "address": "17 Calle Ponientes s/n entre 4a y 6a Av. Norte, Colonia Centro.",
-      "phones": [],
+      "coordinates": [-92.2567249, 14.9130287],
+      "address": "Calle 19a Oriente #38, Colonia Centro, 30700 Tapachula, Chiapas, MX",
+      "phones": ["+52 962 625 6961", "+52 962 196 3717"],
       "description": "",
-      "hours": "Lunes a Viernes, 10 a 14 h"
-    },{
-Servicio Jesuíta a Refugiados (SJR)	19a Oriente No. 38, entre 7a y 92 Norte.	962-1963717	Lunes a viernes, 9:00-14:00 hrs.	Lomas del Soconusco FOVISSTE
-
-5. SERVICIO JESUITA A REFUGIADOS 19 Oriente N° 38 entre 7a y 9a Norte. Lunes a Viernes, 9 a 14 h.
-
-	https://www.google.com/maps/place/Servicio+Jesuita+para+Refugiados/@14.9130287,-92.2567249,17z/data=!4m12!1m6!3m5!1s0x858e0edfe9d022ef:0xd59a7c6c93a2079a!2sServicio+Jesuita+para+Refugiados!8m2!3d14.9130235!4d-92.2545309!3m4!1s0x858e0edfe9d022ef:0xd59a7c6c93a2079a!8m2!3d14.9130235!4d-92.2545309
-	calle 19 oriente 38 Entre 7° y 9° norte, Centro, 30700 Tapachula de Córdova y Ordoñez, Chis., Mexico
-	+52 962 625 6961
-      "name": "SERVICIO JESUITA A REFUGIADOS",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      https://jrs.net/es/home/
-      calle 19 oriente 38 Entre 7° y 9° norte, Centro, 30700 Tapachula de Córdova y Ordoñez, Chis.
-      https://www.google.com/maps/place/Servicio+Jesuita+para+Refugiados/@14.9127569,-92.2547036,20.1z/data=!4m8!1m2!2m1!1sAvenida+19+Oriente+y+9+avenida+norte!3m4!1s0x858e0edfe9d022ef:0xd59a7c6c93a2079a!8m2!3d14.9130233!4d-92.2545308
-
-      "address": "19 Oriente N° 38 entre 7a y 9a Norte",
-      "phones": [962 625 6961],
-      "description": "",
-	"hours": "Lunes a Viernes, 9 a 14 h"
-https://jrs.net/es/home/
-    },{
+      "ruta": ["Lomas del Soconusco", "FOVISSTE"]
+      "hours": "Lunes a Viernes, 9 a 14 h"
+      "websites": ["https://jrs.net/es/home/"]
+    },
+    {
       "name": "ALBERGUE JESÚS EL BUEN PASTOR DEL POBRE Y DEL MIGRANTE AC",
-      "google_place_id": "",
-      "type": "",
+      "google_place_id": "ChIJD5CQ54EFjoURY1yHN0IH0Fk",
+      "type": "Albergue",
       "features": [],
-      "coordinates": [],
-      "address": "Entronque a Raymundo Enriquez, a 500 metros.",
-      "phones": [],
-      "description": "",
-      "hours": ""
-      Camino a Raymundo Enríquez, Solidaridad, Ojo de Agua, 30700 Tapachula de Córdova y Ordoñez, Chis.
-      https://www.google.com/maps/place/Albergue+Jes%C3%BAs+El+Buen+Pastor/@14.8766423,-92.3096047,17z/data=!3m1!4b1!4m13!1m7!3m6!1s0x858e0ef3505a5bdd:0xbdca5559d58b32a7!2sMiguel+Hidalgo+2,+Los+Naranjos,+Jardines+del+Cahoacan,+Tapachula+de+C%C3%B3rdova+y+Ordo%C3%B1ez,+Chis.!3b1!8m2!3d14.88806!4d-92.2439439!3m4!1s0x858e0581e790900f:0x59d0074237875c63!8m2!3d14.8766423!4d-92.307416
-      http://www.alberguebuenpastor.org.mx/
-    },{
-      "name": "ALBERGUE BELÉN (Casa del Migrante Scalabrini)",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      "address": "Av. Hidalgo N° 2, Colonia San Antonio Cahoacán. ",
-	"phones": [962-6254812 962-6206176],
-	"hours": "Diariamente 8:00 -20:00 hrs",
-	route:  Venustiano Carranza
-      "description": "",
-      https://www.google.com/maps/place/Casa+del+Migrante+Scalabrini/@14.887187,-92.2463404,17z/data=!4m13!1m7!3m6!1s0x858e0ef3505a5bdd:0xbdca5559d58b32a7!2sMiguel+Hidalgo+2,+Los+Naranjos,+Jardines+del+Cahoacan,+Tapachula+de+C%C3%B3rdova+y+Ordo%C3%B1ez,+Chis.!3b1!8m2!3d14.88806!4d-92.2439439!3m4!1s0x858e0ef358f28d67:0x402377ac87e5da85!8m2!3d14.887187!4d-92.2441517
-      "hours": "Todos los días, 8 a 20 h."
-    },{
-	RET Internacional	3^ Norte No. 1, entre Central y l9 Oriente, Col. Centro.	962-6287705 934-1106095	Lunes a viernes, 8:30-16:00 hrs.	A pie
-
-
-	8. ASESORÍA EN EDUCACIÓN RET INTERNACIONAL
-3 a Norte N° 1, entre Central y Ia Oriente, Colonia Centr o. Lunes a Viernes, 8 a 16 h.
-
-
-      "name": "ASESORÍA EN EDUCACIÓN RET INTERNACIONAL 3a",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      https://www.google.com/maps/@14.9054951,-92.2615419,3a,75y,205.17h,90t/data=!3m7!1e1!3m5!1si6jjRsV3yrfPftQClDFs5A!2e0!6s%2F%2Fgeo1.ggpht.com%2Fcbk%3Fpanoid%3Di6jjRsV3yrfPftQClDFs5A%26output%3Dthumbnail%26cb_client%3Dsearch.gws-prod.gps%26thumb%3D2%26w%3D86%26h%3D86%26yaw%3D205.169%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656
-      "address": "Calle Norte Numero 1, entre Central y 1a Oriente, Colonia Centro,",
-      "phones": [],
-      "description": "",
-      "hours": "Lunes a Viernes, 8 a 16 h"
-    },{
-9 INICIATIVA PARA EL DESARROLLO HUMANO AC "ESCUELA LIBRE LAS Y LOS AMIGOS"
-Colonia Sierra 1 manzana 4 lote 37. Sábados, 10 a 13 h.
-
-	"name": "INICIATIVA PARA EL DESARROLLO HUMANO AC 'ESCUELA LIBRE LAS Y LOS AMIGOS'",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      "address": "Colonia Sierra 1 manzana 4 lote 37.",
-      "phones": [],
-      "description": "",
-      "hours": "Sábados, 10 a 13 h."
-    },{
-Centro de salud Tapachula	8- Avenida Norte entre 19a y 2ia Calle Poniente, Col. 5 de febrero	962-6265294	Diariamente, 8:00-20:00 hrs.	5 de Febrero
-10. CENTRO DE SALUD URBANO TAPACHULA 8a Norte, entre 19 y 21 Oriente, Colonia 5 de Febrero. Turnos: M-V. Entrega de fichas: 7 a 9 y 14 a 16 h.
-
-	"name": "CENTRO DE SALUD URBANO TAPACHULA",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      "address": "8a Norte, entre 19 y 21 Oriente, Colonia 5 de Febrero.",
-      "phones": [],
-      "description": "",
-      "hours": "Turnos: M-V. Entrega de fichas: 7 a 9 y 14 a 16 h."
-    },{
-	11. CENTRO DE SALUD URBANO SANTA CLARA Prolongación Duraznos, s/n, Laureles, Santa Clara. Entrega de fichas: 7 a 8 y 12 a 13 h.
-
-Centro de salud Santa Clara	Prolongación Duraznos s/n, Col. Santa Clara	962-6426087	Diariamente, 8:00-20:00 hrs.	Laureles 2
-
-	"name": "CENTRO DE SALUD URBANO SANTA CLARA ",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      "address": "Prolongación Duraznos, s/n, Laureles, Santa Clara",
-      "phones": [],
-      "description": "",
-      "hours": "Entrega de fichas: 7 a 8 y 12 a 13 h"
-    },{
-	12. CENTRO DE SALUD URBANO RAYMUNDO ENRIQUE! Central Oriente y 3a Norte, camino al panteón, s/n, entre Los Pinos y Los Cafetales. Entrega de fichas: 7 a 8 h.
-      "name": "CENTRO DE SALUD URBANO RAYMUNDO ENRIQUE!",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      "address": "Central Oriente y 3a Norte, camino al panteón, s/n, entre Los Pinos y Los Cafetales.",
-      "phones": [],
-      "description": "",
-      "hours": "Entrega de fichas: 7 a 8 h."
-    },{
-13. HOSPITAL GENERAL TAPACHULA "DR. MANUEL VELASCO SUÁRE2" Carretera a Puerto Madero S/N, Col. Feliciano Renauld. Emergencias. Abierto las 24 horas.
-
-	"name": "HOSPITAL GENERAL TAPACHULA 'DR. MANUEL VELASCO SUÁRE2'",
-      https://www.google.com/maps/place/Nuevo+Hospital+General+de+Tapachula+%22Dr.+Manuel+Velasco+Su%C3%A1rez%22/@14.8425225,-92.3206149,17z/data=!3m1!4b1!4m5!3m4!1s0x858e0545da8a5023:0xdb6b3bf9c2075482!8m2!3d14.8425173!4d-92.3184262
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      "address": " Carretera a puerto Madero, s/n, Col. Feliciano Renauld, C.P. 30825, Chis. ",
-      "phones": [],
-      "description": "",
-      "hours": "Emergencias. Abierto las 24 horas."
-    },{
-
-14. UNA MANO AMIGA EN LA LUCHA CONTRA EL SIDA AC. Central Norte N° 168 Altos, Colonia 5 de Febrero. Atención al colectivo lgbt+ . Lunes a Viernes, 9 a 15 h.
-
-Una Mano Amiga en la Lucha contra el Sida (UMA)	Central Norte No. 168, Col. 5 de Febrero	962-6267896	Lunes a viernes, 8:00-20:00 hrs.	Galaxias
-
-
-	"name": "UNA MANO AMIGA EN LA LUCHA CONTRA EL SIDA AC. ",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      "address": "Central Norte N° 168 Altos, Colonia 5 de Febrero.",
-      "phones": [],
-      "notes": "Atención al colectivo lgbt+ .",
-      "hours": "Lunes a Viernes, 9 a 15 h."
-      https://www.facebook.com/UMALCS/
-      https://wego.here.com/directions/mix//Una-Mano-Amiga-en-la-lucha-contra-el-SIDA-A.C.,-Avenida-Central-Norte-166,-5-de-Febrero,-30710-Tapachula:e-eyJuYW1lIjoiVW5hIE1hbm8gQW1pZ2EgZW4gbGEgbHVjaGEgY29udHJhIGVsIFNJREEgQS5DLiIsImFkZHJlc3MiOiJDZW50cmFsIG5vcnRlICMxNjggZW50cmUsIFRhcGFjaHVsYSwgQ2hpYXBhcyIsImxhdGl0dWRlIjoxNC45MTgxOTY5MjY1MTIsImxvbmdpdHVkZSI6LTkyLjI1Njg1NDE4NTU1OSwicHJvdmlkZXJOYW1lIjoiZmFjZWJvb2siLCJwcm92aWRlcklkIjoyNTg4NDQ2NzA5Nzk1NjB9?map=14.9182,-92.25685,15,normal&fb_locale=en_US
-    },{
-15. COMISIÓN ESTATAL DE LOS DERECHOS HUMANOS
-13 Norte N° 87. entre 19 y 21 Oriente. Lunes a Viernes: 8 a 16 h.
-	"name": "COMISIÓN ESTATAL DE LOS DERECHOS HUMANOS ",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      "address": "13era Norte Numero 87. entre 19 y 21 Calle Oriente., Colonia Centro ",
-      "phones": [962-6261041],
-      "description": "",
-	"hours": "Lunes a Viernes: 8:30 a 16 h."
-	ruta: Bonanza por 3era. FOVISSTE
-    },{
-
-16. COMISIÓN NACIONAL DE DERECHOS HUMANOS
-15 Oriente N°20, entre 3a y 5a Norte, Col. Centro. Lunes a Viernes: 9 a 19 h.
-
-	"name": "COMISIÓN NACIONAL DE DERECHOS HUMANOS",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      "address": "15era Oriente 20, entre 3era y 5era Avenida Norte, Colonia Centro, Tapachula, Chiapas, MX",
-      "phones": [962-6201466],
-	"description": "",
-	ruta: Lomas del Soconusco
-      "hours": " Lunes a Viernes: 9 a 19 h."
-    },{
-17. FISCALÍA ESPECIALIZADA EN DELITOS COMETIDOS EN CONTRA DE MIGRANTES
-Boulevard Díaz Orduz N° 9, Col. Lomas de Sayula Lunes a Viernes: 9 a 21 h. Sábado: 10 a 14 h.
-	"name": "Fiscalía Especializada en Delitos Cometidos en Contra de Inmigrantes",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      https://www.google.com/maps/place/Gustavo+D%C3%ADaz+Ordaz+9,+Los+Naranjos,+Francisco+Villa,+30740+Tapachula+de+C%C3%B3rdova+y+Ordo%C3%B1ez,+Chis./@14.9028884,-92.2500851,17z/data=!3m1!4b1!4m5!3m4!1s0x858e0eea247277b3:0xed203773c593ff18!8m2!3d14.9028832!4d-92.2478964
-      "coordinates": [],
-      "address": "Boulevard Díaz Ordáz Numero 9, Colonia Lomas de Sayula, Tapachula, Mexico",
-      "phones": [962-6267633],
-	"description": "",
-	ruta: FOVISSTE Bonanza por 3era.
-      "hours": "Lunes a Viernes: 9 a 21 h. Sábado: 10 a 14 h."
-    },{
-	4.	TUXLA GUTIERREZ
-
-Albergue Jesús Esperanza
-en el Camino. Ia calle Poniente y 16 Sur N° 1664. movilidadmt25@hotmail.com
-      "name": "Albergue Jesús Esperanza en el Camino.",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      "address": " Ia calle Poniente y 16 Sur N° 1664.",
+      "coordinates": [ -92.3096047, 14.8766423],
+      "address": "Camino a Raymundo Enríquez, Solidaridad, Ojo de Agua, 30700 Tapachula de Córdova y Ordoñez, Chis., Mexico",
       "phones": [],
       "description": "",
       "hours": "",
-      "notes": "movilidadmt25@hotmail.com"
-    },{
-	4.	TUXLA GUTIERREZ
-
-Una Ayuda Para Ti Mujer Migrante A,C.
-01	961 61 67 903
-
-      "name": "Una Ayuda Para Ti Mujer Migrante A,C.",
-      "google_place_id": "",
-      "type": "",
+      "websites": ["http://www.alberguebuenpastor.org.mx/"]
+    },
+    {
+      "name": "ALBERGUE BELÉN (Casa del Migrante Scalabrini)",
+      "google_place_id": "ChIJZ43yWPMOjoURhdrlh6x3I0A",
+      "type": "Shelter",
       "features": [],
-      "coordinates": [],
-      "address": "",
-      "phones": ["01	961 61 67 903"],
+      "coordinates": [ -92.2463404, 14.887187],
+      "address": "Av. Hidalgo #2, Colonia San Antonio Cahoacán. ",
+      "phones": ["+52 962 625 4812", "+52 962 620 6176"],
+      "hours": "Diariamente 8:00 -20:00 hrs",
+      "route":  "Venustiano Carranza"
       "description": "",
-      "hours": ""
-    },{
-5. FRONTERA COMALAPA
-
-Oficina de Atención a Migrantes y Refugiados / Servicio Jesuíta a Migrantes 2a calle Norte-Poniente Entre 2a y 3o Av. Poniente-Norte
-
-	"name": "Oficina de Atención a Migrantes y Refugiados / Servicio Jesuíta a Migrantes",
-      "google_place_id": "",
+    }, {
+      "name": "ASESORÍA EN EDUCACIÓN RET INTERNACIONAL 3a",
+      "google_place_id": "ChIJ2Uo02s4PjoURzLf8CCsEadI",
+      "type": "",
+      "features": [],
+      "coordinates": [ -92.2615419,14.9054951 ],
+      "address": "Calle 3a Norte Numero 1, entre Central y 1a Oriente, Colonia Centro, Tapachula, Chiapas, Mexico",
+      "phones": ["+52 962 628 7705", "+52 934 110 6095"],
+      "description": "",
+      "hours": "Lunes a Viernes, 8 a 16 h"
+    }, {
+      "name": "Centro de Salud Urbano Tapachula",
+      "google_place_id": "Place ID: ChIJtZESnNcOjoURs5IQnxz2xsA",
+      "type": "",
+      "features": [],
+      "coordinates": [ -92.263014, 14.9171723,],
+      "address": "8A. Av. norte 16B, , entre 19a y 21a Poniente, Los Naranjos, 5 de Febrero, 30710 Tapachula de Córdova y Ordoñez, Chis., Mexico",
+      "phones": ["+52 962 626 5294"],
+      "description": "",
+      "route": "5 de Febrero",
+      "hours": "Diariamente, 8:00-20:00 hrs"
+    }, {
+      "name": "Centro de Atención a la Salud Santa Clara ",
+      "google_place_id": "ChIJs2fHlYcPjoURdH3PFYnyTfs",
       "type": "",
       "features": [],
       "coordinates": [],
-      "address": " 2a calle Norte-Poniente Entre 2a y 3o Av. Poniente-Norte",
+      "address": "Perla del Soconusco 45, Los Naranjos, Burocratica Sta Clara, 30788 Tapachula de Córdova y Ordoñez, Chis., Mexico",
+      "phones": ["+52 962 642 6087"],
+      "description": "",
+      "hours": "8:00-20:00 hrs",
+      "route": "Laureles 2"
+    }, {
+      "name": "Centro de Salud Raymundo Enriquez",
+      "google_place_id": "ChIJk3UKN04FjoURNpsVLE1lhjk",
+      "type": "",
+      "features": [],
+      "coordinates": [-92.317229,14.866439],
+      "address": "Central Oriente y 3a Norte, camino al panteón, s/n, entre Los Pinos y Los Cafetales.",
+      "phones": [],
+      "description": "",
+      "hours": "8 a 20h."
+    }, {
+      "name": "Hospital General de Tapachula 'Dr. Manuel Velasco Suárez'",
+      "google_place_id": "ChIJO68X1VoFjoURzCO6ZpMZ6F4",
+      "type": "",
+      "features": [],
+      "coordinates": [ -92.3206149, 14.8425225],
+      "address": " Carretera a puerto Madero, s/n, Col. Feliciano Renauld, C.P. 30825, Chis. ",
+      "phones": [],
+      "description": "",
+      "websites": ["http://www.hospitaltapachula.salud.gob.mx/"]
+      "hours": "Emergencias. Abierto las 24 horas."
+    },  {
+      "name": " Una Mano Amiga en la Lucha contra el Sida (UMA) ",
+      "google_place_id": "",
+      "type": "",
+      "features": [],
+      "coordinates": [-92.25685,  14.9182],
+      "address": "Avenida Central Norte #168, Colonia 5 de Febrero, Tapachula, Chiapas, Mexico",
+      "phones": ["+ 52 962 626 7896"],
+      "notes": "Atención al colectivo lgbt+ .",
+      "hours": "Lunes a Viernes, 8:00-20:00 hrs"
+	"websites": ["https://www.facebook.com/UMALCS/"]
+    },    {
+      "name": "CEDH Comision Estatal de los Derechos Humanos Chiapas ",
+      "google_place_id": "ChIJu4or78QOjoUR6qYurp6oMLY",
+      "type": "",
+      "features": [],
+	  "coordinates": [-92.2578421, 14.9095437],
+      "address": "Avenida 13a Norte #87, entre 19 y 21 Calle Oriente.,  Barrio Nuevo, Tapachula, Chiapas, MX",
+      "phones": ["+52 962 626 1041"],
+      "description": "",
+      "hours": "Lunes a Viernes:  8-18 h, Sabado 8a-14h."
+	  "route": ["Bonanza por 3era", "FOVISSTE"]
+    },   {
+      "name": "COMISIÓN NACIONAL DE DERECHOS HUMANOS",
+      "google_place_id": "ChIJq6qqqiEPjoURSXtIN7CFWp8",
+      "type": "",
+      "features": [],
+      "coordinates": [ -92.2586703, 14.9121137],
+      "address": "15A. Oriente 20A, entre 3era y 5era Avenida Norte, Los Naranjos, Centro, 30830 Centro, Tapachula, Chiapas, MX",
+      "phones": ["+52 962 620 1466"],
+	  "route": ["Lomas del Soconusco"],
+	  "hours": "Lunes a Viernes: 9 a 19 h.",
+	  "websites": ["http://cndh.org.mx"]
+    },
+      "start", 
+      {
+      "name": "Fiscalía Especializada en Delitos Cometidos en Contra de Inmigrantes",
+      "google_place_id": "Place ID: ChIJ54wJzJXY7IUR7oud5Ak4d6w",
+      "type": "",
+      "features": [],	  
+	  "coordinates": [-92.2500851, 14.9028884],
+      "address": "Boulevard Díaz Ordáz #9, Colonia Lomas de Sayula, Tapachula, Mexico",
+      "phones": ["+52 962 626 7633"],
+      "description": "",
+	  "route": ["FOVISSTE", "Bonanza por 3era"]
+      "hours": "Lunes a Viernes: 9 a 21 h. Sábado: 10 a 14 h."
+    },
+    
+      {
+
+	  
+      "name": "Oficina de Atención a Migrantes y Refugiados / Servicio Jesuíta a Migrantes",
+      "google_place_id": "ChIJA2FL61OjjYURfnCCYLbT9K4",
+      "type": "",
+      "features": [],
+	  "coordinates": [-92.1423763, 15.6617864],
+	  "address": " Segunda Calle Norte Poniente. 238, Entre 2a y 3o Av, Centro, 30140 Frontera Comalapa, Chiapas, Mexico",
       "phones": [],
       "description": "",
       "hours": ""
     },{
-6. COMITAN
-Colectivo Kaltsilaltik. 963 135 9422
-	"name": "Colectivo Kaltsilaltik",
+      "name": "Colectivo Kaltsilaltik",
       "google_place_id": "",
       "type": "",
       "features": [],
       "coordinates": [],
-      "address": "",
-      "phones": ["963 135 9422"],
-      "description": "",
+      "address": "Comitan, Chiapas, Mexico",
+      "phones": ["+52 963 135 9422"],
+	"description": "Defensora integral de Derechos Human@s de migrantes principalmente irregulares y/o refugiad@s: Niñez, adolescencia, familias y comunidad LGBTTTIQ+ en Comitán, Chiapas, México. Apoyo gratuito.  Conocenos y Dona",
+	"websites": ["kaltsilaltik_colectivo@hotmail.com", ]
       "hours": ""
     },{
-	6. COMITAN
-	Centro de Atención y Defensoria de los Derechos de las Mujeres en las Migraciones "La Morada" 3a Av. Oriente Norte, Barrio La Pila, 963 632 8400 lamoradacomitan@gmail.com
       "name": "Centro de Atención y Defensoria de los Derechos de las Mujeres en las Migraciones 'La Morada'",
       "google_place_id": "",
       "type": "",
       "features": [],
-      "coordinates": [],
-      "address": "3a Av. Oriente Norte, Barrio La Pila, ",
-      "phones": ["963 632 8400 "],
+	"coordinates": [-92.1346714,16.2540607],
+      "address": "3a Av. Oriente Norte, Barrio La Pila, Comitan, Chiapas, Mexico",
+      "phones": ["+52 963 632 8400 "],
       "description": "lamoradacomitan@gmail.com",
-      "hours": ""
-    },{
-	7. SAN CRISTOBAL DE LAS CASAS
-
-Voces Mesoamericanas - Acción con Pueblos Migrantes
-Francisco Villa N° 10, Barrio de Fatima,
-01 967 674 7811
+	"hours": ""	
+	    },{
       "name": "Voces Mesoamericanas - Acción con Pueblos Migrantes",
-      "google_place_id": "",
+      "google_place_id": "ChIJ09FoyDhF7YUR65BV3sIw3RU",
       "type": "",
       "features": [],
       "coordinates": [],
-      "address": "Francisco Villa N° 10, Barrio de Fatima",
-      "phones": ["01 967 674 7811"],
+      "address": "Francisco Villa #10, Barrio de Fatima, 29264 San Cristóbal de las Casas, Chis., Mexico",
+      "phones": ["+52 967 674 7811"],
       "description": "",
-      "hours": ""
+		"hours": "",
+		"websites": ["http://vocesmesoamericanas.org"]
     },{
-	7. SAN CRISTOBAL DE LAS CASAS
-Casa del Migrante
-San Martín de Porres
-Prolongación Insurgentes N° 87.
-01 967 678 2776
+      7. SAN CRISTOBAL DE LAS CASAS
+      Casa del Migrante
+      San Martín de Porres
+      Prolongación Insurgentes N° 87.
+      01 967 678 2776
       "name": "Casa del Migrante San Martín de Porres",
       "google_place_id": "",
       "type": "",
@@ -354,11 +227,11 @@ Prolongación Insurgentes N° 87.
       "description": "",
       "hours": ""
     },{
-	7. SAN CRISTOBAL DE LAS CASAS
-Formación y Capacitación A.C.
-Julio M. Corzo
-33 Barrio de Santa Lucía.
-967 674 5310
+      7. SAN CRISTOBAL DE LAS CASAS
+      Formación y Capacitación A.C.
+      Julio M. Corzo
+      33 Barrio de Santa Lucía.
+      967 674 5310
       "name": "Formación y Capacitación A.C. Julio M. Corzo",
 
       "google_place_id": "",
@@ -370,13 +243,13 @@ Julio M. Corzo
       "description": "",
       "hours": ""
     },{
-	8. PALENQUE
+      8. PALENQUE
 
-Casa del Caminante
-Jtatic Samuel Ruiz
-Pasa la vía,
-Xkichan, mano izquierda, 1o A,
-cuadra a la derecha,
+      Casa del Caminante
+      Jtatic Samuel Ruiz
+      Pasa la vía,
+      Xkichan, mano izquierda, 1o A,
+      cuadra a la derecha,
       "name": "Casa del Caminante Jtatic Samuel Ruiz",
       "google_place_id": "",
       "type": "",
@@ -387,10 +260,10 @@ cuadra a la derecha,
       "description": "",
       "hours": ""
     },{
-	8. PALENQUE
-Casa del Caminante,
-Barrio San Francisco,
-Col. Pakal-ná.
+      8. PALENQUE
+      Casa del Caminante,
+      Barrio San Francisco,
+      Col. Pakal-ná.
       "name": "Casa del Caminante, ",
       "google_place_id": "",
       "type": "",
@@ -401,12 +274,12 @@ Col. Pakal-ná.
       "description": "",
       "hours": ""
     },{
-	EN OAXACA
-	9.	IXTEPEC
-Albergue Hermanos en el Camino A.C.
-Av. Ferrocarril Pte. N° 60,
-Barrio de La Soledad.
-01	971 1034385.
+      EN OAXACA
+      9.	IXTEPEC
+      Albergue Hermanos en el Camino A.C.
+      Av. Ferrocarril Pte. N° 60,
+      Barrio de La Soledad.
+      01	971 1034385.
       "name": "Albergue Hermanos en el Camino A.C.",
       "google_place_id": "",
       "type": "",
@@ -417,14 +290,14 @@ Barrio de La Soledad.
       "description": "",
       "hours": ""
     },{
-	EN TABASCO
+      EN TABASCO
 
-10. TENOSIQUE
-La 72,
-Hogar Refugio para Personas Migrantes.
-Estación Nueva N° 86901,
-Tenosique de Pino Suárez.
-01 934 342 1111
+      10. TENOSIQUE
+      La 72,
+      Hogar Refugio para Personas Migrantes.
+      Estación Nueva N° 86901,
+      Tenosique de Pino Suárez.
+      01 934 342 1111
       "name": "La 72, Hogar Refugio para Personas Migrantes",
       "google_place_id": "",
       "type": "",
@@ -435,7 +308,7 @@ Tenosique de Pino Suárez.
       "description": "",
       "hours": ""
     },{
-	Instituto Federal de la Defensoría Publica (IFDP)	3a Oriente No. 12, entre la y 3a calle Norte, Col. Centro.	962-6257837 01-800-2018671	Lunes a viernes, 8:30-16:00 hrs.	A pie
+      Instituto Federal de la Defensoría Publica (IFDP)	3a Oriente No. 12, entre la y 3a calle Norte, Col. Centro.	962-6257837 01-800-2018671	Lunes a viernes, 8:30-16:00 hrs.	A pie
       "name": "",
       "google_place_id": "",
       "type": "",
@@ -446,19 +319,7 @@ Tenosique de Pino Suárez.
       "description": "",
       "hours": ""
     },{
-	Comisión Mexicana de Ayuda a Refugiados (COMAR)	8a Avenida Sur esquina 4a Poniente, Col.Centro	962-6425318 962-6425319	Lunes a viernes, 8:30-16:00 hrs.	A pie
-      "name": "",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      "address": "",
-      "phones": [],
-      "description": "",
-      "hours": ""
-    },{
-
-INM Regularización Migratoria	Vialidad No. 435, Col. Las Vegas.		Lunes a viernes, 8:30-16:00 hrs.	COBACH Solidaridad 2000
+      Comisión Mexicana de Ayuda a Refugiados (COMAR)	8a Avenida Sur esquina 4a Poniente, Col.Centro	962-6425318 962-6425319	Lunes a viernes, 8:30-16:00 hrs.	A pie
       "name": "",
       "google_place_id": "",
       "type": "",
@@ -470,9 +331,8 @@ INM Regularización Migratoria	Vialidad No. 435, Col. Las Vegas.		Lunes a vierne
       "hours": ""
     },{
 
-Procuraduría Regional de Protección de los Derechos de Niñas, Niños y Adolescentes en Materia Migrante	Carretera a Puerto Madero km 3.5 esquina con Ayuntamiento, Col. Joaquín del Pino.	962-6281382	Lunes a viernes, 8:00-16:00 hrs.	Tapachulteco
-
-	"name": "",
+      INM Regularización Migratoria	Vialidad No. 435, Col. Las Vegas.		Lunes a viernes, 8:30-16:00 hrs.	COBACH Solidaridad 2000
+      "name": "",
       "google_place_id": "",
       "type": "",
       "features": [],
@@ -480,49 +340,10 @@ Procuraduría Regional de Protección de los Derechos de Niñas, Niños y Adoles
       "address": "",
       "phones": [],
       "description": "",
-	"hours": "",
-	"route": ""
+      "hours": ""
     },{
-Centro de Atención a Niños, Niñas y Jóvenes Migrantes (Centro de Día)	5a Privada Sur esquina 42 Oriente, Col. Centro.	962-1180949	Lunes a viernes, 9:00-17:00 hrs.	A pie
 
-	"name": "",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      "address": "",
-      "phones": [],
-      "description": "",
-	"hours": "",
-	"route": ""
-    },{
-Centro de Atención Pastoral a Personas Migrantes y Refugiadas	17^ calle Poniente s/n, entre 4a y 6§ Avenida Norte, Col. Centro.	962-6253235	Lunes a viernes, 10:00-14:00 hrs.	A pie
-
-	"name": "",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      "address": "",
-      "phones": [],
-      "description": "",
-	"hours": "",
-	"route": ""
-    },{
-Por la Superación de la Mujer A.C.	Avenida Niños Heroes Mz 15 It 35, Fraccionamiento la Antorcha Tercera Etapa.	962-6283759	Sábado 9:00 a 14:00	Libertad El Carmen
-
-	"name":"",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      "address": "",
-      "phones": [],
-      "description": "",
-	"hours": "",
-	"route": ""
-    },{
-	Centro de salud de Indeco	Avenida Juan Aldama No. 6, Col. Indeco	962-6424214	Diariamente, 8:00-20:00 hrs.	Indeco
+      Procuraduría Regional de Protección de los Derechos de Niñas, Niños y Adolescentes en Materia Migrante	Carretera a Puerto Madero km 3.5 esquina con Ayuntamiento, Col. Joaquín del Pino.	962-6281382	Lunes a viernes, 8:00-16:00 hrs.	Tapachulteco
 
       "name": "",
       "google_place_id": "",
@@ -532,36 +353,10 @@ Por la Superación de la Mujer A.C.	Avenida Niños Heroes Mz 15 It 35, Fracciona
       "address": "",
       "phones": [],
       "description": "",
-	"hours": "",
-	"route": ""
+      "hours": "",
+      "route": ""
     },{
-Centro de salud Villa de las Flores	Jacarandas s/n, Col. Cerrada de las Villa Flores.		Diariamente, 8:00-20:00 hrs.	Emiliano Zapata
-
-
-	"name": "",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      "address": "",
-      "phones": [],
-      "description": "",
-	"hours": "",
-	"route": ""
-    },{
-Centro de salud Nuevo Milenio	Obregón s/n entre avenida San Ramón y San Isidro, Col. Libertad.		Diariamente, 8:00-20:00 hrs.	Nuevo Milenio
-	"name": "",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      "address": "",
-      "phones": [],
-      "description": "",
-	"hours": "",
-	"route": ""
-    },{
-	Centro de salud Raymundo Enríquez	Camino a Raymundo Enríquez		Diariamente, 8:00-20:00 hrs.	Raymundo Enriquez
+      Centro de Atención a Niños, Niñas y Jóvenes Migrantes (Centro de Día)	5a Privada Sur esquina 42 Oriente, Col. Centro.	962-1180949	Lunes a viernes, 9:00-17:00 hrs.	A pie
 
       "name": "",
       "google_place_id": "",
@@ -571,13 +366,12 @@ Centro de salud Nuevo Milenio	Obregón s/n entre avenida San Ramón y San Isidro
       "address": "",
       "phones": [],
       "description": "",
-	"hours": "",
-	"route": ""
+      "hours": "",
+      "route": ""
     },{
+      Centro de Atención Pastoral a Personas Migrantes y Refugiadas	17^ calle Poniente s/n, entre 4a y 6§ Avenida Norte, Col. Centro.	962-6253235	Lunes a viernes, 10:00-14:00 hrs.	A pie
 
-Cruz Roja Mexicana	I* Calle Oriente entre 7a y 9a Avenida Norte, Col. Centro.	962-6261949	Abierto las 24 hrs.	Periférico Derecha
-
-	"name": "",
+      "name": "",
       "google_place_id": "",
       "type": "",
       "features": [],
@@ -585,109 +379,203 @@ Cruz Roja Mexicana	I* Calle Oriente entre 7a y 9a Avenida Norte, Col. Centro.	96
       "address": "",
       "phones": [],
       "description": "",
-	"hours": "",
-	"route": ""
+      "hours": "",
+      "route": ""
+    },{
+      Por la Superación de la Mujer A.C.	Avenida Niños Heroes Mz 15 It 35, Fraccionamiento la Antorcha Tercera Etapa.	962-6283759	Sábado 9:00 a 14:00	Libertad El Carmen
+
+      "name":"",
+      "google_place_id": "",
+      "type": "",
+      "features": [],
+      "coordinates": [],
+      "address": "",
+      "phones": [],
+      "description": "",
+      "hours": "",
+      "route": ""
+    },{
+      Centro de salud de Indeco	Avenida Juan Aldama No. 6, Col. Indeco	962-6424214	Diariamente, 8:00-20:00 hrs.	Indeco
+
+      "name": "",
+      "google_place_id": "",
+      "type": "",
+      "features": [],
+      "coordinates": [],
+      "address": "",
+      "phones": [],
+      "description": "",
+      "hours": "",
+      "route": ""
+    },{
+      Centro de salud Villa de las Flores	Jacarandas s/n, Col. Cerrada de las Villa Flores.		Diariamente, 8:00-20:00 hrs.	Emiliano Zapata
+
+
+      "name": "",
+      "google_place_id": "",
+      "type": "",
+      "features": [],
+      "coordinates": [],
+      "address": "",
+      "phones": [],
+      "description": "",
+      "hours": "",
+      "route": ""
+    },{
+      Centro de salud Nuevo Milenio	Obregón s/n entre avenida San Ramón y San Isidro, Col. Libertad.		Diariamente, 8:00-20:00 hrs.	Nuevo Milenio
+      "name": "",
+      "google_place_id": "",
+      "type": "",
+      "features": [],
+      "coordinates": [],
+      "address": "",
+      "phones": [],
+      "description": "",
+      "hours": "",
+      "route": ""
+    },{
+      Centro de salud Raymundo Enríquez	Camino a Raymundo Enríquez		Diariamente, 8:00-20:00 hrs.	Raymundo Enriquez
+
+      "name": "",
+      "google_place_id": "",
+      "type": "",
+      "features": [],
+      "coordinates": [],
+      "address": "",
+      "phones": [],
+      "description": "",
+      "hours": "",
+      "route": ""
+    },{
+
+      Cruz Roja Mexicana	I* Calle Oriente entre 7a y 9a Avenida Norte, Col. Centro.	962-6261949	Abierto las 24 hrs.	Periférico Derecha
+
+      "name": "",
+      "google_place_id": "",
+      "type": "",
+      "features": [],
+      "coordinates": [],
+      "address": "",
+      "phones": [],
+      "description": "",
+      "hours": "",
+      "route": ""
     }      "features": [],
-      "coordinates": [],
-      "address": "",
-      "phones": [],
-      "description": "",
-	"hours": "",
-	"route": ""
-  }
-    ,{
-	Centros Ambulatorios de Prevención y Atención en SIDA e ITS (CAPASITS)	Prolongación Boulevard Akishino, esquina Vicente Guerrero s/n, Col. La Antorcha, Etapa 4.	962-6284076	Lunes a viernes, 8:00-20:00 hrs.	Nuevo Milenio Cafetales
-	"name": "",
-      "google_place_id": "",
-      "type": "",
-"features": [],
-      "coordinates": [],
-      "address": "",
-      "phones": [],
-      "description": "",
-	"hours": "",
-	"route": ""
-    },{
-	Jurisdicción Sanitaria VII	la Norte No. 9, entre Calle Central y 1" Oriente, Col Centro.	962-6286886	Lunes a viernes, 8:00-20:00 hrs.	A pie
-
-	"name": "",
-      "google_place_id": "",
-      "type": "",
-"features": [],
-      "coordinates": [],
-      "address": "",
-      "phones": [],
-      "description": "",
-	"hours": "",
-	"route": ""
-    },{
-Comisión Ejecutiva de Atención a Víctimas (CEAV)	25 Avenida Norte No. 1, entre Central y l9 Poniente, Col. Centro.	962-6428691	Lunes a viernes, 9:00-15:00 y 16:00-18:00 hrs.	A pie
-
-	"name": "",
-      "google_place_id": "",
-      "type": "",
-"features": [],
-      "coordinates": [],
-      "address": "",
-      "phones": [],
-      "description": "",
-	"hours": "",
-	"route": ""
-    },{
-	"name": "",
-      "google_place_id": "",
-      "type": "",
-"features": [],
-      "coordinates": [],
-      "address": "",
-      "phones": [],
-      "description": "",
-	"hours": "",
-	"route": ""
-    },{
-	"name": "",
-      "google_place_id": "",
-      "type": "",
-"features": [],
-      "coordinates": [],
-      "address": "",
-      "phones": [],
-      "description": "",
-	"hours": "",
-	"route": ""
-    },{
-	"name": "",
-      "google_place_id": "",
-      "type": "",
-"features": [],
-      "coordinates": [],
-      "address": "",
-      "phones": [],
-      "description": "",
-	"hours": "",
-	"route": ""
-    },{
-	"name": "",
-      "google_place_id": "",
-      "type": "",
-"features": [],
-      "coordinates": [],
-      "address": "",
-      "phones": [],
-      "description": "",
-	"hours": "",
-	"route": ""
-    },{
-	"name": "",
-      "google_place_id": "",
-      "type": "",
-"features": [],
-      "coordinates": [],
-      "address": "",
-      "phones": [],
-      "description": "",
-	"hours": "",
-	"route": ""
+    "coordinates": [],
+    "address": "",
+    "phones": [],
+    "description": "",
+    "hours": "",
+    "route": ""
     }
+  ,{
+      Centros Ambulatorios de Prevención y Atención en SIDA e ITS (CAPASITS)	Prolongación Boulevard Akishino, esquina Vicente Guerrero s/n, Col. La Antorcha, Etapa 4.	962-6284076	Lunes a viernes, 8:00-20:00 hrs.	Nuevo Milenio Cafetales
+      "name": "",
+      "google_place_id": "",
+      "type": "",
+      "features": [],
+      "coordinates": [],
+      "address": "",
+      "phones": [],
+      "description": "",
+      "hours": "",
+      "route": ""
+    },{
+      Jurisdicción Sanitaria VII	la Norte No. 9, entre Calle Central y 1" Oriente, Col Centro.	962-6286886	Lunes a viernes, 8:00-20:00 hrs.	A pie
+
+      "name": "",
+      "google_place_id": "",
+      "type": "",
+      "features": [],
+      "coordinates": [],
+      "address": "",
+      "phones": [],
+      "description": "",
+      "hours": "",
+      "route": ""
+    },{
+      Comisión Ejecutiva de Atención a Víctimas (CEAV)	25 Avenida Norte No. 1, entre Central y l9 Poniente, Col. Centro.	962-6428691	Lunes a viernes, 9:00-15:00 y 16:00-18:00 hrs.	A pie
+
+      "name": "",
+      "google_place_id": "",
+      "type": "",
+      "features": [],
+      "coordinates": [],
+      "address": "",
+      "phones": [],
+      "description": "",
+      "hours": "",
+      "route": ""
+    },
+    },{
+      "name": "",
+      "google_place_id": "",
+      "type": "",
+      "features": [],
+      "coordinates": [],
+      "address": "",
+      "phones": [],
+      "description": "",
+      "hours": "",
+      "route": ""
+    },
+    ,{
+      9 INICIATIVA PARA EL DESARROLLO HUMANO AC "ESCUELA LIBRE LAS Y LOS AMIGOS"
+      Colonia Sierra 1 manzana 4 lote 37. Sábados, 10 a 13 h.
+
+      "name": "INICIATIVA PARA EL DESARROLLO HUMANO AC 'ESCUELA LIBRE LAS Y LOS AMIGOS'",
+      "google_place_id": "",
+      "type": "",
+      "features": [],
+      "coordinates": [],
+      "address": "Colonia Sierra 1a Manzana #4 lote 37, Tapachula, Chiapas, MX",
+      "phones": [],
+      "description": "",
+      "hours": "Sábados, 10 a 13 h."
+    },
+    {
+      4. CENTRO DE ATENCIÓN PASTORAL A PERSONAS MIGRANTES Y REFUGIADAS 17 Calle Ponientes s/n entre 4a y 6a Av. Norte, Colonia Centro. Lunes a Viernes, 10 a 14 h.
+      "name": "CENTRO DE ATENCIÓN PASTORAL A PERSONAS MIGRANTES Y REFUGIADAS",
+      "google_place_id": "",
+      "type": "",
+      "features": [],
+      "coordinates": [],
+      "address": "17a Calle Ponientes entre 4a y 6a Avenida Norte, Colonia Centro, Tapachula, Chiapas, Mexico",
+      "phones": [],
+      "description": "",
+      "hours": "Lunes a Viernes, 10 a 14 h"
+    },
+{
+      4.	TUXLA GUTIERREZ
+
+	Albergue Jesús Esperanza en el Camino. Ia calle Poniente y 16 Sur N° 1664.
+	    movilidadmt25@hotmail.com
+      "name": "Albergue Jesús Esperanza en el Camino.",
+      "google_place_id": "",
+      "type": "",
+      "features": [],
+      "coordinates": [],
+      "address": " Ia calle Poniente y 16 Sur N° 1664.",
+      "phones": [],
+      "description": "",
+      "hours": "",
+      "notes": "movilidadmt25@hotmail.com"
+},
+{
+      4.	TUXLA GUTIERREZ
+
+      Una Ayuda Para Ti Mujer Migrante A,C.
+      01	961 61 67 903
+
+      "name": "Una Ayuda Para Ti Mujer Migrante A,C.",
+      "google_place_id": "",
+      "type": "",
+      "features": [],
+      "coordinates": [],
+      "address": "",
+      "phones": ["01	961 61 67 903"],
+      "description": "",
+      "hours": ""
+    },
   ]
 }
