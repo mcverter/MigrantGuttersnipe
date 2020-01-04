@@ -5,6 +5,7 @@ import shelterLGBTQIcon from './lgbtq.jpg';
 import shelterSolterosIcon from './solteros.jpg';
 import shelterMujeresIcon from './mujeres.jpg';
 import shelterMenoresIcon from './menores.jpg';
+import defaultIcon from './icon-512x512.png'
 //import govermentIcon from './government.png';
 //import embassyIcon from './embassy.png';
 import parliamentIcon from './parliament.png'

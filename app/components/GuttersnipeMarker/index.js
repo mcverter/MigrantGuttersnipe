@@ -14,6 +14,7 @@ const GuttersnipeMarker = (shareable) => {
     popup.current.leafletElement.options.leaflet.map.closePopup();
   }
 
+  console.log('shareable', shareable);
   return (
     <Marker
       position={markerPosition}

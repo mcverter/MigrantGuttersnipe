@@ -1,18 +1,12 @@
-/**
- *
- * Tijuana
- *
- */
-
 import React from 'react';
 import GuttersnipeMap  from '../../components/GuttersnipeMap';
 import PropTypes from 'prop-types';
-import {placemarks as shareables} from './tapachula.json';
+import {data} from './tapachula';
 
-export default function Tijuana() {
-  const center = { lat: 32.5364307, lng: -117.037085 };
-  const zoom = 12;
-
+export default function Tapachula() {
+  const center = { lat: 14.9094914, lng: -92.2644298 };
+  const zoom = 8;
+  const shareables = data.placemarks;
   return (
     <GuttersnipeMap
       style={{ height: '100%', width: '100%' }}
@@ -23,4 +17,4 @@ export default function Tijuana() {
   );
 }
 
-Tijuana.propTypes = {};
+Tapachula.propTypes = {};
