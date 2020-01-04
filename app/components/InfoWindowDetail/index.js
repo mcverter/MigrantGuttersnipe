@@ -2,9 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReactHtmlParser from 'react-html-parser';
 import { plainIcons } from '../../images';
+import {stringToHash} from "../../utils/utils"
 import GoogleMapsOpener from '../../components/GoogleMapsOpener';
 import Collapsible from 'react-collapsible';
 import './styles.scss';
+
 
 const InfoWindowDetail = place => {
   const {
@@ -36,7 +38,7 @@ const InfoWindowDetail = place => {
   const listCategories = () => {
     return (
       <ul className="iw-detail-categories">
-        {features && features.map((f, idx) => <li key={idx}>{f}</li>)}
+        {features && features.map((f) => <li key={stringToHash(f)}>{f}</li>)}
       </ul>
     );
   };
@@ -70,9 +72,9 @@ const InfoWindowDetail = place => {
     return (
       <Collapsible trigger="Sitios de Web" className="iw-detail-websites">
         <ul>
-          {websites.map((w, idx) => {
+          {websites.map((w) => {
             return (
-              <li key={idx}>
+              <li key={stringToHash(w)}>
                 <a href={w} target={'_blank'}>
                   {w}
                 </a>
@@ -116,7 +118,7 @@ const InfoWindowDetail = place => {
     }
 
     return (
-      <div className="iw-detail-phone">
+      <div className="iw-detail-phone" key={stringToHash(phone)}>
         <div>
           <span>
             <img align="left" src={plainIcons['phone']} />

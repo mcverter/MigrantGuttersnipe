@@ -1,9 +1,3 @@
-/**
- *
- * Tijuana
- *
- */
-
 import React from 'react';
 import GuttersnipeMap  from '../../components/GuttersnipeMap';
 import PropTypes from 'prop-types';
