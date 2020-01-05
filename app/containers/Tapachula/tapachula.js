@@ -209,6 +209,51 @@ export const data = {
       "description": "",
       "hours": "",
       "websites": ["http://vocesmesoamericanas.org"]
+    },
+    {
+      "name": "Casa del Migrante San Martín de Porres",
+      "google_place_id": "",
+      "type": "ONG",
+      "features": [],
+      "coordinates": [-92.64544,16.73792],
+      "address": "Prolongación 1 ° de Marzo # 47; Barrio de San Ramón, San Cristóbal de las Casas, Chiapas",
+      "phones": ["+52 967 678 2776"],
+      "description": "El Servicio Pastoral a Migrantes San Martín de Porres es un centro de acogida para migrantes, donde se proporcione comida, apoyo espiritual, orientación así como defensa y promoción de los derechos humanos.",
+      "hours": "",
+      "websites": ["https://www.facebook.com/Servicio-Pastoral-a-Migrantes-San-Mart%C3%ADn-de-Porres-1019423034811649/", "sepamismp@gmail.com"]
+    },{
+      "name": "Formación y Capacitación A.C. Julio M. Corzo",
+      "google_place_id": "ChIJa_JrHTlF7YURfLOiA4hnn7M",
+      "type": "ONG",
+      "features": [],
+      "coordinates": [],
+      "address": "33 Barrio de Santa Lucía.",
+      "phones": ["+52 967 674 5310"],
+      "description": "",
+      "hours": "",
+      "websites": ["https://foca.org.mx/"]
+    },
+    {
+      "name": "Albergue Jtatic Samuel Ruiz",
+      "google_place_id": "ChIJTWkLhvRF8oURoMuv6IDFIJw",
+      "type": "Albergue: Familias",
+      "features": [],
+      "coordinates": [-91.9968992,17.5451071],
+      "address": "Pasa la vía, Xkichan, mano izquierda, 1o A,cuadra a la derecha, Palenque, MX",
+      "phones": ["+52 916 345 2497"],
+      "description": "La casa del Caminante Jtatic Samuel Ruiz García, es una asociación civil que brinda albergue a los migrantes en tránsito y asesoría legal gratuita a aquellos en busca de asilo. Administrado por las hermanas Vicentinas.",
+      "websites": ["https://www.facebook.com/Casa-del-Caminante-Jtatic-Samuel-Ruiz-Garc%C3%ADa-966647866711530/", "casadelcaminante@gmail.com"],
+      "hours": ""
+    },{
+      "name": "Casa del Caminante",
+      "google_place_id": "ChIJ_V8Px_NF8oURCRI87BP69cc",
+      "type": "ONG",
+      "features": [],
+      "coordinates": [-91.992548, 17.543319],
+      "address": "Barrio San Francisco, Col. Pakal-ná, Palenque, Chiapas, Mexico",
+      "phones": [],
+      "description": "",
+      "hours": ""
     }
   ]
 }
