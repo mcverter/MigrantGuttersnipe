@@ -79,7 +79,7 @@ export const data = {
     }, {
       "name": "Centro de Salud Urbano Tapachula",
       "google_place_id": "Place ID: ChIJtZESnNcOjoURs5IQnxz2xsA",
-      "type": "ONG",
+      "type": "Servicios Medicos",
       "features": [],
       "coordinates": [ -92.263014, 14.9171723],
       "address": "8A. Av. norte 16B, , entre 19a y 21a Poniente, Los Naranjos, 5 de Febrero, 30710 Tapachula de Córdova y Ordoñez, Chis., Mexico",
@@ -90,7 +90,7 @@ export const data = {
     }, {
       "name": "Centro de Atención a la Salud Santa Clara ",
       "google_place_id": "ChIJs2fHlYcPjoURdH3PFYnyTfs",
-      "type": "ONG",
+      "type": "Servicios Medicos",
       "features": [],
       "coordinates": [],
       "address": "Perla del Soconusco 45, Los Naranjos, Burocratica Sta Clara, 30788 Tapachula de Córdova y Ordoñez, Chis., Mexico",
@@ -101,7 +101,7 @@ export const data = {
     }, {
       "name": "Centro de Salud Raymundo Enriquez",
       "google_place_id": "ChIJk3UKN04FjoURNpsVLE1lhjk",
-      "type": "ONG",
+      "type": "Servicios Medicos",
       "features": [],
       "coordinates": [-92.317229,14.866439],
       "address": "Central Oriente y 3a Norte, camino al panteón, s/n, entre Los Pinos y Los Cafetales.",
@@ -111,7 +111,7 @@ export const data = {
     }, {
       "name": "Hospital General de Tapachula 'Dr. Manuel Velasco Suárez'",
       "google_place_id": "ChIJO68X1VoFjoURzCO6ZpMZ6F4",
-      "type": "ONG",
+      "type": "Servicios Medicos",
       "features": [],
       "coordinates": [ -92.3206149, 14.8425225],
       "address": " Carretera a puerto Madero, s/n, Col. Feliciano Renauld, C.P. 30825, Chis. ",
@@ -122,7 +122,7 @@ export const data = {
     },  {
       "name": " Una Mano Amiga en la Lucha contra el Sida (UMA) ",
       "google_place_id": "",
-      "type": "ONG",
+      "type": "Servicios Medicos",
       "features": [],
       "coordinates": [-92.25685,  14.9182],
       "address": "Avenida Central Norte #168, Colonia 5 de Febrero, Tapachula, Chiapas, Mexico",
@@ -133,7 +133,7 @@ export const data = {
     },    {
       "name": "CEDH Comision Estatal de los Derechos Humanos Chiapas ",
       "google_place_id": "ChIJu4or78QOjoUR6qYurp6oMLY",
-      "type": "ONG",
+      "type": "Oficial",
       "features": [],
       "coordinates": [-92.2578421, 14.9095437],
       "address": "Avenida 13a Norte #87, entre 19 y 21 Calle Oriente.,  Barrio Nuevo, Tapachula, Chiapas, MX",
@@ -144,7 +144,7 @@ export const data = {
     },   {
       "name": "COMISIÓN NACIONAL DE DERECHOS HUMANOS",
       "google_place_id": "ChIJq6qqqiEPjoURSXtIN7CFWp8",
-      "type": "ONG",
+      "type": "Oficial",
       "features": [],
       "coordinates": [ -92.2586703, 14.9121137],
       "address": "15A. Oriente 20A, entre 3era y 5era Avenida Norte, Los Naranjos, Centro, 30830 Centro, Tapachula, Chiapas, MX",
@@ -156,7 +156,7 @@ export const data = {
     {
       "name": "Fiscalía Especializada en Delitos Cometidos en Contra de Inmigrantes",
       "google_place_id": "Place ID: ChIJ54wJzJXY7IUR7oud5Ak4d6w",
-      "type": "ONG",
+      "type": "Oficial",
       "features": [],
       "coordinates": [-92.2500851, 14.9028884],
       "address": "Boulevard Díaz Ordáz #9, Colonia Lomas de Sayula, Tapachula, Mexico",
@@ -164,9 +164,7 @@ export const data = {
       "description": "",
       "route": ["FOVISSTE", "Bonanza por 3era"],
       "hours": "Lunes a Viernes: 9 a 21 h. Sábado: 10 a 14 h."
-    },
-
-    {
+    },  {
 
 
       "name": "Oficina de Atención a Migrantes y Refugiados / Servicio Jesuíta a Migrantes",
@@ -183,7 +181,7 @@ export const data = {
       "google_place_id": "",
       "type": "ONG",
       "features": [],
-      "coordinates": [],
+      "coordinates": [-92.135,16.255],
       "address": "Comitan, Chiapas, Mexico",
       "phones": ["+52 963 135 9422"],
       "description": "Defensora integral de Derechos Human@s de migrantes principalmente irregulares y/o refugiad@s: Niñez, adolescencia, familias y comunidad LGBTTTIQ+ en Comitán, Chiapas, México. Apoyo gratuito.  Conocenos y Dona",
@@ -198,6 +196,7 @@ export const data = {
       "address": "3a Av. Oriente Norte, Barrio La Pila, Comitan, Chiapas, Mexico",
       "phones": ["+52 963 632 8400 "],
       "description": "lamoradacomitan@gmail.com",
+      "websites": ["lamoradacomitan@gmail.com"],
       "hours": ""
     },{
       "name": "Voces Mesoamericanas - Acción con Pueblos Migrantes",
