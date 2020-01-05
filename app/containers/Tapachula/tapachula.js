@@ -254,6 +254,39 @@ export const data = {
       "phones": [],
       "description": "",
       "hours": ""
+    },
+    {
+      "name": "Instituto Federal de la Defensoría Publica (IFDP)",
+      "google_place_id": "",
+      "type": "Oficial",
+      "features": [],
+      "coordinates": [],
+      "address": "Calle 3a Oriente #12 Norte, Col. Centro,	Tapachula, Chiapas",
+      "phones": ["+52 962-625 7837"],
+      "description": "",
+      "hours": "Lunes a viernes, 8:30-16:00 hrs."
+    },{
+      "name": "Comisión Mexicana de Ayuda a Refugiados (COMAR)",
+      "google_place_id": "ChIJo7CjgAoPjoURSDe10lqYjJs",
+      "type": "Oficial",
+      "features": [],
+      "coordinates": [-92.2704458,14.9060729],
+      "address": "	8a Avenida Sur esquina 4a Poniente, Los Naranjos, Centro, 30830 Tapachula de Córdova y Ordoñez, Chis., Mexico",
+      "phones": ["+52 962-642 5318", "+962 642 5319"],
+      "description": "",
+      "hours": "Lunes a viernes, 8:30-16:00 hrs."
+    },
+    {
+      "name": "INM Migracion Y Grupo Beta",
+      "google_place_id": "ChIJv4MutPoPjoURfM8pSqfIzgU",
+      "type": "Oficial",
+      "features": [],
+      "coordinates": [-92.2858998, 14.8907758],
+      "address": "No. 435, Col. Las Vegas, Tapachula, Chiapas, MX",
+      "phones": [],
+      "description": "",
+      "hours": "Lunes a viernes, 8:30-16:00 hrs.",
+      "route": ["COBACH", "Solidaridad 2000"]
     }
   ]
 }

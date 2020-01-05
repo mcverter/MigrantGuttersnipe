@@ -1,102 +1,7 @@
 
 {
   "placemarks": [
-    ,{
-      EN OAXACA
-      9.	IXTEPEC
-      Albergue Hermanos en el Camino A.C.
-      Av. Ferrocarril Pte. N° 60,
-      Barrio de La Soledad.
-      01	971 1034385.
-      "name": "Albergue Hermanos en el Camino A.C.",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      "address": "Av. Ferrocarril Pte. N° 60, Barrio de La Soledad",
-      "phones": ["01	971 1034385"],
-      "description": "",
-      "hours": ""
-    },{
-      EN TABASCO
-
-      10. TENOSIQUE
-      La 72,
-      Hogar Refugio para Personas Migrantes.
-      Estación Nueva N° 86901,
-      Tenosique de Pino Suárez.
-      01 934 342 1111
-      "name": "La 72, Hogar Refugio para Personas Migrantes",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      "address": "Estación Nueva N° 86901, Tenosique de Pino Suárez.",
-      "phones": ["01 934 342 1111"],
-      "description": "",
-      "hours": ""
-    },{
-      Instituto Federal de la Defensoría Publica (IFDP)	3a Oriente No. 12, entre la y 3a calle Norte, Col. Centro.	962-6257837 01-800-2018671	Lunes a viernes, 8:30-16:00 hrs.	A pie
-      "name": "",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      "address": "",
-      "phones": [],
-      "description": "",
-      "hours": ""
-    },{
-      Comisión Mexicana de Ayuda a Refugiados (COMAR)	8a Avenida Sur esquina 4a Poniente, Col.Centro	962-6425318 962-6425319	Lunes a viernes, 8:30-16:00 hrs.	A pie
-      "name": "",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      "address": "",
-      "phones": [],
-      "description": "",
-      "hours": ""
-    },{
-
-      INM Regularización Migratoria	Vialidad No. 435, Col. Las Vegas.		Lunes a viernes, 8:30-16:00 hrs.	COBACH Solidaridad 2000
-      "name": "",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      "address": "",
-      "phones": [],
-      "description": "",
-      "hours": ""
-    },{
-
-      Procuraduría Regional de Protección de los Derechos de Niñas, Niños y Adolescentes en Materia Migrante	Carretera a Puerto Madero km 3.5 esquina con Ayuntamiento, Col. Joaquín del Pino.	962-6281382	Lunes a viernes, 8:00-16:00 hrs.	Tapachulteco
-
-      "name": "",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      "address": "",
-      "phones": [],
-      "description": "",
-      "hours": "",
-      "route": ""
-    },{
-      Centro de Atención a Niños, Niñas y Jóvenes Migrantes (Centro de Día)	5a Privada Sur esquina 42 Oriente, Col. Centro.	962-1180949	Lunes a viernes, 9:00-17:00 hrs.	A pie
-
-      "name": "",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      "address": "",
-      "phones": [],
-      "description": "",
-      "hours": "",
-      "route": ""
-    },{
+,{
       Centro de Atención Pastoral a Personas Migrantes y Refugiadas	17^ calle Poniente s/n, entre 4a y 6§ Avenida Norte, Col. Centro.	962-6253235	Lunes a viernes, 10:00-14:00 hrs.	A pie
 
       "name": "",
@@ -273,11 +178,11 @@
       "description": "",
       "hours": "Lunes a Viernes, 10 a 14 h"
     },
-{
+    {
       4.	TUXLA GUTIERREZ
 
-	Albergue Jesús Esperanza en el Camino. Ia calle Poniente y 16 Sur N° 1664.
-	    movilidadmt25@hotmail.com
+      Albergue Jesús Esperanza en el Camino. Ia calle Poniente y 16 Sur N° 1664.
+      movilidadmt25@hotmail.com
       "name": "Albergue Jesús Esperanza en el Camino.",
       "google_place_id": "",
       "type": "",
@@ -288,8 +193,8 @@
       "description": "",
       "hours": "",
       "notes": "movilidadmt25@hotmail.com"
-},
-{
+    },
+    {
       4.	TUXLA GUTIERREZ
 
       Una Ayuda Para Ti Mujer Migrante A,C.
@@ -306,4 +211,68 @@
       "hours": ""
     },
   ]
+}
+,{
+EN OAXACA
+9.	IXTEPEC
+Albergue Hermanos en el Camino A.C.
+Av. Ferrocarril Pte. N° 60,
+Barrio de La Soledad.
+01	971 1034385.
+"name": "Albergue Hermanos en el Camino A.C.",
+"google_place_id": "",
+"type": "",
+"features": [],
+"coordinates": [],
+"address": "Av. Ferrocarril Pte. N° 60, Barrio de La Soledad",
+"phones": ["01	971 1034385"],
+"description": "",
+"hours": ""
+},{
+EN TABASCO
+
+10. TENOSIQUE
+La 72,
+Hogar Refugio para Personas Migrantes.
+Estación Nueva N° 86901,
+Tenosique de Pino Suárez.
+01 934 342 1111
+"name": "La 72, Hogar Refugio para Personas Migrantes",
+"google_place_id": "",
+"type": "",
+"features": [],
+"coordinates": [],
+"address": "Estación Nueva N° 86901, Tenosique de Pino Suárez.",
+"phones": ["01 934 342 1111"],
+"description": "",
+"hours": ""
+},{
+
+{
+
+Procuraduría Regional de Protección de los Derechos de Niñas, Niños y Adolescentes en Materia Migrante	Carretera a Puerto Madero km 3.5 esquina con Ayuntamiento, Col. Joaquín del Pino.	962-6281382	Lunes a viernes, 8:00-16:00 hrs.	Tapachulteco
+
+"name": "",
+"google_place_id": "",
+"type": "",
+"features": [],
+"coordinates": [],
+"address": "",
+"phones": [],
+"description": "",
+"hours": "",
+"route": ""
+},{
+Centro de Atención a Niños, Niñas y Jóvenes Migrantes (Centro de Día)	5a Privada Sur esquina 42 Oriente, Col. Centro.	962-1180949	Lunes a viernes, 9:00-17:00 hrs.	A pie
+
+"name": "",
+"google_place_id": "",
+"type": "",
+"features": [],
+"coordinates": [],
+"address": "",
+"phones": [],
+"description": "",
+"hours": "",
+"route": ""
 }
