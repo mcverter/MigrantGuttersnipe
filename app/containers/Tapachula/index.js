@@ -3,8 +3,9 @@ import GuttersnipeMap  from '../../components/GuttersnipeMap';
 import PropTypes from 'prop-types';
 import {data} from './tapachula';
 
+
 export default function Tapachula() {
-  const center = { lat: 14.9094914, lng: -92.2644298 };
+  const center = { lat: 15.582594, lng: -92.016658 };
   const zoom = 8;
   const shareables = data.placemarks;
   return (
