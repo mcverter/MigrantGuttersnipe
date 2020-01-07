@@ -1,5 +1,5 @@
 import React from 'react';
-import GuttersnipeMap  from '../../components/GuttersnipeMap';
+import GuttersnipeMap  from '../../containers/MapPopupExample';
 import PropTypes from 'prop-types';
 import {data} from './tapachula';
 

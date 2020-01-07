@@ -11,7 +11,6 @@ import {stringToHash} from "../../utils/utils";
 // import styled from 'styled-components';
 
 function ShareableListing(props) {
-  console.log(props)
 
   function makeKey(shareable) {
     if (!shareable) return "";
@@ -21,15 +20,15 @@ function ShareableListing(props) {
 
   const {shareables, onListItemClicked} = props;
   return (
-    <div style={{maxHeight: "300px", overflow: "scroll"}}>
+    <div style={{maxHeight: "300px",
+      overflow: "scroll"}}>
       {shareables.map((shareable)=>{
         const shareableKey = makeKey(shareable);
-        console.log('shareable', shareable)
         return (
           <ShareableListItem
            key={shareableKey}
            itemKey={shareableKey}
-           text={shareable.name}
+           shareable={shareable}
            onListItemClicked={onListItemClicked}
           />
         )

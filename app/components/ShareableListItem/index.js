@@ -5,13 +5,23 @@
  */
 
 import React from 'react';
+import {plainIcons} from "../../images";
 // import PropTypes from 'prop-types';
 // import styled from 'styled-components';
 
+console.log('plain', plainIcons
+)
 function ShareableListItem(props) {
-  let {text, itemKey, onListItemClicked} = props;
+  let {shareable, itemKey, onListItemClicked} = props;
   return (
-    <div onClick={()=>{onListItemClicked(itemKey)}}> {text} </div>
+
+    <div onClick={()=>{onListItemClicked(itemKey)}}>
+      <span>&nbsp;
+        <img height="12px" align="left"
+             src={plainIcons[shareable.type]}/>
+      </span>&nbsp;
+      {shareable.name} ({shareable.type})
+    </div>
   )
 }
 
