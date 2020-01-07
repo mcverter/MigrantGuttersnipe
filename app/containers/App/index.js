@@ -13,7 +13,7 @@ import Tijuana from '../../containers/Tijuana';
 import Tapachula from '../../containers/Tapachula';
 import HomePage from '../../containers/HomePage';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
-
+import MapPopupExample from '../../containers/MapPopupExample';
 import GlobalStyle from '../../global-styles';
 export default function App() {
   return (
@@ -21,6 +21,7 @@ export default function App() {
       <Switch>
         <Route path={"/Tijuana"} component={Tijuana}/>
         <Route path={"/Tapachula"} component={Tapachula}/>
+        <Route path={"/TestTijuanaLegend"} component={MapPopupExample}/>
         <Route path={'/elnumerodelalista'} component={() => {
           debugger;
 //          window.open('http://www.elnumerodelalista.com'/*, "_blank"*/);

@@ -87,18 +87,7 @@ export const data = {
       "description": "",
       "route": "5 de Febrero",
       "hours": "Diariamente, 8:00-20:00 hrs"
-    }, {
-      "name": "Centro de Atención a la Salud Santa Clara ",
-      "google_place_id": "ChIJs2fHlYcPjoURdH3PFYnyTfs",
-      "type": "Servicios Medicos",
-      "features": [],
-      "coordinates": [],
-      "address": "Perla del Soconusco 45, Los Naranjos, Burocratica Sta Clara, 30788 Tapachula de Córdova y Ordoñez, Chis., Mexico",
-      "phones": ["+52 962 642 6087"],
-      "description": "",
-      "hours": "8:00-20:00 hrs",
-      "route": "Laureles 2"
-    }, {
+    },  {
       "name": "Centro de Salud Raymundo Enriquez",
       "google_place_id": "ChIJk3UKN04FjoURNpsVLE1lhjk",
       "type": "Servicios Medicos",
@@ -198,17 +187,6 @@ export const data = {
       "description": "lamoradacomitan@gmail.com",
       "websites": ["lamoradacomitan@gmail.com"],
       "hours": ""
-    },{
-      "name": "Voces Mesoamericanas - Acción con Pueblos Migrantes",
-      "google_place_id": "ChIJ09FoyDhF7YUR65BV3sIw3RU",
-      "type": "ONG",
-      "features": [],
-      "coordinates": [],
-      "address": "Francisco Villa #10, Barrio de Fatima, 29264 San Cristóbal de las Casas, Chis., Mexico",
-      "phones": ["+52 967 674 7811"],
-      "description": "",
-      "hours": "",
-      "websites": ["http://vocesmesoamericanas.org"]
     },
     {
       "name": "Casa del Migrante San Martín de Porres",
@@ -221,17 +199,6 @@ export const data = {
       "description": "El Servicio Pastoral a Migrantes San Martín de Porres es un centro de acogida para migrantes, donde se proporcione comida, apoyo espiritual, orientación así como defensa y promoción de los derechos humanos.",
       "hours": "",
       "websites": ["https://www.facebook.com/Servicio-Pastoral-a-Migrantes-San-Mart%C3%ADn-de-Porres-1019423034811649/", "sepamismp@gmail.com"]
-    },{
-      "name": "Formación y Capacitación A.C. Julio M. Corzo",
-      "google_place_id": "ChIJa_JrHTlF7YURfLOiA4hnn7M",
-      "type": "ONG",
-      "features": [],
-      "coordinates": [],
-      "address": "33 Barrio de Santa Lucía.",
-      "phones": ["+52 967 674 5310"],
-      "description": "",
-      "hours": "",
-      "websites": ["https://foca.org.mx/"]
     },
     {
       "name": "Albergue Jtatic Samuel Ruiz",
@@ -255,17 +222,7 @@ export const data = {
       "description": "",
       "hours": ""
     },
-    {
-      "name": "Instituto Federal de la Defensoría Publica (IFDP)",
-      "google_place_id": "",
-      "type": "Oficial",
-      "features": [],
-      "coordinates": [],
-      "address": "Calle 3a Oriente #12 Norte, Col. Centro,	Tapachula, Chiapas",
-      "phones": ["+52 962-625 7837"],
-      "description": "",
-      "hours": "Lunes a viernes, 8:30-16:00 hrs."
-    },{
+{
       "name": "Comisión Mexicana de Ayuda a Refugiados (COMAR)",
       "google_place_id": "ChIJo7CjgAoPjoURSDe10lqYjJs",
       "type": "Oficial",
