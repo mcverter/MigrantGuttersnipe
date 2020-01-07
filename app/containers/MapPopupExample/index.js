@@ -28,7 +28,7 @@ class MapPopupExample extends Component {
     };
     this.markerRefs = {};
     this.makeKey = this.makeKey.bind(this);
-    this.closePopup = this.closePopup.bind(this);
+    //this.closePopup = this.closePopup.bind(this);
   }
 
   componentDidMount() {
@@ -42,9 +42,8 @@ class MapPopupExample extends Component {
   handleMarkerRef(key, node) {
     this.markerRefs[key] = node;
   }
-
   closePopup() {
-    mapRef.current.leafletElement.closePopup()
+    //   mapRef.current.closePopup()
     //    map.current.leafletElement.options.leaflet.map.closePopup();
   }
 
@@ -59,6 +58,19 @@ class MapPopupExample extends Component {
       }
     })
   }
+
+  popupClose(key) {
+    this.setState({
+      lat: this.shareablesMap[key].coordinates[1],
+      lng: this.shareablesMap[key].coordinates[0],
+      zoom: 16
+    }, () => {
+      if (this.markerRefs[key]) {
+        this.markerRefs[key].leafletElement.closePopup();
+      }
+    })
+  }
+
   handleMarkerRef(key, node) {
    this.markerRefs[key] = node;
   }
@@ -85,14 +97,19 @@ class MapPopupExample extends Component {
               <Marker
                key={markerKey}
                ref={this.handleMarkerRef.bind(this, markerKey)}
-               onclick={()=>{
-                self.markerClick(markerKey)
-               }}
+               foo
+               onclick={()=>{self.markerClick(markerKey)}}
                position={markerPosition}
                icon={leafletIcons[shareable.type]}
               >
                 <Popup>
                   <InfoWindowDetail {...shareable}/>
+                  <div
+                    className="map-popup-close-btn"
+                    onClick={()=>{self.popupClose(markerKey)}}
+                  >
+                    CERRAR
+                  </div>
                 </Popup>
 
               </Marker>
@@ -110,3 +127,4 @@ class MapPopupExample extends Component {
 }
 
 export default MapPopupExample;
+
