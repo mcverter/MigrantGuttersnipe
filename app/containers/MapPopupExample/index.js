@@ -7,6 +7,9 @@ import {stringToHash} from "../../utils/utils";
 import '../../components/GuttersnipeMap/styles.scss'
 import '../../components/GuttersnipeMap/leaflet.css'
 import { leafletIcons } from '../../images';
+import InfoWindowDetail from "../../components/InfoWindowDetail";
+import L from 'leaflet';
+const mapRef = React.createRef();
 
 class MapPopupExample extends Component {
 //  shareables = data.placemarks;
@@ -25,6 +28,7 @@ class MapPopupExample extends Component {
     };
     this.markerRefs = {};
     this.makeKey = this.makeKey.bind(this);
+    this.closePopup = this.closePopup.bind(this);
   }
 
   componentDidMount() {
@@ -37,6 +41,11 @@ class MapPopupExample extends Component {
   }
   handleMarkerRef(key, node) {
     this.markerRefs[key] = node;
+  }
+
+  closePopup() {
+    mapRef.current.leafletElement.closePopup()
+    //    map.current.leafletElement.options.leaflet.map.closePopup();
   }
 
   markerClick(key) {
@@ -63,7 +72,7 @@ class MapPopupExample extends Component {
     const self = this;
 
     return (
-      <div className="Map">
+      <div className="Map" ref={mapRef}>
         <Map center={[this.state.lat, this.state.lng]}
              zoom={this.state.zoom} style={{width: "100vw", height: "70vh"}}>
              <TileLayer url={this.state.tileUrl}/>
@@ -82,7 +91,10 @@ class MapPopupExample extends Component {
                position={markerPosition}
                icon={leafletIcons[shareable.type]}
               >
-                <Popup>{shareable.name}</Popup>
+                <Popup>
+                  <InfoWindowDetail {...shareable}/>
+                </Popup>
+
               </Marker>
           )})}
         </Map>
