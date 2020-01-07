@@ -14,6 +14,7 @@ export default function Tapachula() {
       shareables={shareables}
       center={center}
       zoom={zoom}
+      title={'Recursos en Chiapas'}
     />
   );
 }

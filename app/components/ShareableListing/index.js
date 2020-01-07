@@ -18,10 +18,11 @@ function ShareableListing(props) {
     return stringToHash(`${coordinates[1]}${coordinates[0]}${name}`);
   }
 
-  const {shareables, onListItemClicked} = props;
+  const {shareables, onListItemClicked, title} = props;
   return (
     <div style={{maxHeight: "300px",
       overflow: "scroll"}}>
+      <h2>{title}</h2>
       {shareables.map((shareable)=>{
         const shareableKey = makeKey(shareable);
         return (

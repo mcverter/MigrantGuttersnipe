@@ -13,6 +13,7 @@ export default function Tijuana() {
       shareables={shareables}
       center={center}
       zoom={zoom}
+      title={'Recursos en Tijuana'}
     />
   );
 }

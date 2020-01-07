@@ -82,7 +82,7 @@ class MapPopupExample extends Component {
 
   render() {
     const self = this;
-
+    const {title} = this.props;
     return (
       <div className="Map" ref={mapRef}>
         <Map center={[this.state.lat, this.state.lng]}
@@ -119,6 +119,7 @@ class MapPopupExample extends Component {
           style={{width: "100vw", height: "30vh"}}
           onListItemClicked={this.markerClick.bind(this)}
           shareables={this.state.shareables}
+          title={title}
         />
       </div>
     )
