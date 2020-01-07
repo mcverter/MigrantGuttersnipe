@@ -13,7 +13,6 @@ export default function HomePage() {
     }}>
     <h1> Guia Migrante </h1>
       <ul style={{fontSize: "175%"}}>
-        <li><Link to="/TestTijuanaLegend">Test Tijuana Legend</Link></li>
         <li><Link to="/Tijuana">Tijuana</Link></li>
         <li><Link to="/Tapachula">Tapachula</Link></li>
         <li><Link to="/elnumerodelalista">El Numero de la Lista (Tijuana)</Link></li>
