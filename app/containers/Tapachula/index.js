@@ -1,8 +1,7 @@
 import React from 'react';
-import GuttersnipeMap  from '../../containers/MapPopupExample';
 import PropTypes from 'prop-types';
-import {data} from './tapachula';
-
+import GuttersnipeMap from '../GuttersnipeMap';
+import { data } from './tapachula';
 
 export default function Tapachula() {
   const center = { lat: 15.582594, lng: -92.016658 };
@@ -14,7 +13,7 @@ export default function Tapachula() {
       shareables={shareables}
       center={center}
       zoom={zoom}
-      title={'Recursos en Chiapas'}
+      title="Recursos en Chiapas"
     />
   );
 }

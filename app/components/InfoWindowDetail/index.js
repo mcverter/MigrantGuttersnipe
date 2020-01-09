@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ReactHtmlParser from 'react-html-parser';
-import { plainIcons } from '../../images';
-import {stringToHash} from "../../utils/utils"
-import GoogleMapsOpener from '../../components/GoogleMapsOpener';
 import Collapsible from 'react-collapsible';
-import './styles.scss';
 
+import { plainIcons } from '../../images';
+import { stringToHash } from '../../utils/utils';
+import GoogleMapsOpener from '../GoogleMapsOpener';
+import './styles.scss';
 
 const InfoWindowDetail = place => {
   const {
@@ -15,19 +15,17 @@ const InfoWindowDetail = place => {
     features,
     description,
     phones,
-    coordinates,
     address,
     notes,
     websites,
-    google_place_id,
-    hours
+    hours,
   } = place;
 
   const renderHours = () => (
     <div className="iw-detail-hours">
       <div>{hours}</div>
     </div>
-  )
+  );
   const renderAddress = () => (
     <div className="iw-detail-address">
       <div>{address}</div>
@@ -35,13 +33,11 @@ const InfoWindowDetail = place => {
     </div>
   );
 
-  const listCategories = () => {
-    return (
-      <ul className="iw-detail-categories">
-        {features && features.map((f) => <li key={stringToHash(f)}>{f}</li>)}
-      </ul>
-    );
-  };
+  const listCategories = () => (
+    <ul className="iw-detail-categories">
+      {features && features.map(f => <li key={stringToHash(f)}>{f}</li>)}
+    </ul>
+  );
 
   const renderType = () => (
     <div className="iw-detail-type">
@@ -49,6 +45,7 @@ const InfoWindowDetail = place => {
         {' '}
         <img
           className="iw-detail-type-icon"
+          alt={`${type}`}
           align="left"
           src={plainIcons[type]}
         />
@@ -72,27 +69,23 @@ const InfoWindowDetail = place => {
     return (
       <Collapsible trigger="Sitios de Web" className="iw-detail-websites">
         <ul>
-          {websites.map((w) => {
-            return (
-              <li key={stringToHash(w)}>
-                <a href={w} target={'_blank'}>
-                  {w}
-                </a>
-              </li>
-            );
-          })}
+          {websites.map(w => (
+            <li key={stringToHash(w)}>
+              <a href={w} target="_blank">
+                {w}
+              </a>
+            </li>
+          ))}
         </ul>
       </Collapsible>
     );
   };
 
-  const renderRawHTMLInCollapsible = ({ trigger, element }) => {
-    return (
-      <div className="iw-detail-description">
-        <Collapsible trigger={trigger}>{ReactHtmlParser(element)}</Collapsible>
-      </div>
-    );
-  };
+  const renderRawHTMLInCollapsible = ({ trigger, element }) => (
+    <div className="iw-detail-description">
+      <Collapsible trigger={trigger}>{ReactHtmlParser(element)}</Collapsible>
+    </div>
+  );
 
   const renderNotes = () =>
     renderRawHTMLInCollapsible({ trigger: 'Notes', element: notes });
@@ -102,14 +95,13 @@ const InfoWindowDetail = place => {
       trigger: 'Descripcion',
       element: description,
     });
-  //       <a href={}>
 
-  const renderPhones = phones => {
-    return (!phones || !Array.isArray(phones)|| phones.length < 1) ? "" :(
-      <div>
-        {phones.map(p=>renderPhone(p))}
-      </div>)
-  }
+  const renderPhones = () =>
+    !phones || !Array.isArray(phones) || phones.length < 1 ?
+      '':  (
+        <div>
+          {phones.map(p=>renderPhone(p))}
+        </div>);
 
   const renderPhone = phone => {
     function makePhoneCall() {
@@ -121,7 +113,7 @@ const InfoWindowDetail = place => {
       <div className="iw-detail-phone" key={stringToHash(phone)}>
         <div>
           <span>
-            <img align="left" src={plainIcons['phone']} />
+            <img align="left" src={plainIcons.phone} alt="phone" />
           </span>
           {phone}
         </div>
@@ -151,8 +143,7 @@ InfoWindowDetail.propTypes = {
     type: PropTypes.string.isRequired,
     coordinates: PropTypes.array.isRequired,
     description: PropTypes.string,
-    phone1: PropTypes.string,
-    phone2: PropTypes.string,
+    phones: PropTypes.array,
     address: PropTypes.string,
     notes: PropTypes.string,
     websites: PropTypes.array,

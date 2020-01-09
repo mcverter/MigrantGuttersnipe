@@ -1,7 +1,7 @@
 import React from 'react';
-import GuttersnipeMap  from '../../containers/MapPopupExample';
 import PropTypes from 'prop-types';
-import {placemarks as shareables} from './tijuana.json';
+import GuttersnipeMap from '../GuttersnipeMap';
+import { placemarks as shareables } from './tijuana.json';
 
 export default function Tijuana() {
   const center = { lat: 32.5364307, lng: -117.037085 };
@@ -13,7 +13,7 @@ export default function Tijuana() {
       shareables={shareables}
       center={center}
       zoom={zoom}
-      title={'Recursos en Tijuana'}
+      title="Recursos en Tijuana"
     />
   );
 }

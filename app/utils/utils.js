@@ -1,7 +1,9 @@
-export function stringToHash (s) {
-  let h = 0, l = s.length, i = 0;
-  if ( l > 0 )
-    while (i < l)
-      h = (h << 5) - h + s.charCodeAt(i++) | 0;
-  return h;
+/* eslint-disable no-bitwise */
+export function stringToHash(s) {
+  const len = s.length;
+  let hash = 0;
+  for (let idx = 0; idx < len; idx += 1) {
+    hash = ((hash << 5) - hash + s.charCodeAt(idx)) | 0;
+  }
+  return hash;
 }

@@ -12,7 +12,7 @@ import { render } from 'react-testing-library';
 
 import { MapPopupExample } from '../index';
 
-describe('<MapPopupExample />', () => {
+describe('<GuttersnipeMap />', () => {
   it('Expect to not log errors in console', () => {
     const spy = jest.spyOn(global.console, 'error');
     const dispatch = jest.fn();
