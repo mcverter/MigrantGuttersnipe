@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Map, TileLayer, Popup, Marker } from 'react-leaflet';
 import { stringToHash } from '../../utils/utils';
-import { leafletIcons } from '../../images';
+import { getLeafletIcon } from '../../images';
 import InfoWindowDetail from '../../components/InfoWindowDetail';
 import ShareableListing from '../../components/ShareableListing';
 import './styles.scss';
@@ -93,12 +93,11 @@ class MapPopupExample extends Component {
               <Marker
                 key={markerKey}
                 ref={this.handleMarkerRef.bind(this, markerKey)}
-                foo
                 onclick={() => {
                   self.markerClick(markerKey);
                 }}
                 position={markerPosition}
-                icon={leafletIcons[shareable.type]}
+                icon={getLeafletIcon(shareable.type)}
               >
                 <Popup>
                   <InfoWindowDetail {...shareable} />
