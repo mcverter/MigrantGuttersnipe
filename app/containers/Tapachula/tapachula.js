@@ -293,11 +293,28 @@ export const data = {
       type: 'Albergue: Familias',
       features: [],
       coordinates: [-91.4331462, 17.461921],
-      address: 'Estación Nueva N° 86901, Tenosique de Pino Suárez, MX',
+      address: 'Estación Nueva N° 86901, Tenosique de Pino Suárez, Tobasco, MX',
       phones: ['+52 934 342 1111'],
       description: '',
       hours: 'Lunes a viernes, 8:30-16:00 hrs.',
       route: ['COBACH', 'Solidaridad 2000'],
     },
+    {
+      name: 'Albergue Jesús Esperanza en el Camino.',
+      google_place_id: 'ChIJj27QEVbY7IURaiFiRnu9eN0',
+      type: 'Albergue',
+      coordinates: [-93.1646752, 16.7460768],
+      address:
+        'Primera Calle Poniente y 16 Sur #1664, Tuxtla Gutierrez Chis MX',
+      websites: ['movilidadmt25@hotmail.com'],
+    },
+    {
+      name: 'Una Ayuda Para Ti Mujer Migrante A,C.',
+      type: 'ONG',
+      google_place_id: 'ChIJj27QEVbY7IURaiFiRnu9eN0',
+      coordinates: [-93.1646752, 16.7460768],
+      phones: ['+52	961 61 67 903'],
+    },
+
   ],
 };

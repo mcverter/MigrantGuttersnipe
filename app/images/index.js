@@ -8,12 +8,17 @@ import shelterMujeresIcon from './mujeres.jpg';
 import shelterMenoresIcon from './menores.jpg';
 import parliamentIcon from './parliament.png';
 import phoneIcon from './phone.png';
+import defaultPlainIcon from './shareableDefault.png';
 import ngoIcon from './ngo.png';
 
 const objectMap = (obj, fn) =>
   Object.fromEntries(Object.entries(obj).map(([k, v], i) => [k, fn(v, k, i)]));
 
+export const getLeafletIcon = type => leafletIcons[type] || leafletIcons.default;
+export const getPlainIcon = type => plainIcons[type] || plainIcons.default;
+
 export const plainIcons = {
+  default: defaultPlainIcon,
   Comida: foodIcon,
   'Servicios Medicos': medicineIcon,
   'Albergue: Familias': shelterFamilasIcon,

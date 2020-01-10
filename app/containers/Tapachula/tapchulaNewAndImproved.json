@@ -224,38 +224,6 @@
       "description": "",
       "hours": "Lunes a Viernes, 10 a 14 h"
     },
-    {
-      4.	TUXLA GUTIERREZ
-
-      Albergue Jesús Esperanza en el Camino. Ia calle Poniente y 16 Sur N° 1664.
-      movilidadmt25@hotmail.com
-      "name": "Albergue Jesús Esperanza en el Camino.",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      "address": " Ia calle Poniente y 16 Sur N° 1664.",
-      "phones": [],
-      "description": "",
-      "hours": "",
-      "notes": "movilidadmt25@hotmail.com"
-    },
-    {
-      4.	TUXLA GUTIERREZ
-
-      Una Ayuda Para Ti Mujer Migrante A,C.
-      01	961 61 67 903
-
-      "name": "Una Ayuda Para Ti Mujer Migrante A,C.",
-      "google_place_id": "",
-      "type": "",
-      "features": [],
-      "coordinates": [],
-      "address": "",
-      "phones": ["01	961 61 67 903"],
-      "description": "",
-      "hours": ""
-    },
   ]
 }
 ,{
@@ -274,24 +242,7 @@ Barrio de La Soledad.
 "phones": ["01	971 1034385"],
 "description": "",
 "hours": ""
-},{
-EN TABASCO
-
-10. TENOSIQUE
-
-
-
-"name": "La 72, Hogar Refugio para Personas Migrantes",
-"google_place_id": "",
-"type": "",
-"features": [],
-"coordinates": [],
-"address": "Estación Nueva N° 86901, Tenosique de Pino Suárez.",
-"phones": ["01 934 342 1111"],
-"description": "",
-"hours": ""
-},{
-
+},
 {
 
 Procuraduría Regional de Protección de los Derechos de Niñas, Niños y Adolescentes en Materia Migrante	Carretera a Puerto Madero km 3.5 esquina con Ayuntamiento, Col. Joaquín del Pino.	962-6281382	Lunes a viernes, 8:00-16:00 hrs.	Tapachulteco
