@@ -108,7 +108,7 @@ class MapPopupExample extends Component {
                       self.popupClose(markerKey);
                     }}
                   >
-                    CERRAR
+                    X
                   </div>
                 </Popup>
               </Marker>

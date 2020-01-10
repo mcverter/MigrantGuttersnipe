@@ -1,6 +1,20 @@
+.leaflet-popup-content-wrapper {
+  width: 71vw !important;
+  margin: auto;
+}
+.leaflet-popup-content {
+  width: 69vw !important;
+  margin: auto;
+
+}
+.leaflet-popup-content>div {
+  width: 67vw !important;
+  overflow: scroll;
+  margin: auto;
+}
 .iw-detail-container {
-  width: 80%;
-  max-height: 50%;
+  width: 65vw !important;
+  //max-height: 50%;
   font-size: 1rem;
   overflow: scroll;
 }

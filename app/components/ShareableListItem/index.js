@@ -20,7 +20,7 @@ function ShareableListItem(props) {
     >
       <span>
         &nbsp;
-        <img height="12px" align="left" src={plainIcons[shareable.type]} />
+        <img height="18px" align="left" src={plainIcons[shareable.type]} />
       </span>
       &nbsp;
       {shareable.name} ({shareable.type})

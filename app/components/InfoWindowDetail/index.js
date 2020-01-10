@@ -71,9 +71,9 @@ const InfoWindowDetail = place => {
         <ul>
           {websites.map(w => (
             <li key={stringToHash(w)}>
-              <a href={w} target="_blank">
-                {w}
-              </a>
+              {w.search('@') === -1 ? (
+                <a href={w} target="_blank">{ w }</a>) :
+                (<a href={`mailto:${w}`}>{ w }</a>)}
             </li>
           ))}
         </ul>
