@@ -5,7 +5,7 @@ import { data } from './tapachula';
 
 export default function Tapachula() {
   const center = { lat: 15.582594, lng: -92.016658 };
-  const zoom = 8;
+  const zoom = 7;
   const shareables = data.placemarks;
   return (
     <GuttersnipeMap

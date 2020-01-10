@@ -287,5 +287,17 @@ export const data = {
       hours: 'Lunes a viernes, 8:30-16:00 hrs.',
       route: ['COBACH', 'Solidaridad 2000'],
     },
+    {
+      name: 'La 72, Hogar Refugio para Personas Migrantes.',
+      google_place_id: 'ChIJs76NKQ6a84URqRK0pOXX1OM',
+      type: 'Albergue: Familias',
+      features: [],
+      coordinates: [-91.4331462, 17.461921],
+      address: 'Estación Nueva N° 86901, Tenosique de Pino Suárez, MX',
+      phones: ['+52 934 342 1111'],
+      description: '',
+      hours: 'Lunes a viernes, 8:30-16:00 hrs.',
+      route: ['COBACH', 'Solidaridad 2000'],
+    },
   ],
 };
