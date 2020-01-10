@@ -5,6 +5,7 @@ import { getLeafletIcon } from '../../images';
 import InfoWindowDetail from '../../components/InfoWindowDetail';
 import ShareableListing from '../../components/ShareableListing';
 import './styles.scss';
+import PopupDetail from "../../components/PopupDetail";
 
 const mapRef = React.createRef();
 
@@ -100,15 +101,7 @@ class MapPopupExample extends Component {
                 icon={getLeafletIcon(shareable.type)}
               >
                 <Popup>
-                  <InfoWindowDetail {...shareable} />
-                  <div
-                    className="map-popup-close-btn"
-                    onClick={() => {
-                      self.popupClose(markerKey);
-                    }}
-                  >
-                    X
-                  </div>
+                  <PopupDetail/>
                 </Popup>
               </Marker>
             );
@@ -126,3 +119,16 @@ class MapPopupExample extends Component {
 }
 
 export default MapPopupExample;
+
+
+/*
+                  <div
+                    className="map-popup-close-btn"
+                    onClick={() => {
+                      self.popupClose(markerKey);
+                    }}
+                  >
+                    X
+                  </div>
+
+ */
