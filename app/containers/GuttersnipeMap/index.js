@@ -4,7 +4,6 @@ import { stringToHash } from '../../utils/utils';
 import { leafletIcons } from '../../images';
 import InfoWindowDetail from '../../components/InfoWindowDetail';
 import ShareableListing from '../../components/ShareableListing';
-import './styles.css';
 import './styles.scss';
 
 const mapRef = React.createRef();

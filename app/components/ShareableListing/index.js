@@ -19,7 +19,7 @@ function ShareableListing(props) {
 
   const { shareables, onListItemClicked, title } = props;
   return (
-    <div style={{ maxHeight: '300px', overflow: 'scroll' }}>
+    <div style={{ maxHeight: '300px', overflow: 'scroll', fontSize: '1.5rem' }}>
       <h2>{title}</h2>
       {shareables.map(shareable => {
         const shareableKey = makeKey(shareable);
