@@ -8,7 +8,7 @@ import { stringToHash } from '../../utils/utils';
 import GoogleMapsOpener from '../GoogleMapsOpener';
 import './styles.scss';
 
-const InfoWindowDetail = place => {
+const InfoWindowDetail = ({shareable}) => {
   const {
     name,
     type,
@@ -19,7 +19,7 @@ const InfoWindowDetail = place => {
     notes,
     websites,
     hours,
-  } = place;
+  } = shareable;
 
   const renderHours = () => (
     <div className="iw-detail-hours">
@@ -29,7 +29,7 @@ const InfoWindowDetail = place => {
   const renderAddress = () => (
     <div className="iw-detail-address">
       <div>{address}</div>
-      <GoogleMapsOpener {...place} />
+      <GoogleMapsOpener {...shareable} />
     </div>
   );
 
@@ -138,7 +138,7 @@ const InfoWindowDetail = place => {
 };
 
 InfoWindowDetail.propTypes = {
-  place: PropTypes.shape({
+  shareable: PropTypes.shape({
     name: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
     coordinates: PropTypes.array.isRequired,
