@@ -11,10 +11,10 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
 
-function NamePanel() {
+function NamePanel({name}) {
   return (
-    <div>
-      <FormattedMessage {...messages.header} />
+    <div className="iw-detail-name">
+      <span>{name}</span>
     </div>
   );
 }

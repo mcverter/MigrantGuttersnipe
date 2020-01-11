@@ -6,15 +6,15 @@ import InfoWindowDetail from '../../components/InfoWindowDetail';
 import ShareableListing from '../../components/ShareableListing';
 import './styles.scss';
 import PopupDetail from "../../components/PopupDetail";
+import {shareables} from "../Tapachula/tapachula";
 
 const mapRef = React.createRef();
 
-class MapPopupExample extends Component {
-  shareablesMap = {};
-
+class GuttersnipeMap extends Component {
   constructor(props) {
     super(props);
     const { shareables, center, zoom } = props;
+
     this.state = {
       shareables,
       lat: center.lat,
@@ -23,13 +23,9 @@ class MapPopupExample extends Component {
       tileUrl: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
     };
     this.markerRefs = {};
-    this.makeKey = this.makeKey.bind(this);
   }
 
   componentDidMount() {
-    this.state.shareables.forEach(s => {
-      this.shareablesMap[this.makeKey(s)] = s;
-    });
   }
 
   handleMarkerRef(key, node) {
@@ -39,8 +35,8 @@ class MapPopupExample extends Component {
   markerClick(key) {
     this.setState(
       {
-        lat: this.shareablesMap[key].coordinates[1],
-        lng: this.shareablesMap[key].coordinates[0],
+        lat: shareablesMap[key].coordinates[1],
+        lng: shareablesMap[key].coordinates[0],
         zoom: 16,
       },
       () => {
@@ -54,8 +50,8 @@ class MapPopupExample extends Component {
   popupClose(key) {
     this.setState(
       {
-        lat: this.shareablesMap[key].coordinates[1],
-        lng: this.shareablesMap[key].coordinates[0],
+        lat: shareablesMap[key].coordinates[1],
+        lng: shareablesMap[key].coordinates[0],
         zoom: 16,
       },
       () => {
@@ -64,12 +60,6 @@ class MapPopupExample extends Component {
         }
       },
     );
-  }
-
-  makeKey(shareable) {
-    if (!shareable) return '';
-    const { coordinates, name } = shareable;
-    return stringToHash(`${coordinates[1]}${coordinates[0]}${name}`);
   }
 
   render() {
@@ -84,8 +74,14 @@ class MapPopupExample extends Component {
         >
           <TileLayer url={this.state.tileUrl} />
           {this.state.shareables.map(shareable => {
-            const { coordinates } = shareable;
-            const markerKey = this.makeKey(shareable);
+            function makeKey(shareable) {
+              if (!shareable) return '';
+              const { coordinates, name } = shareable;
+              return stringToHash(`${coordinates[1]}${coordinates[0]}${name}`);
+            }
+
+            const { coordinates, type, name } = shareable;
+            const markerKey = makeKey(shareable);
             const markerPosition = [coordinates[1], coordinates[0]];
             if (!coordinates || coordinates.length !== 2) {
               return '';
@@ -101,7 +97,11 @@ class MapPopupExample extends Component {
                 icon={getLeafletIcon(shareable.type)}
               >
                 <Popup>
-                  <PopupDetail/>
+                  <PopupDetail
+                    name={name}
+                    type={type}
+                    markerKey={markerKey}
+                  />
                 </Popup>
               </Marker>
             );
@@ -118,7 +118,7 @@ class MapPopupExample extends Component {
   }
 }
 
-export default MapPopupExample;
+export default GuttersnipeMap;
 
 
 /*

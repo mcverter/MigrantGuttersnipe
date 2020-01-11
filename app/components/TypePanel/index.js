@@ -2,6 +2,9 @@
  *
  * TypePanel
  *
+ *       {renderType()}
+ {listCategories()}
+
  */
 
 import React from 'react';
@@ -10,11 +13,22 @@ import React from 'react';
 
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
+import {plainIcons} from "../../images";
 
-function TypePanel() {
+function TypePanel({type}) {
   return (
-    <div>
-      <FormattedMessage {...messages.header} />
+    <div className="iw-detail-type">
+      <span>
+        {' '}
+        <img
+          className="iw-detail-type-icon"
+          alt={`${type}`}
+          align="left"
+          src={plainIcons[type]}
+        />
+      </span>
+      &nbsp;
+      <span>{type}</span>
     </div>
   );
 }
