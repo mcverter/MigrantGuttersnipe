@@ -4,9 +4,8 @@
  *
  */
 
+import { LOCATION_CHANGE } from 'react-router-redux';
 import { DEFAULT_ACTION } from './constants';
-import { LOCATION_CHANGE } from 'react-router-redux'
-
 
 export function defaultAction() {
   return {

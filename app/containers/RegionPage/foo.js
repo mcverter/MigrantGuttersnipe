@@ -1,6 +1,6 @@
-import { LOCATION_CHANGE } from 'react-router-redux'
+import { LOCATION_CHANGE } from 'react-router-redux';
 
-export function manualCategories(state=[], action) {
+export function manualCategories(state = [], action) {
   switch (action.type) {
     case LOCATION_CHANGE:
       debugger;
@@ -23,6 +23,6 @@ export function manualCategories(state=[], action) {
     */
 
     default:
-      return state
+      return state;
   }
 }

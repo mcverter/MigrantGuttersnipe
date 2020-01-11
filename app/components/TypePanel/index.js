@@ -13,9 +13,9 @@ import React from 'react';
 
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
-import {plainIcons} from "../../images";
+import { plainIcons } from '../../images';
 
-function TypePanel({type}) {
+function TypePanel({ type }) {
   return (
     <div className="iw-detail-type">
       <span>

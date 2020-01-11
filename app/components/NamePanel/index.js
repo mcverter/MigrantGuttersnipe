@@ -11,7 +11,7 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
 
-function NamePanel({name}) {
+function NamePanel({ name }) {
   return (
     <div className="iw-detail-name">
       <span>{name}</span>

@@ -4,12 +4,12 @@
  *
  */
 import produce from 'immer';
+import { LOCATION_CHANGE } from 'react-router-redux';
 import { DEFAULT_ACTION } from './constants';
-import { LOCATION_CHANGE } from 'react-router-redux'
-import tapachulaData from '../Tapachula/tapachula'
+import tapachulaData from '../Tapachula/tapachula';
 
 export const initialState = {};
- console.log('foo')
+console.log('foo');
 /* eslint-disable default-case, no-param-reassign */
 const regionPageReducer = (state = initialState, action) =>
   produce(state, (/* draft */) => {
@@ -17,10 +17,9 @@ const regionPageReducer = (state = initialState, action) =>
       case DEFAULT_ACTION:
         break;
       case LOCATION_CHANGE:
-        const pathname = action.payload.location.pathname;
+        const { pathname } = action.payload.location;
         console.log(action.payload.location.pathname);
         if (pathname.toLowerCase().slice(1) === 'tapachula') {
-
         }
         debugger;
         break;

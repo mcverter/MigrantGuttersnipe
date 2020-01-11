@@ -5,8 +5,8 @@ import { getLeafletIcon } from '../../images';
 import InfoWindowDetail from '../../components/InfoWindowDetail';
 import ShareableListing from '../../components/ShareableListing';
 import './styles.scss';
-import PopupDetail from "../../components/PopupDetail";
-import {shareables} from "../Tapachula/tapachula";
+import PopupDetail from '../../components/PopupDetail';
+import { shareables } from '../Tapachula/tapachula';
 
 const mapRef = React.createRef();
 
@@ -25,8 +25,7 @@ class GuttersnipeMap extends Component {
     this.markerRefs = {};
   }
 
-  componentDidMount() {
-  }
+  componentDidMount() {}
 
   handleMarkerRef(key, node) {
     this.markerRefs[key] = node;
@@ -97,11 +96,7 @@ class GuttersnipeMap extends Component {
                 icon={getLeafletIcon(shareable.type)}
               >
                 <Popup>
-                  <PopupDetail
-                    name={name}
-                    type={type}
-                    markerKey={markerKey}
-                  />
+                  <PopupDetail name={name} type={type} markerKey={markerKey} />
                 </Popup>
               </Marker>
             );
@@ -119,7 +114,6 @@ class GuttersnipeMap extends Component {
 }
 
 export default GuttersnipeMap;
-
 
 /*
                   <div

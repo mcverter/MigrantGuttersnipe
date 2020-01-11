@@ -1,12 +1,11 @@
-
 import React from 'react';
-import {useParams} from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 function ShareableResourcePage() {
   const { markerKey } = useParams();
   const shareable = window.shareablesMap[markerKey];
   return (
     <div>
-      MarkerKey {markerKey} <br/>
+      MarkerKey {markerKey} <br />
     </div>
   );
 }

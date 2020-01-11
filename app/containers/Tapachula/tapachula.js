@@ -1,4 +1,4 @@
-import {stringToHash} from "../../utils/utils";
+import { stringToHash } from '../../utils/utils';
 
 export const shareables = [
   {
@@ -305,8 +305,7 @@ export const shareables = [
     google_place_id: 'ChIJj27QEVbY7IURaiFiRnu9eN0',
     type: 'Albergue',
     coordinates: [-93.1646752, 16.7460768],
-    address:
-      'Primera Calle Poniente y 16 Sur #1664, Tuxtla Gutierrez Chis MX',
+    address: 'Primera Calle Poniente y 16 Sur #1664, Tuxtla Gutierrez Chis MX',
     websites: ['movilidadmt25@hotmail.com'],
   },
   {
@@ -317,6 +316,3 @@ export const shareables = [
     phones: ['+52	961 61 67 903'],
   },
 ];
-
-
-
