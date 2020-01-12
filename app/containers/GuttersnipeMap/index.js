@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Map, TileLayer, Popup, Marker } from 'react-leaflet';
-import {makeKeyFromShareable, stringToHash} from '../../utils/utils';
+import { makeKeyFromShareable, stringToHash } from '../../utils/utils';
 import { getLeafletIcon } from '../../images';
 import InfoWindowDetail from '../../components/InfoWindowDetail';
 import ShareableListing from '../../components/ShareableListing';

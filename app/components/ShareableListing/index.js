@@ -6,7 +6,7 @@
 
 import React from 'react';
 import ShareableListItem from '../ShareableListItem';
-import {makeKeyFromShareable} from '../../utils/utils';
+import { makeKeyFromShareable } from '../../utils/utils';
 // import PropTypes from 'prop-types';
 // import styled from 'styled-components';
 

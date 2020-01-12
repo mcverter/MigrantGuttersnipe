@@ -20,10 +20,7 @@ function PopupDetail({ shareable, shareableKey }) {
     <div>
       <NamePanel name={name} />
       <TypePanel type={type} />
-      <Link
-        style={Styles.moreDetailButton}
-        to={`/Shareable/${shareableKey}`}
-      >
+      <Link style={Styles.moreDetailButton} to={`/Shareable/${shareableKey}`}>
         Mas Informacion
       </Link>
     </div>
