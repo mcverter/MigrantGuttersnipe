@@ -23,7 +23,9 @@ const tapachula = {
         'Gustavo Díaz Ordaz #11, Los Naranjos, Bonanza, 30779 Tapachula de Córdova y Ordoñez, Chis., MX',
       phones: ['+52 962 642 5674', ' +52  962 625 6311'],
       description: '',
+      websites: ['https://mexico.iom.int/oficina-en-tapachula-chiapas'],
       hours: '',
+      contacted: 'yes',
     },
     {
       name: 'CENTRO DE DERECHOS HUMANOS FRAY MATIAS DE CÓRDOVA AC',
@@ -36,6 +38,7 @@ const tapachula = {
       phones: ['+52 962 642 5098'],
       description: '',
       hours: 'Lunes a Viernes, 9 a 17 h.',
+      contacted: 'yes',
     },
     {
       name: 'Servicio Jesuíta a Refugiados (SJR)',
@@ -49,7 +52,11 @@ const tapachula = {
       description: '',
       route: ['Lomas del Soconusco', 'FOVISSTE'],
       hours: 'Lunes a Viernes, 9 a 14 h',
-      websites: ['https://jrs.net/es/home/'],
+      websites: [
+        'https://www.facebook.com/JesuitRefugeeService/',
+        'https://jrs.net/es/home/',
+      ],
+      contacted: 'yes',
     },
     {
       name: 'ALBERGUE JESÚS EL BUEN PASTOR DEL POBRE Y DEL MIGRANTE AC',
@@ -63,6 +70,7 @@ const tapachula = {
       description: '',
       hours: '',
       websites: ['http://www.alberguebuenpastor.org.mx/'],
+      contacted: 'yes',
     },
     {
       name: 'ALBERGUE BELÉN (Casa del Migrante Scalabrini)',
@@ -74,6 +82,11 @@ const tapachula = {
       phones: ['+52 962 625 4812', '+52 962 620 6176'],
       hours: 'Diariamente 8:00 -20:00 hrs',
       route: 'Venustiano Carranza',
+      websites: [
+        'http://www.migrante.com.mx/tapachula.html',
+        'https://www.facebook.com/pages/Albergue-Belen-Casa-Del-Migrante/552481265196011',
+      ],
+      contacted: 'yes',
     },
     {
       name: 'ASESORÍA EN EDUCACIÓN RET INTERNACIONAL 3a',
@@ -205,6 +218,7 @@ const tapachula = {
         'kaltsilaltik_colectivo@hotmail.com',
         'https://www.facebook.com/Kaltsilaltik/',
       ],
+      contacted: 'yes',
       hours: '',
     },
     {
