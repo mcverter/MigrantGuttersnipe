@@ -12,34 +12,20 @@ import InfoWindowDetail from '../InfoWindowDetail';
 // import PropTypes from 'prop-types';
 // import styled from 'styled-components';
 
-function PopupDetail({ shareable }) {
+function PopupDetail({ shareable, shareableKey }) {
   const { name, type } = shareable;
-  const [detailVisible, setDetailVisible] = useState(false);
+  // const [detailVisible, setDetailVisible] = useState(false);
 
   return (
     <div>
-      {detailVisible ? (
-        <div>
-          <InfoWindowDetail shareable={shareable} />
-          <div
-            style={Styles.moreDetailButton}
-            onClick={() => setDetailVisible(false)}
-          >
-            Menos Informacion
-          </div>
-        </div>
-      ) : (
-        <div>
-          <NamePanel name={name} />
-          <TypePanel type={type} />
-          <div
-            style={Styles.moreDetailButton}
-            onClick={() => setDetailVisible(true)}
-          >
-            Mas Informacion
-          </div>
-        </div>
-      )}
+      <NamePanel name={name} />
+      <TypePanel type={type} />
+      <Link
+        style={Styles.moreDetailButton}
+        to={`/Shareable/${shareableKey}`}
+      >
+        Mas Informacion
+      </Link>
     </div>
   );
 }

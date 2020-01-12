@@ -18,7 +18,12 @@ export default function HomePage() {
           <Link to="/Region/Tijuana">Mapa de Recursos en Tijuana, Mexico</Link>
         </li>
         <li>
-          <Link to="/Region/Tapachula">Mapa de Recursos en Tapachula, Mexico</Link>
+          <Link to="/Region/Tapachula">
+            Mapa de Recursos en Tapachula, Mexico
+          </Link>
+        </li>
+        <li>
+          <Link to="/Shareable/44142960">Link to a record </Link>
         </li>
         <li>
           <Link to="/elnumerodelalista">El Numero de la Lista (Tijuana)</Link>

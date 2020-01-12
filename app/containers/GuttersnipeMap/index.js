@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Map, TileLayer, Popup, Marker } from 'react-leaflet';
-import { stringToHash } from '../../utils/utils';
+import {makeKeyFromShareable, stringToHash} from '../../utils/utils';
 import { getLeafletIcon } from '../../images';
 import InfoWindowDetail from '../../components/InfoWindowDetail';
 import ShareableListing from '../../components/ShareableListing';
@@ -23,12 +23,11 @@ class MapPopupExample extends Component {
       tileUrl: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
     };
     this.markerRefs = {};
-    this.makeKey = this.makeKey.bind(this);
   }
 
   componentDidMount() {
     this.state.shareables.forEach(s => {
-      this.shareablesMap[this.makeKey(s)] = s;
+      this.shareablesMap[makeKeyFromShareable(s)] = s;
     });
   }
 
@@ -66,12 +65,6 @@ class MapPopupExample extends Component {
     );
   }
 
-  makeKey(shareable) {
-    if (!shareable) return '';
-    const { coordinates, name } = shareable;
-    return stringToHash(`${coordinates[1]}${coordinates[0]}${name}`);
-  }
-
   render() {
     const self = this;
     const { title } = this.props;
@@ -85,7 +78,7 @@ class MapPopupExample extends Component {
           <TileLayer url={this.state.tileUrl} />
           {this.state.shareables.map(shareable => {
             const { coordinates } = shareable;
-            const markerKey = this.makeKey(shareable);
+            const markerKey = makeKeyFromShareable(shareable);
             const markerPosition = [coordinates[1], coordinates[0]];
             if (!coordinates || coordinates.length !== 2) {
               return '';
@@ -101,7 +94,7 @@ class MapPopupExample extends Component {
                 icon={getLeafletIcon(shareable.type)}
               >
                 <Popup>
-                  <PopupDetail shareable={shareable} />
+                  <PopupDetail shareable={shareable} shareableKey={markerKey} />
                 </Popup>
               </Marker>
             );

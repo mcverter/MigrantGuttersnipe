@@ -317,7 +317,6 @@ const tapachula = {
       coordinates: [-93.1646752, 16.7460768],
       phones: ['+52	961 61 67 903'],
     },
-
   ],
 };
 export default tapachula;
