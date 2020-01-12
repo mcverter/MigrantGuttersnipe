@@ -12,7 +12,7 @@ export default function HomePage() {
         margin: '20px auto',
       }}
     >
-      <h1> Guia Migrante </h1>
+      <h1> La Ruta del Migrante </h1>
       <ul style={{ fontSize: '175%' }}>
         <li>
           <Link to="/Tijuana">Mapa de Recursos en Tijuana, Mexico</Link>
