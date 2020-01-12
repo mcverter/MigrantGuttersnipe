@@ -10,7 +10,6 @@ export function RegionPage(props) {
   const data = shareablesByRegion[regionID];
   const { center, zoom, shareables } = data;
   regionID = regionID.charAt(0).toUpperCase() + regionID.substring(1);
-  console.log('center', 'zoom', 'regionid', regionID, 'shareables', shareables);
 
   return (
     <GuttersnipeMap

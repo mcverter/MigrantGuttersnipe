@@ -9,7 +9,6 @@ import { plainIcons } from '../../images';
 // import PropTypes from 'prop-types';
 // import styled from 'styled-components';
 
-console.log('plain', plainIcons);
 function ShareableListItem(props) {
   const { shareable, itemKey, onListItemClicked } = props;
   return (

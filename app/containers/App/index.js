@@ -41,6 +41,25 @@ export default function App() {
             return null;
           }}
         />
+        <Route
+          path="/:shareableID"
+          render={props => {
+            /*Any numeric route string is assumed to be Shareable Resource */
+            let url = props.match.url
+            url = url.substr(1);
+
+            if (url.match(/^[0-9]*$/)) {
+              return(
+                <ShareableDetailPage {...props} shareablesByKey={shareablesByKey} />
+              )
+            } else {
+              return (
+                <HomePage {...props} />
+              )
+            }
+          }}
+        />
+
         <Route path="/" component={HomePage} />
         <Route component={HomePage} />
       </Switch>

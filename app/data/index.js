@@ -15,5 +15,3 @@ tijuana.shareables.forEach(s => {
 
 export const shareablesByKey = sByKey;
 export const shareablesByRegion = { tijuana, tapachula };
-
-console.log('sbk', shareablesByKey);
