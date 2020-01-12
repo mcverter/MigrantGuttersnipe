@@ -20,20 +20,6 @@ export default function App() {
   return (
     <div>
       <Switch>
-        <Route path="/Tijuana" component={Tijuana} />
-        <Route path="/Tapachula" component={Tapachula} />
-        <Route
-          path="/Region/:regionID"
-          render={props => (
-            <RegionPage {...props} shareablesByRegion={shareablesByRegion} />
-          )}
-        />
-        <Route
-          path="/Shareable/:shareableID"
-          render={props => (
-            <ShareableDetailPage {...props} shareablesByKey={shareablesByKey} />
-          )}
-        />
         <Route
           path="/elnumerodelalista"
           component={() => {
@@ -42,23 +28,29 @@ export default function App() {
           }}
         />
         <Route
-          path="/:shareableID"
+          path="/:id"
           render={props => {
-            /* Any numeric route string is assumed to be Shareable Resource */
-            let {url} = props.match
+            /* Alphabetical = Region
+               Numeric = ShareableDetail */
+            let { url } = props.match;
             url = url.substr(1);
+            if (url.match(/^[a-zA-Z]*$/)) {
+              return (
+                <RegionPage {...props}
+                            shareablesByRegion={shareablesByRegion}
+                            regionID={url}
 
-            if (url.match(/^[0-9]*$/)) {
+                />)
+            } else if (url.match(/^[0-9]*$/)) {
               return (
                 <ShareableDetailPage
                   {...props}
                   shareablesByKey={shareablesByKey}
+                  shareableID={url}
                 />
               );
-            } else {
-              return (
-              <HomePage {...props} />
-            )}
+            }
+            return <HomePage {...props} />;
           }}
         />
 

@@ -1,11 +1,9 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import GuttersnipeMap from '../GuttersnipeMap';
 
 export function RegionPage(props) {
-  let { regionID } = useParams();
-  const { shareablesByRegion } = props;
+  let { regionID, shareablesByRegion } = props;
   regionID = regionID.toLowerCase();
   const data = shareablesByRegion[regionID];
   const { center, zoom, shareables } = data;
