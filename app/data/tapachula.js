@@ -1,5 +1,5 @@
 const tapachula = {
-  center: { lat: 15.582594, lng: -92.016658 },
+  center: {lat: 15.582594, lng: -92.016658},
   zoom: 7,
   shareables: [
     {
@@ -317,7 +317,7 @@ const tapachula = {
       coordinates: [-93.1646752, 16.7460768],
       phones: ['+52	961 61 67 903'],
     },
-
-  ],
+  ]
 };
+
 export default tapachula;
