@@ -44,19 +44,21 @@ export default function App() {
         <Route
           path="/:shareableID"
           render={props => {
-            /*Any numeric route string is assumed to be Shareable Resource */
-            let url = props.match.url
+            /* Any numeric route string is assumed to be Shareable Resource */
+            let {url} = props.match
             url = url.substr(1);
 
             if (url.match(/^[0-9]*$/)) {
-              return(
-                <ShareableDetailPage {...props} shareablesByKey={shareablesByKey} />
-              )
+              return (
+                <ShareableDetailPage
+                  {...props}
+                  shareablesByKey={shareablesByKey}
+                />
+              );
             } else {
               return (
-                <HomePage {...props} />
-              )
-            }
+              <HomePage {...props} />
+            )}
           }}
         />
 
