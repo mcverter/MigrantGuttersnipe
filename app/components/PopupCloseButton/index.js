@@ -10,12 +10,15 @@ import React from 'react';
 
 function PopupCloseButton() {
   return (
-    <div style={Styles.popupCloseButton}
-         onClick={() => {
-           self.popupClose(markerKey);
-         }}>x</div>
-  )
-    ;
+    <div
+      style={Styles.popupCloseButton}
+      onClick={() => {
+        self.popupClose(markerKey);
+      }}
+    >
+      x
+    </div>
+  );
 }
 const Styles = {
   popupCloseButton: {
@@ -28,8 +31,8 @@ const Styles = {
     border: '2px solid black',
     borderRadius: '50%',
     maxWidth: '25%',
-  }
-}
+  },
+};
 PopupCloseButton.propTypes = {};
 
 export default PopupCloseButton;
