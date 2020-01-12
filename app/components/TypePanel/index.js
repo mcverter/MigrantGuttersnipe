@@ -37,14 +37,14 @@ const Styles = {
   typeIcon: {
     height: '14px',
     padding: '1px',
-    margin: '1px'
+    margin: '1px',
   },
   typePanel: {
     fontWeight: 600,
     color: 'maroon',
-    border: '2px solid maroon'
-  }
-}
+    border: '2px solid maroon',
+  },
+};
 TypePanel.propTypes = {};
 
 export default TypePanel;

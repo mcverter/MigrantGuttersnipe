@@ -1,22 +1,22 @@
+$leaflet_popup_width: 55vw;
+
 .leaflet-popup-content-wrapper {
-  width: 71vw !important;
+  width: $leaflet_popup_width+8 !important;
   margin: auto;
 }
 .leaflet-popup-content {
-  width: 69vw !important;
+  width: $leaflet_popup_width+6 !important;
   margin: auto;
 
 }
 .leaflet-popup-content>div {
-  width: 67vw !important;
-  overflow: scroll;
+  width: $leaflet_popup_width+4 !important;
   margin: auto;
 }
 .iw-detail-container {
-  width: 65vw !important;
+  width: $leaflet_popup_width+2  !important;
   //max-height: 50%;
   font-size: 1rem;
-  overflow: scroll;
 }
 .phone-caller {
   width: 80%;

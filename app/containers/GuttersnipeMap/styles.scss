@@ -11,11 +11,16 @@ $leaflet_popup_width: 55vw;
 }
 .leaflet-container a.leaflet-popup-close-button {
   //  icon: url("./images/hearts.svg");
-  font-size: 300%;
+  font-size: 125%;
   text-align: center;
-  font-weight: 900;
-  color: black;
-  right: 15px;
+  font-weight: 700;
+  background-color: red;
+  // border-radius: 50%;
+  color: white;
+  border: 1px black solid;
+  padding: 0px !important;
+  right: -5px;
+  border-radius: 50%;
 }
 
 .map {
@@ -23,15 +28,3 @@ $leaflet_popup_width: 55vw;
   width: 100vw;
 }
 
-.map-popup-close-btn {
-  background-color: red;
-  text-align: center;
-  color: white;
-  font-weight: 700;
-  font-size: 200%;
-  padding: 10px;
-  margin: 15px auto;
-  border: 5px solid black;
-  border-radius: 50%;
-  max-width: 25%;
-}

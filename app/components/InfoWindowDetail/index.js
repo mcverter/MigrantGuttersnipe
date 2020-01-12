@@ -8,7 +8,7 @@ import { stringToHash } from '../../utils/utils';
 import GoogleMapsOpener from '../GoogleMapsOpener';
 import './styles.scss';
 
-const InfoWindowDetail = ({shareable}) => {
+const InfoWindowDetail = ({ shareable }) => {
   const {
     name,
     type,
@@ -72,8 +72,12 @@ const InfoWindowDetail = ({shareable}) => {
           {websites.map(w => (
             <li key={stringToHash(w)}>
               {w.search('@') === -1 ? (
-                <a href={w} target="_blank">{ w }</a>) :
-                (<a href={`mailto:${w}`}>{ w }</a>)}
+                <a href={w} target="_blank">
+                  {w}
+                </a>
+              ) : (
+                <a href={`mailto:${w}`}>{w}</a>
+              )}
             </li>
           ))}
         </ul>
@@ -97,11 +101,11 @@ const InfoWindowDetail = ({shareable}) => {
     });
 
   const renderPhones = () =>
-    !phones || !Array.isArray(phones) || phones.length < 1 ?
-      '':  (
-        <div>
-          {phones.map(p=>renderPhone(p))}
-        </div>);
+    !phones || !Array.isArray(phones) || phones.length < 1 ? (
+      ''
+    ) : (
+      <div>{phones.map(p => renderPhone(p))}</div>
+    );
 
   const renderPhone = phone => {
     function makePhoneCall() {
