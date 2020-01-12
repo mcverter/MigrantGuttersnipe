@@ -11,7 +11,7 @@ export function ShareableDetailPage(props) {
   return (
     <div>
       <InfoWindowDetail shareable={shareable} />
-      <Link to={`/Region/${shareable.region}`}>
+      <Link to={`/${shareable.region}`}>
         <h1> Mapa de Recursos en {shareable.region}</h1>
       </Link>
     </div>
