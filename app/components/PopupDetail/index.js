@@ -5,7 +5,7 @@
  */
 
 import React, { useState } from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import NamePanel from '../ShareableInfoPanels/NamePanel';
 import TypePanel from '../ShareableInfoPanels/TypePanel';
 // import PropTypes from 'prop-types';
