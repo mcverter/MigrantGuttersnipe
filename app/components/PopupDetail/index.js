@@ -5,12 +5,10 @@
  */
 
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import NamePanel from '../NamePanel';
-import TypePanel from '../TypePanel';
-import InfoWindowDetail from '../InfoWindowDetail';
+import {Link} from 'react-router-dom';
+import NamePanel from '../ShareableInfoPanels/NamePanel';
+import TypePanel from '../ShareableInfoPanels/TypePanel';
 // import PropTypes from 'prop-types';
-// import styled from 'styled-components';
 
 function PopupDetail({ shareable, shareableKey }) {
   const { name, type } = shareable;

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { Link } from 'react-router-dom';
-import InfoWindowDetail from '../../components/InfoWindowDetail';
+import InfoWindowDetail from '../../components/ShareableInfoPanels/InfoWindowDetail';
 export function ShareableDetailPage(props) {
   const { shareableID, shareablesByKey } = props;
   const shareable = shareablesByKey[shareableID];

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Map, TileLayer, Popup, Marker } from 'react-leaflet';
 import { makeKeyFromShareable, stringToHash } from '../../utils/utils';
 import { getLeafletIcon } from '../../images';
-import InfoWindowDetail from '../../components/InfoWindowDetail';
+import InfoWindowDetail from '../../components/ShareableInfoPanels/InfoWindowDetail';
 import ShareableListing from '../../components/ShareableListing';
 import './styles.scss';
 import PopupDetail from '../../components/PopupDetail';
