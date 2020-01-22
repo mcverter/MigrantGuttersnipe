@@ -13,7 +13,7 @@ function PopupCloseButton() {
     <div
       style={Styles.popupCloseButton}
       onClick={() => {
-        self.popupClose(markerKey);
+        self.closePopup(markerKey);
       }}
     >
       x

@@ -16,10 +16,13 @@ import RegionPage from '../RegionPage';
 import ShareableDetailPage from '../ShareableDetailPage';
 import GlobalStyle from '../../global-styles';
 import { shareablesByKey, shareablesByRegion } from '../../data';
+import MPE from '../../../tutorials/markerpopupexample/index';
+
 export default function App() {
   return (
     <div>
       <Switch>
+        <Route path="/MPE" component={MPE} />
         <Route
           path="/elnumerodelalista"
           component={() => {

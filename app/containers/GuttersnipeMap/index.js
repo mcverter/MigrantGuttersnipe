@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import { Map, TileLayer, Popup, Marker } from 'react-leaflet';
-import { makeKeyFromShareable, stringToHash } from '../../utils/utils';
-import { getLeafletIcon } from '../../images';
-import InfoWindowDetail from '../../components/ShareableInfoPanels/InfoWindowDetail';
+import { Map, TileLayer } from 'react-leaflet';
+import { makeKeyFromShareable } from '../../utils/utils';
 import ShareableListing from '../../components/ShareableListing';
+import GuttersnipeMarker from '../../components/GuttersnipeMarker';
 import './styles.scss';
-import PopupDetail from '../../components/PopupDetail';
 
 const mapRef = React.createRef();
 
@@ -23,6 +21,8 @@ class MapPopupExample extends Component {
       tileUrl: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
     };
     this.markerRefs = {};
+    this.showMarkerPopup = this.showMarkerPopup.bind(this);
+    this.addMarkerRef = this.addMarkerRef.bind(this);
   }
 
   componentDidMount() {
@@ -31,11 +31,11 @@ class MapPopupExample extends Component {
     });
   }
 
-  handleMarkerRef(key, node) {
+  addMarkerRef(node, key) {
     this.markerRefs[key] = node;
   }
 
-  markerClick(key) {
+  showMarkerPopup(key) {
     this.setState(
       {
         lat: this.shareablesMap[key].coordinates[1],
@@ -44,13 +44,13 @@ class MapPopupExample extends Component {
       },
       () => {
         if (this.markerRefs[key]) {
-          this.markerRefs[key].leafletElement.openPopup();
+          this.markerRefs[key].current.leafletElement.openPopup();
         }
       },
     );
   }
 
-  popupClose(key) {
+  closePopup(key) {
     this.setState(
       {
         lat: this.shareablesMap[key].coordinates[1],
@@ -58,6 +58,7 @@ class MapPopupExample extends Component {
         zoom: 16,
       },
       () => {
+        debugger;
         if (this.markerRefs[key]) {
           this.markerRefs[key].leafletElement.closePopup();
         }
@@ -66,8 +67,8 @@ class MapPopupExample extends Component {
   }
 
   render() {
-    const self = this;
     const { title } = this.props;
+    console.log('mapref', mapRef)
     return (
       <div className="Map" ref={mapRef}>
         <Map
@@ -80,29 +81,24 @@ class MapPopupExample extends Component {
             const { coordinates } = shareable;
             const markerKey = makeKeyFromShareable(shareable);
             const markerPosition = [coordinates[1], coordinates[0]];
-            if (!coordinates || coordinates.length !== 2) {
-              return '';
-            }
+            const ref = React.createRef();
+            this.addMarkerRef(ref, markerKey);
             return (
-              <Marker
+              <GuttersnipeMarker
+                markerRef={ref}
                 key={markerKey}
-                ref={this.handleMarkerRef.bind(this, markerKey)}
-                onclick={() => {
-                  self.markerClick(markerKey);
-                }}
+                markerKey={markerKey}
+                shareable={shareable}
+                addRef={this.addMarkerRef}
+                showPopup={this.showMarkerPopup}
                 position={markerPosition}
-                icon={getLeafletIcon(shareable.type)}
-              >
-                <Popup>
-                  <PopupDetail shareable={shareable} shareableKey={markerKey} />
-                </Popup>
-              </Marker>
+              />
             );
           })}
         </Map>
         <ShareableListing
           style={{ width: '100vw', height: '30vh' }}
-          onListItemClicked={this.markerClick.bind(this)}
+          onListItemClicked={this.showMarkerPopup.bind(this)}
           shareables={this.state.shareables}
           title={title}
         />

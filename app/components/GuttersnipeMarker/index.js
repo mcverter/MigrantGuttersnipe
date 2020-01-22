@@ -4,19 +4,37 @@
  *
  */
 
-import React from 'react';
-// import PropTypes from 'prop-types';
-// import styled from 'styled-components';
+import React, { Component, createRef } from 'react';
+import PropTypes from 'prop-types';
+import { Marker, Popup } from 'react-leaflet';
+import { getLeafletIcon } from '../../images';
+import PopupDetail from '../PopupDetail';
 
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+class GuttersnipeMarker extends Component{
+  constructor(props) {
+    super(props);
+  }
 
-function GuttersnipeMarker() {
-  return (
-    <div>
-      <FormattedMessage {...messages.header} />
-    </div>
-  );
+  render() {
+    let self = this;
+    const {markerKey,shareable, addRef, showPopup, position, markerRef} = this.props;
+    addRef(markerKey, markerRef)
+
+    return (
+      <Marker
+        onclick={() => {
+          showPopup(markerKey);
+        }}
+        ref={markerRef}
+        position={position}
+        icon={getLeafletIcon(shareable.type)}
+      >
+        <Popup>
+          <PopupDetail shareable={shareable} shareableKey={markerKey} />
+        </Popup>
+      </Marker>
+    );
+  }
 }
 
 GuttersnipeMarker.propTypes = {};
