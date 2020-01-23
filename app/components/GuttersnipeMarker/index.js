@@ -4,21 +4,23 @@
  *
  */
 
-import React, { Component, createRef } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Marker, Popup } from 'react-leaflet';
 import { getLeafletIcon } from '../../images';
 import PopupDetail from '../PopupDetail';
 
-class GuttersnipeMarker extends Component{
-  constructor(props) {
-    super(props);
-  }
-
+class GuttersnipeMarker extends Component {
   render() {
-    let self = this;
-    const {markerKey,shareable, addRef, showPopup, position, markerRef} = this.props;
-    addRef(markerKey, markerRef)
+    const {
+      markerKey,
+      shareable,
+      addRef,
+      showPopup,
+      position,
+      markerRef,
+    } = this.props;
+    addRef(markerKey, markerRef);
 
     return (
       <Marker
@@ -37,6 +39,13 @@ class GuttersnipeMarker extends Component{
   }
 }
 
-GuttersnipeMarker.propTypes = {};
+GuttersnipeMarker.propTypes = {
+  markerKey: PropTypes.number,
+  shareable: PropTypes.object,
+  addRef: PropTypes.func,
+  showPopup: PropTypes.func,
+  position: PropTypes.array,
+  markerRef: PropTypes.node
+};
 
 export default GuttersnipeMarker;

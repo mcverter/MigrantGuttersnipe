@@ -39,12 +39,14 @@ export default function App() {
             url = url.substr(1);
             if (url.match(/^[a-zA-Z]*$/)) {
               return (
-                <RegionPage {...props}
-                            shareablesByRegion={shareablesByRegion}
-                            regionID={url}
-
-                />)
-            } else if (url.match(/^[0-9]*$/)) {
+                <RegionPage
+                  {...props}
+                  shareablesByRegion={shareablesByRegion}
+                  regionID={url}
+                />
+              );
+            }
+            if (url.match(/^[0-9]*$/)) {
               return (
                 <ShareableDetailPage
                   {...props}

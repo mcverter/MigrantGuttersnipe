@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Map, TileLayer } from 'react-leaflet';
 import { makeKeyFromShareable } from '../../utils/utils';
 import ShareableListing from '../../components/ShareableListing';
@@ -7,7 +8,7 @@ import './styles.scss';
 
 const mapRef = React.createRef();
 
-class MapPopupExample extends Component {
+class GuttersnipeMap extends Component {
   shareablesMap = {};
 
   constructor(props) {
@@ -58,7 +59,6 @@ class MapPopupExample extends Component {
         zoom: 16,
       },
       () => {
-        debugger;
         if (this.markerRefs[key]) {
           this.markerRefs[key].leafletElement.closePopup();
         }
@@ -68,7 +68,7 @@ class MapPopupExample extends Component {
 
   render() {
     const { title } = this.props;
-    console.log('mapref', mapRef)
+
     return (
       <div className="Map" ref={mapRef}>
         <Map
@@ -106,5 +106,11 @@ class MapPopupExample extends Component {
     );
   }
 }
+GuttersnipeMap.propTypes = {
+  shareables: PropTypes.object,
+  center: PropTypes.array,
+  zoom: PropTypes.number,
+  title: PropTypes.string
+};
 
-export default MapPopupExample;
+export default GuttersnipeMap;

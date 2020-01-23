@@ -335,7 +335,7 @@ const tijuana = {
         '<div><h2>Solicitando Asilo en México</h2><h5>NOTA: Si recibe el estado de asilo en México, puede afectar negativamente su asilo en E U.</h5><div>Para solicitar asilo, debe entregar una solicitud por escrito (o verbalmente si no puede presentarlo por escrito), y proporcionar su identificación y los motivos para apoyar su solicitud. Puede solicitar la condición de refugiado en la Comisión Mexicana de Ayuda a Refugiados (COMAR) (Ciudad de México), Acayucan (Veracruz),Tenosique (Tabasco),Tapachula (Chiapas) o en las Oficinas Reguladoras de Inmigración del Instituto Nacional de Migración. Debe entregar la solicitud dentro de los 30 días hábiles a partir de la fecha de ingreso al país. Si ha estado en México por más de 30 días, debe explicar por qué no pudo solicitar antes. Si no habla español, se le proporcionará un traductor o intérprete. La solicitud será revisada y resuelta dentro de 45 días hábiles a partir de la fecha de entrego.</div><div><ul> Al recibir el estado de asilo, debe recibir los siguientes derechos:<li>Servicios de salud</li><li>Educación y reconocimiento de tus estudios</li><li>El derecho al trabajo</li><li>Identidad y documentos de viaje emitidos por el Ministerio de Relaciones Exteriores y la capacidad de solicitar la reunificación familiar</li><li>Documento de inmigración que acredite su condición de residente permanente<li></ul></div><h3>Si necesita ayuda o tiene preguntas, comuniqúese con Asylum Access.</h3></div>',
       websites: ['http://www.asylumaccess.org'],
     },
-    {
+/*    {
       name: 'Border Angels',
       google_place_id: '',
       type: 'ONG',
@@ -345,7 +345,7 @@ const tijuana = {
       phones: [],
       description: '',
       hours: '',
-    },
+    }, */
     {
       name: 'Consulado de la Republica de El Salvador en Tijuana',
       google_place_id: '',
@@ -384,17 +384,6 @@ const tijuana = {
         'Información sobre ingreso regular a EUA y servicios migratorios para residentes temporales y permanentes en México.',
       hours: 'Lunes a viernes, 11:00 a.m. - 3:00 p.m.',
       websites: ['https://goo.gl/maps/tTwV5SL7BYK2'],
-    },
-    {
-      name: '',
-      google_place_id: '',
-      type: '',
-      features: [],
-      coordinates: [],
-      address: '',
-      phones: [],
-      description: '',
-      hours: '',
     },
   ],
 };
