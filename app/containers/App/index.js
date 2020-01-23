@@ -9,8 +9,6 @@
 
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Tijuana from '../Tijuana';
-import Tapachula from '../Tapachula';
 import HomePage from '../HomePage';
 import RegionPage from '../RegionPage';
 import ShareableDetailPage from '../ShareableDetailPage';

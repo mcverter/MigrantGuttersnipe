@@ -110,7 +110,7 @@ GuttersnipeMap.propTypes = {
   shareables: PropTypes.object,
   center: PropTypes.array,
   zoom: PropTypes.number,
-  title: PropTypes.string
+  title: PropTypes.string,
 };
 
 export default GuttersnipeMap;
