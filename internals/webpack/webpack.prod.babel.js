@@ -124,7 +124,7 @@ module.exports = require('./webpack.base.babel')({
       inject: true,
       ios: true,
       icons: [
-        {
+        /*        {
           src: path.resolve('app/images/icon-512x512.png'),
           sizes: [72, 96, 128, 144, 192, 384, 512],
         },
@@ -133,6 +133,7 @@ module.exports = require('./webpack.base.babel')({
           sizes: [120, 152, 167, 180],
           ios: true,
         },
+        */
       ],
     }),
 
@@ -142,7 +143,7 @@ module.exports = require('./webpack.base.babel')({
       hashDigestLength: 20,
     }),
   ],
-//  devtool: 'eval-source-map',
+  //  devtool: 'eval-source-map',
 
   performance: {
     assetFilter: assetFilename =>
