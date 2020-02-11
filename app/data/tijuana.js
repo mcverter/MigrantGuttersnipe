@@ -3,6 +3,7 @@ const tijuana = {
   zoom: 12,
   shareables: [
     {
+      region: 'Tijuana',
       name: 'Enclave Caracol',
       google_place_id: 'ChIJZ1wZ4gBJ2YARWk0pwqi7jp8',
       type: 'Comida',
@@ -17,6 +18,7 @@ const tijuana = {
         '<ul><li>COMPUTADORES, CAFE: Lunes - Sábado de 10AM-8PM </li><li>COMIDA GRATIS: Lunes - Jueves a las 5pm </li><li>LEGAL: Martes - Jueves a las 10:00 am (español) y 12:30 (otras idiomas)</li></ul>',
     },
     {
+      region: 'Tijuana',
       name: 'Comedor Contra Viento y Marea',
       google_place_id: '',
       type: 'Comida',
@@ -28,6 +30,7 @@ const tijuana = {
       hours: '<div>Lunes a Sábado, 12 -1 pm y 5 - 7pm</div>',
     },
     {
+      region: 'Tijuana',
       name: 'Espacio Migrante',
       google_place_id: 'ChIJ4fG8sHtJ2YARFrfH8abHp2Q',
       type: 'Albergue: Familias',
@@ -52,6 +55,7 @@ const tijuana = {
         '<ul><li>REFUGIO: Lunes - Viernes de7AM-6PM y Sábado de 9AM-6PM</li><li>SERVICIOS LEGALES: Lunes - Viernes 9am-5pm</li><li>SERVICIOS MEDICALES: Lunes-Viernes 9am-2pm</li></ul>',
     },
     {
+      region: 'Tijuana',
       name: 'Templo Embajadores De Jesús',
       google_place_id: 'ChIJUXSOpiBK2YARCDKVIHgSAeA',
       type: 'Albergue: Familias',
@@ -64,6 +68,7 @@ const tijuana = {
       ],
     },
     {
+      region: 'Tijuana',
       name: 'Pro Amore Dei',
       google_place_id: 'ChIJZYlEJJhJ2YAR_WQMrFzU_B0',
       type: 'Albergue: Familias',
@@ -77,6 +82,7 @@ const tijuana = {
       ],
     },
     {
+      region: 'Tijuana',
       name: 'Casa Del Deportation Sagrado Corazon',
       google_place_id: 'ChIJvbftFg1J2YARijOKRwrfUI8',
       type: 'Albergue: Mujeres',
@@ -89,6 +95,7 @@ const tijuana = {
       ],
     },
     {
+      region: 'Tijuana',
       name: 'Movimiento Juventud 2000 Secc. Tijuana AC',
       google_place_id: 'ChIJC633HARJ2YAR6SKYsXauLs0',
       type: 'Albergue: Familias',
@@ -101,6 +108,7 @@ const tijuana = {
       ],
     },
     {
+      region: 'Tijuana',
       name: 'Desayunador Salesiano Padre Chava',
       google_place_id: 'ChIJ5SIq3v9I2YARfSni0k-x6oI',
       type: 'Albergue: Solteros',
@@ -116,6 +124,7 @@ const tijuana = {
       hours: 'COMIDA GRATIS:  Desayuno Lunes-Sabado',
     },
     {
+      region: 'Tijuana',
       name: 'Ejercito De Salvación',
       google_place_id: 'ChIJKba3hV5I2YAR1iuXz6fCASM',
       type: 'Albergue: Solteros',
@@ -129,6 +138,7 @@ const tijuana = {
       ],
     },
     {
+      region: 'Tijuana',
       name: 'Ejercito De Salvación Casa Puerta de Esperanza',
       google_place_id: 'ChIJ3fFDU9xJ2YARSeh2Zwn55ow',
       type: 'Albergue: Mujeres',
@@ -141,6 +151,7 @@ const tijuana = {
       ],
     },
     {
+      region: 'Tijuana',
       name: 'Casa del Migrante',
       google_place_id: 'ChIJdUzFv2xI2YARi8QKUo4bLHY',
       type: 'Albergue: Solteros',
@@ -153,6 +164,7 @@ const tijuana = {
       ],
     },
     {
+      region: 'Tijuana',
       name: 'Instituto Madre Asunta',
       google_place_id: 'ChIJVSjz7GxI2YARl1VyQO3I33A',
       type: 'Albergue: Mujeres',
@@ -166,6 +178,7 @@ const tijuana = {
       ],
     },
     {
+      region: 'Tijuana',
       name: 'Volviendo a la Patria A.C. Centro para Migrantes',
       google_place_id: '',
       type: 'Albergue: Solteros',
@@ -177,6 +190,7 @@ const tijuana = {
       ],
     },
     {
+      region: 'Tijuana',
       name: 'Casa De Oracion Del Migrante A.C.',
       google_place_id: 'ChIJaZ1ezG9I2YARR_g0bTlezZg',
       type: 'Albergue: Solteros',
@@ -190,6 +204,7 @@ const tijuana = {
       ],
     },
     {
+      region: 'Tijuana',
       name: 'Leaked A.C. Simon Bolívar 12512',
       google_place_id: '',
       type: 'Albergue: Mujeres',
@@ -201,6 +216,7 @@ const tijuana = {
       ],
     },
     {
+      region: 'Tijuana',
       name: 'Mision Evangelica Roca de Salvacion A.C.',
       google_place_id: '',
       type: 'Albergue: Mujeres',
@@ -214,6 +230,7 @@ const tijuana = {
       ],
     },
     {
+      region: 'Tijuana',
       name: 'Iglesia Cristiana Bautista Camino de Salvacion',
       google_place_id: 'ChIJsQeDojs_2YARXAp9wLBnuLo',
       type: 'Albergue: Familias',
@@ -227,6 +244,7 @@ const tijuana = {
       ],
     },
     {
+      region: 'Tijuana',
       name: 'Iglesia Casa de Dios',
       google_place_id: '',
       type: 'Albergue: Mujeres',
@@ -238,6 +256,7 @@ const tijuana = {
       ],
     },
     {
+      region: 'Tijuana',
       name: 'Hospital Guadalajara',
       google_place_id: 'ChIJh_u5BwlJ2YAR_7aFpxX2ZsM',
       type: 'Servicios Medicos',
@@ -246,6 +265,7 @@ const tijuana = {
       phones: ['+52 664 685 8953'],
     },
     {
+      region: 'Tijuana',
       name: 'Hospital México',
       google_place_id: 'ChIJtZFQGP9I2YARxoPUNQ3UlVQ',
       type: 'Servicios Medicos',
@@ -254,6 +274,7 @@ const tijuana = {
       phones: ['+52 664 683 6363'],
     },
     {
+      region: 'Tijuana',
       name: 'Centro de Rehabilitacion Jardin de las Mariposas, A.C.',
       google_place_id: '',
       type: 'Albergue: LGBTQ',
@@ -265,6 +286,7 @@ const tijuana = {
       ],
     },
     {
+      region: 'Tijuana',
       name: 'La Roca',
       google_place_id: 'ChIJGaKh-g5J2YARi4X94hCUBvk',
       type: 'Albergue: Familias',
@@ -273,6 +295,7 @@ const tijuana = {
       phones: ['+52 664 688 0190'],
     },
     {
+      region: 'Tijuana',
       name: 'AGAPE Misión Mundial',
       google_place_id: 'ChIJGXlBrXkk-xQR_7PjxNvDfmE',
       type: 'Albergue: Familias',
@@ -285,6 +308,7 @@ const tijuana = {
       ],
     },
     {
+      region: 'Tijuana',
       name: 'Fundación Centro para Migrantes A.C.',
       google_place_id: '',
       type: 'Albergue: Familias',
@@ -296,6 +320,7 @@ const tijuana = {
       ],
     },
     {
+      region: 'Tijuana',
       name: 'Clinica HFIT',
       google_place_id: 'ChIJAwn9LgZJ2YARgdk1q_TSucc',
       type: 'Servicios Medicos',
@@ -304,6 +329,7 @@ const tijuana = {
       phones: ['+52 664 638 4291'],
     },
     {
+      region: 'Tijuana',
       name: 'Prevencasa',
       google_place_id: 'ChIJyR5_Qw9J2YARdFOcSejbGxs',
       type: 'Servicios Medicos',
@@ -314,6 +340,7 @@ const tijuana = {
       hours: '<div>SERVICIOS MEDICOS: Lunes a Viernes de 9am a 2pm</div>',
     },
     {
+      region: 'Tijuana',
       name: 'Instituto Nadonal de Migración Oficina en Tijuana Puerta México',
       google_place_id: 'ChIJIXIKEPxI2YAR4qDacRLGBGE',
       type: 'Oficial',
@@ -324,6 +351,7 @@ const tijuana = {
         '<div>Email: <a href="mailto:bcdrbc@inami.gob.mx">bcdrbc@inami.gob.mx</a></div>',
     },
     {
+      region: 'Tijuana',
       name: 'Asylum Access',
       google_place_id: 'ChIJkTvPeTZJ2YARYp_-4lhCApA',
       type: 'ONG',
@@ -336,7 +364,8 @@ const tijuana = {
       websites: ['http://www.asylumaccess.org'],
     },
     /*    {
-      name: 'Border Angels',
+      region: 'Tijuana',
+name: 'Border Angels',
       google_place_id: '',
       type: 'ONG',
       features: [],
@@ -347,6 +376,7 @@ const tijuana = {
       hours: '',
     }, */
     {
+      region: 'Tijuana',
       name: 'Consulado de la Republica de El Salvador en Tijuana',
       google_place_id: '',
       type: 'Oficial',
@@ -360,6 +390,7 @@ const tijuana = {
       websites: ['https://goo.gl/maps/L7HAVmtD9v32'],
     },
     {
+      region: 'Tijuana',
       name: 'Misión Consular Guatemala',
       google_place_id: '',
       type: 'Oficial',
@@ -373,6 +404,7 @@ const tijuana = {
       websites: ['https://goo.gl/maps/L7HAVmtD9v32'],
     },
     {
+      region: 'Tijuana',
       name: 'US Consulate General',
       google_place_id: '',
       type: 'Oficial',

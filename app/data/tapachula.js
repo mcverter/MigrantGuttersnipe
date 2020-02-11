@@ -3,6 +3,7 @@ const tapachula = {
   zoom: 7,
   shareables: [
     {
+      region: 'Tapachula',
       name: 'Agencia de la ONU para los Refugiados (ACNUR)',
       google_place_id: 'ChIJxZtCNsUOjoURYX6XtDZ7UWs',
       type: 'ONG',
@@ -16,6 +17,7 @@ const tapachula = {
       route: 'Lomas del Soconusco, FOVISSTE',
     },
     {
+      region: 'Tapachula',
       name: 'Organización Internacional para las Migraciones',
       type: 'ONG',
       coordinates: [-92.2443442, 14.8992854],
@@ -28,6 +30,7 @@ const tapachula = {
       contacted: 'yes',
     },
     {
+      region: 'Tapachula',
       name: 'CENTRO DE DERECHOS HUMANOS FRAY MATIAS DE CÓRDOVA AC',
       google_place_id: 'ChIJQSXRVCAPjoURPN1IZ7JG_xE',
       type: 'ONG',
@@ -41,6 +44,7 @@ const tapachula = {
       contacted: 'yes',
     },
     {
+      region: 'Tapachula',
       name: 'Servicio Jesuíta a Refugiados (SJR)',
       google_place_id: '',
       type: 'ONG',
@@ -59,6 +63,7 @@ const tapachula = {
       contacted: 'yes',
     },
     {
+      region: 'Tapachula',
       name: 'ALBERGUE JESÚS EL BUEN PASTOR DEL POBRE Y DEL MIGRANTE AC',
       google_place_id: 'ChIJD5CQ54EFjoURY1yHN0IH0Fk',
       type: 'Albergue: Familias',
@@ -73,6 +78,7 @@ const tapachula = {
       contacted: 'yes',
     },
     {
+      region: 'Tapachula',
       name: 'ALBERGUE BELÉN (Casa del Migrante Scalabrini)',
       google_place_id: 'ChIJZ43yWPMOjoURhdrlh6x3I0A',
       type: 'Albergue: Familias',
@@ -89,6 +95,7 @@ const tapachula = {
       contacted: 'yes',
     },
     {
+      region: 'Tapachula',
       name: 'ASESORÍA EN EDUCACIÓN RET INTERNACIONAL 3a',
       google_place_id: 'ChIJ2Uo02s4PjoURzLf8CCsEadI',
       type: 'ONG',
@@ -101,6 +108,7 @@ const tapachula = {
       hours: 'Lunes a Viernes, 8 a 16 h',
     },
     {
+      region: 'Tapachula',
       name: 'Centro de Salud Urbano Tapachula',
       google_place_id: 'Place ID: ChIJtZESnNcOjoURs5IQnxz2xsA',
       type: 'Servicios Medicos',
@@ -114,6 +122,7 @@ const tapachula = {
       hours: 'Diariamente, 8:00-20:00 hrs',
     },
     {
+      region: 'Tapachula',
       name: 'Centro de Salud Raymundo Enriquez',
       google_place_id: 'ChIJk3UKN04FjoURNpsVLE1lhjk',
       type: 'Servicios Medicos',
@@ -126,6 +135,7 @@ const tapachula = {
       hours: '8 a 20h.',
     },
     {
+      region: 'Tapachula',
       name: 'Hospital General de Tapachula "Dr. Manuel Velasco Suárez"',
       google_place_id: 'ChIJO68X1VoFjoURzCO6ZpMZ6F4',
       type: 'Servicios Medicos',
@@ -139,6 +149,7 @@ const tapachula = {
       hours: 'Emergencias. Abierto las 24 horas.',
     },
     {
+      region: 'Tapachula',
       name: 'Una Mano Amiga en la Lucha contra el Sida (UMA) ',
       google_place_id: '',
       type: 'Servicios Medicos',
@@ -152,6 +163,7 @@ const tapachula = {
       websites: ['https://www.facebook.com/UMALCS/'],
     },
     {
+      region: 'Tapachula',
       name: 'CEDH Comision Estatal de los Derechos Humanos Chiapas ',
       google_place_id: 'ChIJu4or78QOjoUR6qYurp6oMLY',
       type: 'Oficial',
@@ -165,6 +177,7 @@ const tapachula = {
       route: ['Bonanza por 3era', 'FOVISSTE'],
     },
     {
+      region: 'Tapachula',
       name: 'COMISIÓN NACIONAL DE DERECHOS HUMANOS',
       google_place_id: 'ChIJq6qqqiEPjoURSXtIN7CFWp8',
       type: 'Oficial',
@@ -178,6 +191,7 @@ const tapachula = {
       websites: ['http://cndh.org.mx'],
     },
     {
+      region: 'Tapachula',
       name:
         'Fiscalía Especializada en Delitos Cometidos en Contra de Inmigrantes',
       google_place_id: 'Place ID: ChIJ54wJzJXY7IUR7oud5Ak4d6w',
@@ -192,6 +206,7 @@ const tapachula = {
       hours: 'Lunes a Viernes: 9 a 21 h. Sábado: 10 a 14 h.',
     },
     {
+      region: 'Tapachula',
       name:
         'Oficina de Atención a Migrantes y Refugiados / Servicio Jesuíta a Migrantes',
       google_place_id: 'ChIJA2FL61OjjYURfnCCYLbT9K4',
@@ -205,6 +220,7 @@ const tapachula = {
       hours: '',
     },
     {
+      region: 'Tapachula',
       name: 'Colectivo Kaltsilaltik',
       google_place_id: '',
       type: 'ONG',
@@ -222,6 +238,7 @@ const tapachula = {
       hours: '',
     },
     {
+      region: 'Tapachula',
       name:
         'Centro de Atención y Defensoria de los Derechos de las Mujeres en las Migraciones "La Morada"',
       google_place_id: '',
@@ -235,6 +252,7 @@ const tapachula = {
       hours: '',
     },
     {
+      region: 'Tapachula',
       name: 'Casa del Migrante San Martín de Porres',
       google_place_id: '',
       type: 'ONG',
@@ -252,6 +270,7 @@ const tapachula = {
       ],
     },
     {
+      region: 'Tapachula',
       name: 'Albergue Jtatic Samuel Ruiz',
       google_place_id: 'ChIJTWkLhvRF8oURoMuv6IDFIJw',
       type: 'Albergue: Familias',
@@ -269,6 +288,7 @@ const tapachula = {
       hours: '',
     },
     {
+      region: 'Tapachula',
       name: 'Casa del Caminante',
       google_place_id: 'ChIJ_V8Px_NF8oURCRI87BP69cc',
       type: 'ONG',
@@ -280,6 +300,7 @@ const tapachula = {
       hours: '',
     },
     {
+      region: 'Tapachula',
       name: 'Comisión Mexicana de Ayuda a Refugiados (COMAR)',
       google_place_id: 'ChIJo7CjgAoPjoURSDe10lqYjJs',
       type: 'Oficial',
@@ -292,6 +313,7 @@ const tapachula = {
       hours: 'Lunes a viernes, 8:30-16:00 hrs.',
     },
     {
+      region: 'Tapachula',
       name: 'INM Migracion Y Grupo Beta',
       google_place_id: 'ChIJv4MutPoPjoURfM8pSqfIzgU',
       type: 'Oficial',
@@ -304,6 +326,7 @@ const tapachula = {
       route: ['COBACH', 'Solidaridad 2000'],
     },
     {
+      region: 'Tapachula',
       name: 'La 72, Hogar Refugio para Personas Migrantes.',
       google_place_id: 'ChIJs76NKQ6a84URqRK0pOXX1OM',
       type: 'Albergue: Familias',
@@ -316,6 +339,7 @@ const tapachula = {
       route: ['COBACH', 'Solidaridad 2000'],
     },
     {
+      region: 'Tapachula',
       name: 'Albergue Jesús Esperanza en el Camino.',
       google_place_id: 'ChIJj27QEVbY7IURaiFiRnu9eN0',
       type: 'Albergue',
@@ -325,6 +349,7 @@ const tapachula = {
       websites: ['movilidadmt25@hotmail.com'],
     },
     {
+      region: 'Tapachula',
       name: 'Una Ayuda Para Ti Mujer Migrante A,C.',
       type: 'ONG',
       google_place_id: 'ChIJj27QEVbY7IURaiFiRnu9eN0',

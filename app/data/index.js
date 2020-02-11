@@ -1,12 +1,13 @@
-import tijuana from './tijuana';
-import tapachula from './tapachula';
+import Tijuana from './tijuana';
+import Tapachula from './tapachula';
+import { makeKeyFromShareable } from '../utils/utils';
 
-const makeRegionalShareables = (shareable, region) => {
-  shareable.region = region;
-  return shareable;
-};
-const TAP = tapachula.shareables.map(s => makeRegionalShareables(s, 'Tapachula'));
-const TIJ = tijuana.shareables.map(s => makeRegionalShareables(s, 'Tijuana'));
+export const allShareables = Tapachula.shareables.concat(Tijuana.shareables);
+const sbk = {};
 
-export const shareablesByKey = [...TAP, ...TIJ];
-export const shareablesByRegion = { tijuana, tapachula };
+allShareables.forEach(s => {
+  sbk[makeKeyFromShareable(s)] = s;
+});
+
+export const shareablesByKey = sbk;
+export const shareablesByRegion = { Tijuana, Tapachula };
