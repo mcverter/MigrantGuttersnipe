@@ -7,14 +7,15 @@
 // import PropTypes from 'prop-types';
 // import styled from 'styled-components';
 import React from 'react';
+import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import {makeKeyFromShareable} from "../../utils/utils";
-import {getPlainIcon} from "../../images";
+import { makeKeyFromShareable } from '../../utils/utils';
+import { getPlainIcon } from '../../images';
 
 const StyledMenu = withStyles({
   paper: {
@@ -83,10 +84,12 @@ export default function ShareableMenu(props) {
           return (
             <StyledMenuItem
               key={shareableKey}
-              onClick={() => {onListItemClicked(shareableKey); handleClose();}}>
-              <ListItemIcon>
-                {getPlainIcon(shareable.type)}
-              </ListItemIcon>
+              onClick={() => {
+                onListItemClicked(shareableKey);
+                handleClose();
+              }}
+            >
+              <ListItemIcon>{getPlainIcon(shareable.type)}</ListItemIcon>
               <ListItemText primary={shareable.name} />
             </StyledMenuItem>
           );
@@ -94,4 +97,10 @@ export default function ShareableMenu(props) {
       </StyledMenu>
     </div>
   );
+}
+
+ShareableMenu.propTypes = {
+  shareables: PropTypes.array,
+  onListItemClicked: PropTypes.func,
+  title: PropTypes.string
 }

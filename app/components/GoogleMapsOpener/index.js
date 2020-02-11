@@ -48,7 +48,8 @@ const GoogleMapsOpener = place => {
   };
 
   return (
-    <Button type="primary"
+    <Button
+      type="primary"
       onClick={() => {
         openGoogleMaps();
       }}

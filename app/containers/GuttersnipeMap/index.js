@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Map, TileLayer } from 'react-leaflet';
 import { makeKeyFromShareable } from '../../utils/utils';
-import ShareableListing from '../../components/ShareableListing';
+import ShareablesMenu from '../../components/ShareablesMenu';
 import GuttersnipeMarker from '../../components/GuttersnipeMarker';
 import './styles.scss';
 
@@ -70,8 +70,14 @@ class GuttersnipeMap extends Component {
     const { title } = this.props;
 
     return (
-      <div className="Map" ref={mapRef}>
+      <div>
+        <ShareablesMenu
+          onListItemClicked={this.showMarkerPopup.bind(this)}
+          shareables={this.state.shareables}
+          title={title}
+        />
         <Map
+          className="Map" ref={mapRef}
           center={[this.state.lat, this.state.lng]}
           zoom={this.state.zoom}
           style={{ width: '100vw', height: '70vh' }}
@@ -96,19 +102,13 @@ class GuttersnipeMap extends Component {
             );
           })}
         </Map>
-        <ShareableListing
-          style={{ width: '100vw', height: '30vh' }}
-          onListItemClicked={this.showMarkerPopup.bind(this)}
-          shareables={this.state.shareables}
-          title={title}
-        />
       </div>
     );
   }
 }
 GuttersnipeMap.propTypes = {
-  shareables: PropTypes.object,
-  center: PropTypes.array,
+  shareables: PropTypes.array,
+  center: PropTypes.object,
   zoom: PropTypes.number,
   title: PropTypes.string,
 };

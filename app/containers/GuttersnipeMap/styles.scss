@@ -1,21 +1,10 @@
 // Leaflet
-$leaflet_popup_width: 55vw;
-
-.leaflet-popup {
-  width: $leaflet_popup_width;
-  max-height: 50vh;
-}
-
-.leaflet-popup-content > div {
-  width: $leaflet_popup_width - 3;
-}
 .leaflet-container a.leaflet-popup-close-button {
-  //  icon: url("./images/hearts.svg");
+  icon: url("../../images/hearts.svg");
   font-size: 125%;
   text-align: center;
   font-weight: 700;
   background-color: red;
-  // border-radius: 50%;
   color: white;
   border: 1px black solid;
   padding: 0px !important;

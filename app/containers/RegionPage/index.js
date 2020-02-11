@@ -12,7 +12,7 @@ import { compose } from 'redux';
 import GuttersnipeMap from '../GuttersnipeMap';
 
 export function RegionPage(props) {
-  let { region, shareablesByRegion } = props;
+  const { region, shareablesByRegion } = props;
   const regionID =
     region.charAt(1).toUpperCase() + region.substring(2).toLowerCase();
   const data = shareablesByRegion[regionID];
@@ -29,11 +29,10 @@ export function RegionPage(props) {
   );
 }
 
-const mapStateToProps = state => {
-  return ({
-    region: state.router.location.pathname,
-    shareablesByRegion: state.App.shareablesByRegion
-  })};
+const mapStateToProps = state => ({
+  region: state.router.location.pathname,
+  shareablesByRegion: state.App.shareablesByRegion,
+});
 
 const withConnect = connect(mapStateToProps);
 

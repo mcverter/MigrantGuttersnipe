@@ -18,7 +18,7 @@ const SVGMap = {
   default: ONGSVG,
   Comida: ComidaSVG,
   'Servicios Medicos': MedicosSVG,
-  'Albergue': AlbergueSVG,
+  Albergue: AlbergueSVG,
   'Albergue: Familias': FamiliasSVG,
   'Albergue: LGBTQ': LGBTSVG,
   'Albergue: Solteros': SolterosSVG,
@@ -27,7 +27,7 @@ const SVGMap = {
   phone: PhoneSVG,
   Oficial: OficialSVG,
   ONG: ONGSVG,
-}
+};
 
 export function getLeafletIcon(type) {
   return new LeafletIcon({
@@ -37,7 +37,7 @@ export function getLeafletIcon(type) {
 export function getPlainIcon(type) {
   return (
     <MaterialIcon>
-      <img align="middle" src={SVGMap[type] || SVGMap.default} />
+      <img align="middle" alt={type} src={SVGMap[type] || SVGMap.default} />
     </MaterialIcon>
   );
 }

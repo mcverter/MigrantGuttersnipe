@@ -4,17 +4,16 @@
  *
  */
 
-import React, { useState } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 
-
 import Button from '@material-ui/core/Button';
 import Details from '@material-ui/icons/Info';
-import {getPlainIcon} from '../../images';
-
+import { getPlainIcon } from '../../images';
 
 function PopupDetail({ shareable, shareableKey }) {
   const { name, type } = shareable;
@@ -26,17 +25,16 @@ function PopupDetail({ shareable, shareableKey }) {
             {name}
           </Typography>
           <Typography variant="body1">
-            <span> &nbsp; {getPlainIcon(type)}  &nbsp;{type}</span>
+            <span>
+              {' '}
+              &nbsp; {getPlainIcon(type)} &nbsp;{type}
+            </span>
           </Typography>
         </Card>
       </Grid>
       <Grid item>
-        <Link to={`/${shareableKey}`} style={{textDecoration: "none"}}>
-          <Button
-            variant='contained'
-            color='primary'
-            startIcon={<Details/>}
-          >
+        <Link to={`/${shareableKey}`} style={{ textDecoration: 'none' }}>
+          <Button variant="contained" color="primary" startIcon={<Details />}>
             Mas Informacion
           </Button>
         </Link>
@@ -45,24 +43,9 @@ function PopupDetail({ shareable, shareableKey }) {
   );
 }
 
-const Styles = {
-  moreDetailButton: {
-    backgroundColor: 'darkgreen',
-    color: 'white',
-    fontWeight: 700,
-    fontSize: '125%',
-  },
-  typeIcon: {
-    height: '14px',
-    padding: '1px',
-    margin: '1px',
-  },
-  typePanel: {
-    fontWeight: 600,
-    color: 'maroon',
-    border: '2px solid maroon',
-  },
+PopupDetail.propTypes = {
+  shareable: PropTypes.object,
+  shareableKey: PropTypes.string
 };
-PopupDetail.propTypes = {};
 
 export default PopupDetail;
