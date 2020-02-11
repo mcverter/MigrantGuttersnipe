@@ -45,7 +45,7 @@ GuttersnipeMarker.propTypes = {
   addRef: PropTypes.func,
   showPopup: PropTypes.func,
   position: PropTypes.array,
-  markerRef: PropTypes.node,
+  markerRef: PropTypes.object,
 };
 
 export default GuttersnipeMarker;

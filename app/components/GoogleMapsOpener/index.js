@@ -2,6 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './styles.scss';
+import Button from '@material-ui/core/Button';
 
 const GoogleMapsOpener = place => {
   const { coordinates, google_place_id, name, address } = place;
@@ -47,14 +48,13 @@ const GoogleMapsOpener = place => {
   };
 
   return (
-    <div
-      className="google-opener"
+    <Button type="primary"
       onClick={() => {
         openGoogleMaps();
       }}
     >
       DIRECCIONES
-    </div>
+    </Button>
   );
 };
 

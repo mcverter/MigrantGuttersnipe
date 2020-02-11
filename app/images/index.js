@@ -1,37 +1,43 @@
-import { Icon } from 'leaflet';
-import foodIcon from './comida.png';
-import medicineIcon from './medicos.png';
-import shelterFamilasIcon from './familias.jpg';
-import shelterLGBTQIcon from './lgbtq.jpg';
-import shelterSolterosIcon from './solteros.jpg';
-import shelterMujeresIcon from './mujeres.jpg';
-import shelterMenoresIcon from './menores.jpg';
-import parliamentIcon from './parliament.png';
-import phoneIcon from './phone.png';
-import defaultPlainIcon from './shareableDefault.png';
-import ngoIcon from './ngo.png';
+import React from 'react';
+import MaterialIcon from '@material-ui/core/Icon';
+import { Icon as LeafletIcon } from 'leaflet';
+import './icons.css';
+import SolterosSVG from './human-male.svg';
+import MujeresSVG from './human-female.svg';
+import FamiliasSVG from './human-male-female.svg';
+import MenoresSVG from './human-child.svg';
+import LGBTSVG from './gender-transgender.svg';
+import ONGSVG from './hand-heart.svg';
+import MedicosSVG from './hospital-box.svg';
+import ComidaSVG from './silverware.svg';
+import AlbergueSVG from './home-floor-a.svg';
+import PhoneSVG from './phone.svg';
+import OficialSVG from './domain.svg';
 
-const objectMap = (obj, fn) =>
-  Object.fromEntries(Object.entries(obj).map(([k, v], i) => [k, fn(v, k, i)]));
+const SVGMap = {
+  default: ONGSVG,
+  Comida: ComidaSVG,
+  'Servicios Medicos': MedicosSVG,
+  'Albergue': AlbergueSVG,
+  'Albergue: Familias': FamiliasSVG,
+  'Albergue: LGBTQ': LGBTSVG,
+  'Albergue: Solteros': SolterosSVG,
+  'Albergue: Mujeres': MujeresSVG,
+  'Albergue: Menores de Edad': MenoresSVG,
+  phone: PhoneSVG,
+  Oficial: OficialSVG,
+  ONG: ONGSVG,
+}
 
-export const getLeafletIcon = type => leafletIcons[type] || leafletIcons.default;
-export const getPlainIcon = type => plainIcons[type] || plainIcons.default;
-
-export const plainIcons = {
-  default: defaultPlainIcon,
-  Comida: foodIcon,
-  'Servicios Medicos': medicineIcon,
-  'Albergue: Familias': shelterFamilasIcon,
-  'Albergue: LGBTQ': shelterLGBTQIcon,
-  'Albergue: Solteros': shelterSolterosIcon,
-  'Albergue: Mujeres': shelterMujeresIcon,
-  'Albergue: Menores de Edad': shelterMenoresIcon,
-  phone: phoneIcon,
-  Oficial: parliamentIcon,
-  ONG: ngoIcon,
-};
-
-export const leafletIcons = objectMap(
-  plainIcons,
-  i => new Icon({ iconUrl: i }),
-);
+export function getLeafletIcon(type) {
+  return new LeafletIcon({
+    iconUrl: SVGMap[type] || SVGMap.default,
+  });
+}
+export function getPlainIcon(type) {
+  return (
+    <MaterialIcon>
+      <img align="middle" src={SVGMap[type] || SVGMap.default} />
+    </MaterialIcon>
+  );
+}

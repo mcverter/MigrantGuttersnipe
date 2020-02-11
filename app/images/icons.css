@@ -1,0 +1,15 @@
+.leaflet-marker-icon {
+  display: block;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px #888;
+  padding: 0.5em 0.6em;
+  background-color: #f0fffe
+}
+
+.material-icons > img {
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px #888;
+  background-color: #bafffa;
+  display: block;
+  margin: auto;
+}
