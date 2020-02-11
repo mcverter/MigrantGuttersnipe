@@ -13,14 +13,11 @@ import HomePage from '../HomePage';
 import RegionPage from '../RegionPage';
 import ShareableDetailPage from '../ShareableDetailPage';
 import GlobalStyle from '../../global-styles';
-import { shareablesByKey, shareablesByRegion } from '../../data';
-import MPE from '../../../tutorials/markerpopupexample/index';
 
 export default function App() {
   return (
     <div>
       <Switch>
-        <Route path="/MPE" component={MPE} />
         <Route
           path="/elnumerodelalista"
           component={() => {
@@ -36,22 +33,10 @@ export default function App() {
             let { url } = props.match;
             url = url.substr(1);
             if (url.match(/^[a-zA-Z]*$/)) {
-              return (
-                <RegionPage
-                  {...props}
-                  shareablesByRegion={shareablesByRegion}
-                  regionID={url}
-                />
-              );
+              return <RegionPage {...props} />;
             }
             if (url.match(/^[0-9]*$/)) {
-              return (
-                <ShareableDetailPage
-                  {...props}
-                  shareablesByKey={shareablesByKey}
-                  shareableID={url}
-                />
-              );
+              return <ShareableDetailPage {...props} />;
             }
             return <HomePage {...props} />;
           }}
