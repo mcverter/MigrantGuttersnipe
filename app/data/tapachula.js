@@ -12,7 +12,7 @@ const tapachula = {
       address:
         '21a Oriente  #22, entre 9a y 11a Avenida Norte, Colonia Lomas del Soconusco, Tapachula, Chiapas, MX',
       phones: ['+52 962 642 5198', '+52 962 642 5199'],
-      hours: 'Lunes a viernes, 8:30-16:00 hrs',
+      hours: ['Lunes a viernes, 8:30-16:00 hrs'],
       route: 'Lomas del Soconusco, FOVISSTE',
     },
     {
@@ -36,7 +36,7 @@ const tapachula = {
       address:
         '4a Avenida Sur #6, Colonia Centro, Tapachula de Córdova y Ordoñez, Chis.',
       phones: ['+52 962 642 5098'],
-      hours: 'Lunes a Viernes, 9 a 17 h.',
+      hours: ['Lunes a Viernes, 9 a 17 h.'],
       contacted: 'yes',
     },
     {
@@ -50,7 +50,7 @@ const tapachula = {
         'Calle 19a Oriente #38, Colonia Centro, 30700 Tapachula, Chiapas, MX',
       phones: ['+52 962 625 6961', '+52 962 196 3717'],
       route: ['Lomas del Soconusco', 'FOVISSTE'],
-      hours: 'Lunes a Viernes, 9 a 14 h',
+      hours: ['Lunes a Viernes, 9 a 14 h'],
       websites: [
         'https://www.facebook.com/JesuitRefugeeService/',
         'https://jrs.net/es/home/',
@@ -79,7 +79,7 @@ const tapachula = {
       coordinates: [-92.2463404, 14.887187],
       address: 'Av. Hidalgo #2, Colonia San Antonio Cahoacán. ',
       phones: ['+52 962 625 4812', '+52 962 620 6176'],
-      hours: 'Diariamente 8:00 -20:00 hrs',
+      hours: ['Diariamente 8:00 -20:00 hrs'],
       route: 'Venustiano Carranza',
       websites: [
         'http://www.migrante.com.mx/tapachula.html',
@@ -97,7 +97,7 @@ const tapachula = {
       address:
         'Calle 3a Norte Numero 1, entre Central y 1a Oriente, Colonia Centro, Tapachula, Chiapas, Mexico',
       phones: ['+52 962 628 7705', '+52 934 110 6095'],
-      hours: 'Lunes a Viernes, 8 a 16 h',
+      hours: ['Lunes a Viernes, 8 a 16 h'],
     },
     {
       region: 'Tapachula',
@@ -110,7 +110,7 @@ const tapachula = {
         '8A. Av. norte 16B, , entre 19a y 21a Poniente, Los Naranjos, 5 de Febrero, 30710 Tapachula de Córdova y Ordoñez, Chis., Mexico',
       phones: ['+52 962 626 5294'],
       route: '5 de Febrero',
-      hours: 'Diariamente, 8:00-20:00 hrs',
+      hours: ['Diariamente, 8:00-20:00 hrs'],
     },
     {
       region: 'Tapachula',
@@ -122,7 +122,7 @@ const tapachula = {
       address:
         'Central Oriente y 3a Norte, camino al panteón, s/n, entre Los Pinos y Los Cafetales.',
       phones: [],
-      hours: '8 a 20h.',
+      hours: ['8 a 20h.'],
     },
     {
       region: 'Tapachula',
@@ -135,7 +135,7 @@ const tapachula = {
         'Carretera a puerto Madero, s/n, Col. Feliciano Renauld, C.P. 30825, Chis. ',
       phones: [],
       websites: ['http://www.hospitaltapachula.salud.gob.mx/'],
-      hours: 'Emergencias. Abierto las 24 horas.',
+      hours: ['Emergencias. Abierto las 24 horas.'],
     },
     {
       region: 'Tapachula',
@@ -148,7 +148,7 @@ const tapachula = {
         'Avenida Central Norte #168, Colonia 5 de Febrero, Tapachula, Chiapas, Mexico',
       phones: ['+ 52 962 626 7896'],
       notes: 'Atención al colectivo lgbt+ .',
-      hours: 'Lunes a Viernes, 8:00-20:00 hrs',
+      hours: ['Lunes a Viernes, 8:00-20:00 hrs'],
       websites: ['https://www.facebook.com/UMALCS/'],
     },
     {
@@ -161,7 +161,7 @@ const tapachula = {
       address:
         'Avenida 13a Norte #87, entre 19 y 21 Calle Oriente.,  Barrio Nuevo, Tapachula, Chiapas, MX',
       phones: ['+52 962 626 1041'],
-      hours: 'Lunes a Viernes:  8-18 h, Sabado 8a-14h.',
+      hours: ['Lunes a Viernes:  8-18 h, Sabado 8a-14h.'],
       route: ['Bonanza por 3era', 'FOVISSTE'],
     },
     {
@@ -175,7 +175,7 @@ const tapachula = {
         '15A. Oriente 20A, entre 3era y 5era Avenida Norte, Los Naranjos, Centro, 30830 Centro, Tapachula, Chiapas, MX',
       phones: ['+52 962 620 1466'],
       route: ['Lomas del Soconusco'],
-      hours: 'Lunes a Viernes: 9 a 19 h.',
+      hours: ['Lunes a Viernes: 9 a 19 h.'],
       websites: ['http://cndh.org.mx'],
     },
     {
@@ -190,7 +190,7 @@ const tapachula = {
         'Boulevard Díaz Ordáz #9, Colonia Lomas de Sayula, Tapachula, Mexico',
       phones: ['+52 962 626 7633'],
       route: ['FOVISSTE', 'Bonanza por 3era'],
-      hours: 'Lunes a Viernes: 9 a 21 h. Sábado: 10 a 14 h.',
+      hours: ['Lunes a Viernes: 9 a 21 h. Sábado: 10 a 14 h.'],
     },
     {
       region: 'Tapachula',
@@ -213,8 +213,9 @@ const tapachula = {
       coordinates: [-92.135, 16.255],
       address: 'Comitan, Chiapas, Mexico',
       phones: ['+52 963 135 9422'],
-      description:
+      description: [
         'Defensora integral de Derechos Human@s de migrantes principalmente irregulares y/o refugiad@s: Niñez, adolescencia, familias y comunidad LGBTTTIQ+ en Comitán, Chiapas, México. Apoyo gratuito.  Conocenos y Dona',
+      ],
       websites: [
         'kaltsilaltik_colectivo@hotmail.com',
         'https://www.facebook.com/Kaltsilaltik/',
@@ -231,7 +232,7 @@ const tapachula = {
       coordinates: [-92.1346714, 16.2540607],
       address: '3a Av. Oriente Norte, Barrio La Pila, Comitan, Chiapas, Mexico',
       phones: ['+52 963 632 8400 '],
-      description: 'lamoradacomitan@gmail.com',
+      description: ['lamoradacomitan@gmail.com'],
       websites: ['lamoradacomitan@gmail.com'],
     },
     {
@@ -244,8 +245,9 @@ const tapachula = {
       address:
         'Prolongación 1 ° de Marzo # 47; Barrio de San Ramón, San Cristóbal de las Casas, Chiapas',
       phones: ['+52 967 678 2776'],
-      description:
+      description: [
         'El Servicio Pastoral a Migrantes San Martín de Porres es un centro de acogida para migrantes, donde se proporcione comida, apoyo espiritual, orientación así como defensa y promoción de los derechos humanos.',
+      ],
       websites: [
         'https://www.facebook.com/Servicio-Pastoral-a-Migrantes-San-Mart%C3%ADn-de-Porres-1019423034811649/',
         'sepamismp@gmail.com',
@@ -261,8 +263,9 @@ const tapachula = {
       address:
         'Pasa la vía, Xkichan, mano izquierda, 1o A,cuadra a la derecha, Palenque, MX',
       phones: ['+52 916 345 2497'],
-      description:
+      description: [
         'La casa del Caminante Jtatic Samuel Ruiz García, es una asociación civil que brinda albergue a los migrantes en tránsito y asesoría legal gratuita a aquellos en busca de asilo. Administrado por las hermanas Vicentinas.',
+      ],
       websites: [
         'https://www.facebook.com/Casa-del-Caminante-Jtatic-Samuel-Ruiz-Garc%C3%ADa-966647866711530/',
         'casadelcaminante@gmail.com',
@@ -288,7 +291,7 @@ const tapachula = {
       address:
         '8a Avenida Sur esquina 4a Poniente, Los Naranjos, Centro, 30830 Tapachula de Córdova y Ordoñez, Chis., Mexico',
       phones: ['+52 962-642 5318', '+962 642 5319'],
-      hours: 'Lunes a viernes, 8:30-16:00 hrs.',
+      hours: ['Lunes a viernes, 8:30-16:00 hrs.'],
     },
     {
       region: 'Tapachula',
@@ -299,7 +302,7 @@ const tapachula = {
       coordinates: [-92.2858998, 14.8907758],
       address: 'No. 435, Col. Las Vegas, Tapachula, Chiapas, MX',
       phones: [],
-      hours: 'Lunes a viernes, 8:30-16:00 hrs.',
+      hours: ['Lunes a viernes, 8:30-16:00 hrs.'],
       route: ['COBACH', 'Solidaridad 2000'],
     },
     {
@@ -311,7 +314,7 @@ const tapachula = {
       coordinates: [-91.4331462, 17.461921],
       address: 'Estación Nueva N° 86901, Tenosique de Pino Suárez, Tobasco, MX',
       phones: ['+52 934 342 1111'],
-      hours: 'Lunes a viernes, 8:30-16:00 hrs.',
+      hours: ['Lunes a viernes, 8:30-16:00 hrs.'],
       route: ['COBACH', 'Solidaridad 2000'],
     },
     {
