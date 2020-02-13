@@ -3,9 +3,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './styles.scss';
 import Button from '@material-ui/core/Button';
-
-const GoogleMapsOpener = place => {
-  const { coordinates, google_place_id, name, address } = place;
+import DirectionsIcon from '@material-ui/icons/DirectionsRounded';
+const GoogleMapsOpener = ({ shareable }) => {
+  const { coordinates, google_place_id, name, address } = shareable;
   const openGoogleMaps = () => {
     const placeOnly = () => {
       let placeURL = `https://www.google.com/maps/search/?api=1&query=${
@@ -49,7 +49,9 @@ const GoogleMapsOpener = place => {
 
   return (
     <Button
-      type="primary"
+      variant="contained"
+      color="primary"
+      startIcon={<DirectionsIcon />}
       onClick={() => {
         openGoogleMaps();
       }}
@@ -59,6 +61,8 @@ const GoogleMapsOpener = place => {
   );
 };
 
-GoogleMapsOpener.propTypes = {};
+GoogleMapsOpener.propTypes = {
+  shareable: PropTypes.object.isRequired,
+};
 
 export default GoogleMapsOpener;

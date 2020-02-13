@@ -1,37 +1,97 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import PropTypes from 'prop-types';
 import Grid from '@material-ui/core/Grid';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { Link } from 'react-router-dom';
-
-
 import Paper from '@material-ui/core/Paper';
-import Card from '@material-ui/core/Card';
-import CardMedia from '@material-ui/core/CardContent';
-import CardContent from '@material-ui/core/CardMedia';
-
+import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import { plainIcons } from '../../images';
+import PhoneIcon from '@material-ui/icons/Phone';
+import { getPlainIcon } from '../../images';
 import GoogleMapsOpener from '../../components/GoogleMapsOpener';
-const isNonEmptyArray = arr => arr && Array.isArray(arr) && arr.length > 0
+import './styles.css';
 
-const NamePanel = ({ name }) => (
-  <Paper variant="outlined" elevation="2">
-    <Typography variant="h5" color="textSecondary">
-      {name}
-    </Typography>
-  </Paper>
+const useStyles = makeStyles(theme => ({
+  root: {
+    flexGrow: 1,
+    margin: theme.spacing(2),
+  },
+  item: {
+    padding: theme.spacing(1),
+  },
+}));
+
+const isNonEmptyArray = arr => arr && Array.isArray(arr) && arr.length > 0;
+
+const FieldTitle = ({ title }) => (
+  <Typography variant="h6" color="primary">
+    {title}
+  </Typography>
+);
+
+const TextPanel = ({
+                     title,
+                     text,
+                     typography = {},
+                     paper = { variant: 'outlined', elevation: 2 },
+                   }) => (
+  <Grid item>
+    <Paper {...paper}>
+      <FieldTitle title={title} />
+      <Typography {...typography}>{text}</Typography>
+    </Paper>
+  </Grid>
+);
+
+const ListingPanel = ({
+                        title,
+                        listingArray,
+                        typography = {},
+                        paper = { variant: 'outlined', elevation: 2 },
+                      }) => (
+  <Grid item>
+    <Paper {...paper}>
+      <FieldTitle title={title} />
+      <Typography {...typography}>
+        {listingArray.map((la, idx) => (
+          <li key={ idx }>{la}</li>
+        ))}
+      </Typography>
+    </Paper>
+  </Grid>
+);
+
+const LongTextPanel = ({
+                         title,
+                         textArray,
+                         typography = {},
+                         paper = { variant: 'outlined', elevation: 2 },
+                       }) => (
+  <Grid item>
+    <Paper {...paper}>
+      <FieldTitle title={title} />
+      <Typography {...typography}>
+        {textArray.map((ta, idx) => (
+          <Fragment key={ idx }>
+            {ta}
+            <br />
+          </Fragment>
+        ))}
+      </Typography>
+    </Paper>
+  </Grid>
 );
 
 const AddressPanel = ({ address, shareable }) => (
-  <Paper>
-    <Typography variant="body1">
-      {address}
-    </Typography>
-    <GoogleMapsOpener {...shareable} />
-  </Paper>
+  <Grid item>
+    <Paper variant="outlined" elevation={2}>
+      <FieldTitle title="dirección" />
+      <Typography variant="body1">{address}</Typography>
+      <GoogleMapsOpener shareable={shareable} />
+    </Paper>
+  </Grid>
 );
 
 const PhoneItem = ({ phone }) => {
@@ -41,75 +101,71 @@ const PhoneItem = ({ phone }) => {
   }
 
   return (
-    <Paper key={phone}>
-      <Card>
-        <span>
-          <img align="left" src={plainIcons.phone} alt="phone"/>
-        </span>
-        {phone}
-      </Card>
-      <Button variant="contained" color="primary" onClick={makePhoneCall}>
-        LLAMAR
+    <div>
+      <Button
+        variant="contained"
+        color="primary"
+        onClick={makePhoneCall}
+        startIcon={<PhoneIcon />}
+      >
+        LLAMAR {phone}
       </Button>
-    </Paper>
+    </div>
   );
 };
 
-const PhonesPanel = ({ phones }) => (
-  isNonEmptyArray(phones) ?
-    (<Paper>{phones.map(p => <PhoneItem phone={p}/>)}</Paper>) : null
-)
-
-const WebsitesPanel = ({websites}) => (
-  isNonEmptyArray(websites) ?
-    <Paper>
-      Sitios de Web
-      <ul>
-        {websites.map((w, idx) => (
-          <li key={ idx }>
-            {w.search('@') === -1 ? (
-              <a href={w} target="_blank">
-                {w}
-              </a>
-            ) : (
-              <a href={`mailto:${w}`}>{w}</a>
-            )}
-          </li>
+const PhonesPanel = ({ phones }) =>
+  isNonEmptyArray(phones) ? (
+    <Grid item>
+      <Paper variant="outlined" elevation={2}>
+        <FieldTitle title="telefones" />
+        {phones.map(p => (
+          <PhoneItem phone={p} key={p} />
         ))}
-      </ul>
-    </Paper> : null
-)
+      </Paper>
+    </Grid>
+  ) : (
+    ''
+  );
 
-const TypePanel = ({ type }) =>  (
-  <Card>
-    <Typography variant="body1">
-      <CardMedia
-        align="left"
-        src={plainIcons[type]}
-      />
-      &nbsp;
-      <CardContent>{type}</CardContent>
-    </Typography>
-  </Card>
-)
-const HoursPanel = ({ hours }) =>  (<Paper>{hours}</Paper>);
-const DescriptionPanel = ({ description }) => (<div>{description}</div>)
-const NotesPanel = ({ notes }) => (<div>{notes}</div>)
-const FeaturesPanel = ({ features }) => (
-  isNonEmptyArray(features) ?
-    <ul>
-      {features && features.map((f, idx) => <li key={idx}>{f}</li>)}
-    </ul> : null
+const WebsitesPanel = ({ websites }) =>
+  isNonEmptyArray(websites) ? (
+    <Grid item>
+      <Paper variant="outlined" elevation={2}>
+        <FieldTitle title="sitios de web" />
+        <ul>
+          {websites.map((w, idx) => (
+            <li key={idx}>
+              {w.search('@') === -1 ? (
+                <a href={w} target="_blank">
+                  {w}
+                </a>
+              ) : (
+                <a href={`mailto:${w}`}>{w}</a>
+              )}
+            </li>
+          ))}
+        </ul>
+      </Paper>
+    </Grid>
+  ) : null;
+
+const TypePanel = ({ type }) => (
+  <Grid item>
+    <Paper variant="outlined" elevation={2}>
+      <FieldTitle title="categoria" />
+      <Typography variant="body1">
+        {getPlainIcon(type)}
+        &nbsp;
+        {type}
+      </Typography>
+    </Paper>
+  </Grid>
 );
-
-
-
-
-
 
 function ShareableDetailPage(props) {
   const { shareableID, shareablesByKey } = props;
-  const shareable = shareablesByKey[shareableID.substring(1)];
+  const shareable = shareablesByKey[shareableID];
   const {
     name,
     type,
@@ -122,72 +178,91 @@ function ShareableDetailPage(props) {
     hours,
   } = shareable;
 
+  const classes = useStyles();
+
   return (
-    <Grid container spacing={1} padding={2} alignItems="center" justify="space-around">
-      <div>
-        {name && <Grid item><NamePanel name={name} type={type} /></Grid>}
-        {features && <Grid item><FeaturesPanel features={features} /></Grid> }
-        {description && <Grid item><DescriptionPanel description={description} /></Grid> }
-        {address && <Grid item><AddressPanel address={address} /></Grid>}
-        {phones && <Grid item><PhonesPanel phone={phones} /></Grid>}
-      </div>
-      <Link to={`/${shareable.region}`}>
-        <h1> Mapa de Recursos en {shareable.region}</h1>
-      </Link>
-    </Grid>
+    <div className={classes.root}>
+      <Grid
+        container
+        spacing={1}
+        padding={2}
+        alignItems="stretch"
+        direction="column"
+        justify="space-around"
+      >
+        {name && (
+          <TextPanel
+            title="nombre"
+            typography={{ variant: 'h5', color: 'textSecondary' }}
+            text={name}
+          />
+        )}
+        {type && <TypePanel type={type} />}
+        {features && <ListingPanel listingArray={features} title="servicios" />}
+        {address && <AddressPanel address={address} shareable={shareable} />}
+        {phones && <PhonesPanel phones={phones} />}
+        {websites && <WebsitesPanel websites={websites} />}
+        {hours && <ListingPanel listingArray={hours} title="horario" />}
+        {description && (
+          <LongTextPanel textArray={description} title="descripción" />
+        )}
+        {notes && <LongTextPanel textArray={notes} title="notas adicionales" />}
+        <Grid item>
+          <Link to={`/${shareable.region}`}>
+            <h1> Mapa de Recursos en {shareable.region}</h1>
+          </Link>
+        </Grid>
+      </Grid>
+    </div>
   );
 }
 
-const mapStateToProps = state => {
-  return ({
-    shareableID: state.router.location.pathname,
-    shareablesByKey: state.App.shareablesByKey
-  })};
-
-const withConnect = connect(
-  mapStateToProps
-);
-
-
-NamePanel.propTypes = {
-  name: PropTypes.string,
-}
+const withConnect = connect();
 
 AddressPanel.propTypes = {
-  address: PropTypes.string,
-  shareable: PropTypes.object,
-}
+  address: PropTypes.string.isRequired,
+  shareable: PropTypes.object.isRequired,
+};
 
 PhoneItem.propTypes = {
-  phone: PropTypes.string,
-}
+  phone: PropTypes.string.isRequired,
+};
 
 PhonesPanel.propTypes = {
   phones: PropTypes.array,
-}
+};
 
 WebsitesPanel.propTypes = {
   websites: PropTypes.array,
-}
+};
 
 TypePanel.propTypes = {
-  type: PropTypes.string,
-}
+  type: PropTypes.string.isRequired,
+};
 
-HoursPanel.propTypes = {
-  hours: PropTypes.string,
-}
+ListingPanel.propTypes = {
+  title: PropTypes.string.isRequired,
+  listingArray: PropTypes.array.isRequired,
+  typography: PropTypes.object,
+  paper: PropTypes.object,
+};
 
-DescriptionPanel.propTypes = {
-  description: PropTypes.string,
-}
+LongTextPanel.propTypes = {
+  title: PropTypes.string.isRequired,
+  textArray: PropTypes.array.isRequired,
+  typography: PropTypes.object,
+  paper: PropTypes.object,
+};
 
-NotesPanel.propTypes = {
-  notes: PropTypes.string,
-}
+FieldTitle.propTypes = {
+  title: PropTypes.string.isRequired,
+};
 
-FeaturesPanel.propTypes = {
-  features: PropTypes.array,
-}
+TextPanel.propTypes = {
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  typography: PropTypes.object,
+  paper: PropTypes.object,
+};
 
 export default compose(withConnect)(ShareableDetailPage);

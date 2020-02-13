@@ -6,15 +6,11 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { compose } from 'redux';
 
 import GuttersnipeMap from '../GuttersnipeMap';
 
 export function RegionPage(props) {
-  const { region, shareablesByRegion } = props;
-  const regionID =
-    region.charAt(1).toUpperCase() + region.substring(2).toLowerCase();
+  const { regionID, shareablesByRegion } = props;
   const data = shareablesByRegion[regionID];
   const { center, zoom, shareables } = data;
 
@@ -29,11 +25,9 @@ export function RegionPage(props) {
   );
 }
 
-const mapStateToProps = state => ({
-  region: state.router.location.pathname,
-  shareablesByRegion: state.App.shareablesByRegion,
-});
+RegionPage.propTypes = {
+  regionID: PropTypes.string.isRequired,
+  shareablesByRegion: PropTypes.object.isRequired,
+};
 
-const withConnect = connect(mapStateToProps);
-
-export default compose(withConnect)(RegionPage);
+export default RegionPage;

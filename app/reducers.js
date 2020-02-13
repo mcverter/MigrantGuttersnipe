@@ -4,11 +4,11 @@
 
 import { combineReducers } from 'redux';
 import { connectRouter } from 'connected-react-router';
-import { shareablesByKey, shareablesByRegion } from './data/index';
 
 import history from 'utils/history';
 import languageProviderReducer from 'containers/LanguageProvider/reducer';
-import AppReducer from 'containers/App/reducer'
+import AppReducer from 'containers/App/reducer';
+import { shareablesByKey, shareablesByRegion } from './data/index';
 
 /**
  * Merges the main reducer with the router state and dynamically injected reducers

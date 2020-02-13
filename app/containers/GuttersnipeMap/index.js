@@ -72,12 +72,13 @@ class GuttersnipeMap extends Component {
     return (
       <div>
         <ShareablesMenu
-          onListItemClicked={this.showMarkerPopup.bind(this)}
+          onListItemClicked={this.showMarkerPopup}
           shareables={this.state.shareables}
           title={title}
         />
         <Map
-          className="Map" ref={mapRef}
+          className="Map"
+          ref={mapRef}
           center={[this.state.lat, this.state.lng]}
           zoom={this.state.zoom}
           style={{ width: '100vw', height: '70vh' }}

@@ -102,5 +102,5 @@ export default function ShareableMenu(props) {
 ShareableMenu.propTypes = {
   shareables: PropTypes.array,
   onListItemClicked: PropTypes.func,
-  title: PropTypes.string
-}
+  title: PropTypes.string,
+};

@@ -13,6 +13,7 @@ import HomePage from '../HomePage';
 import RegionPage from '../RegionPage';
 import ShareableDetailPage from '../ShareableDetailPage';
 import GlobalStyle from '../../global-styles';
+import { shareablesByRegion, shareablesByKey } from '../../data';
 
 export default function App() {
   return (
@@ -33,15 +34,24 @@ export default function App() {
             let { url } = props.match;
             url = url.substr(1);
             if (url.match(/^[a-zA-Z]*$/)) {
-              return <RegionPage {...props} />;
+              return (
+                <RegionPage
+                  shareablesByRegion={shareablesByRegion}
+                  regionID={url}
+                />
+              );
             }
             if (url.match(/^[0-9]*$/)) {
-              return <ShareableDetailPage {...props} />;
+              return (
+                <ShareableDetailPage
+                  shareablesByKey={shareablesByKey}
+                  shareableID={url}
+                />
+              );
             }
             return <HomePage {...props} />;
           }}
         />
-
         <Route path="/" component={HomePage} />
         <Route component={HomePage} />
       </Switch>

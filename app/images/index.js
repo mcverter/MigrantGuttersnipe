@@ -13,6 +13,7 @@ import ComidaSVG from './silverware.svg';
 import AlbergueSVG from './home-floor-a.svg';
 import PhoneSVG from './phone.svg';
 import OficialSVG from './domain.svg';
+import DirectionsSVG from './3d_rotation-24px.svg';
 
 const SVGMap = {
   default: ONGSVG,
@@ -27,6 +28,7 @@ const SVGMap = {
   phone: PhoneSVG,
   Oficial: OficialSVG,
   ONG: ONGSVG,
+  directions: DirectionsSVG,
 };
 
 export function getLeafletIcon(type) {

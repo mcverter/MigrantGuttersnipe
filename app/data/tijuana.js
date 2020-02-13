@@ -11,11 +11,19 @@ const tijuana = {
       coordinates: [-117.036088, 32.537013],
       address: 'Calle Primera 8250, Zona Norte, Tijuana, MX',
       phones: ['+52 664 379 1818'],
-      description:
-        '<div><h3>Lunes - Sábado de 10AM-8PM</h3><ul><li>Se sirve comida de Lunes - Jueves a las 5pm (1 er piso. Comida no Bombas)</li><li>Acceso a la computadora (1 er piso)</li><li>Talleres de asilo en los Estados Unidos Martes - Jueves a las 10:00 am (español) y 12:30 taller en inglés. (3er piso, Al Otro Lado)</li><li>Consultas legales Martes - Jueves después de la charla conforme llegaron (3er piso, AOL).</li></ul></div>',
+      description: [
+        'Lunes - Sábado de 10AM-8PM',
+        ' * Se sirve comida de Lunes - Jueves a las 5pm (1 er piso. Comida no Bombas)',
+        ' * Acceso a la computadora (1 er piso)',
+        ' * Talleres de asilo en los Estados Unidos Martes - Jueves a las 10:00 am (español) y 12:30 taller en inglés. (3er piso, Al Otro Lado)',
+        ' * Consultas legales Martes - Jueves después de la charla conforme llegaron (3er piso, AOL).',
+      ],
 
-      hours:
-        '<ul><li>COMPUTADORES, CAFE: Lunes - Sábado de 10AM-8PM </li><li>COMIDA GRATIS: Lunes - Jueves a las 5pm </li><li>LEGAL: Martes - Jueves a las 10:00 am (español) y 12:30 (otras idiomas)</li></ul>',
+      hours: [
+        ' * COMPUTADORES, CAFE: Lunes - Sábado de 10AM-8PM ',
+        ' * COMIDA GRATIS: Lunes - Jueves a las 5pm ',
+        ' * LEGAL: Martes - Jueves a las 10:00 am (español) y 12:30 (otras idiomas)',
+      ],
     },
     {
       region: 'Tijuana',
@@ -25,9 +33,13 @@ const tijuana = {
       features: ['Accesso a Computadores', 'Donaciones'],
       coordinates: [-117.047227, 32.535897],
       address: '7310-A, Calle Primera, Zona Centro, Tijuana, MX',
-      description:
-        '<div>Se sirve comida de 12 -1 pm y 5 - 7pm de lunes a sábado</div><ul><li>Acceso a la computadora en horarios de comida</li><li>Donaciones disponibles: Ropa, Cobija, Kits de Higiene, Juguetes, etc. Lunes - Sábado durante las comidas (preguntar al llegar)</li><li>Selección de donaciones cada Viernes a las 5pm</li>',
-      hours: '<div>Lunes a Sábado, 12 -1 pm y 5 - 7pm</div>',
+      description: [
+        ' * Se sirve comida de 12 -1 pm y 5 - 7pm de lunes a sábado',
+        ' * Acceso a la computadora en horarios de comida',
+        ' * Donaciones disponibles: Ropa, Cobija, Kits de Higiene, Juguetes, etc. Lunes - Sábado durante las comidas (preguntar al llegar)',
+        ' * Selección de donaciones cada Viernes a las 5pm',
+      ],
+      hours: ['* Lunes a Sábado, 12 -1 pm y 5 - 7pm'],
     },
     {
       region: 'Tijuana',
@@ -40,8 +52,13 @@ const tijuana = {
         'On parle FRANCAIS',
         'Nou pale KREYOL',
       ],
-      description:
-        '<div>Lunes - Viernes de7AM-6PM y Sábado de 9AM-6PM</div> <ul><li>Taller gratuito sobre derechos de los migrantes y cómo presentar quejas</li><li>Acompañamiento legal por los migrantes en sus casos 9am - 5pm</li><li>Clases de idiomas (español e inglés)</li><li>Clases de computación</li><li>Clínica medica / servicios (2do piso, San Diego Border Dreamers) Lunes - viernes 9am- 2pm (provisionalmente se encuentran en Prevencasa)</li></ul>',
+      description: [
+        ' * Taller gratuito sobre derechos de los migrantes y cómo presentar quejas',
+        ' * Acompañamiento legal por los migrantes en sus casos 9am - 5pm',
+        ' * Clases de idiomas (español e inglés)',
+        ' * Clases de computación',
+        ' * Clínica medica / servicios (2do piso, San Diego Border Dreamers) Lunes - viernes 9am- 2pm (provisionalmente se encuentran en Prevencasa)',
+      ],
       coordinates: [-117.0343361, 32.538251],
       address:
         'Avenida Miguel Negrete 8350, Zona Urbana Rio, 22010, Tijuana, MX',
@@ -51,8 +68,12 @@ const tijuana = {
         'https://www.google.com/maps/d/viewer?mid=1nrt9x8tGdAqiw7vP_YdICSVrQdMTam7j&ll=32.53825100000002%2C-117.03433610000002&z=9',
         'https://www.espaciomigrante.org/',
       ],
-      hours:
-        '<ul><li>REFUGIO: Lunes - Viernes de7AM-6PM y Sábado de 9AM-6PM</li><li>SERVICIOS LEGALES: Lunes - Viernes 9am-5pm</li><li>SERVICIOS MEDICALES: Lunes-Viernes 9am-2pm</li></ul>',
+      hours: [
+        'Lunes - Viernes de7AM-6PM y Sábado de 9AM-6PM ',
+        ' * REFUGIO: Lunes - Viernes de7AM-6PM y Sábado de 9AM-6PM',
+        ' * SERVICIOS LEGALES: Lunes - Viernes 9am-5pm',
+        ' * SERVICIOS MEDICALES: Lunes-Viernes 9am-2pm',
+      ],
     },
     {
       region: 'Tijuana',
@@ -336,8 +357,8 @@ const tijuana = {
       coordinates: [-117.0470867, 32.538914],
       address: 'Baja California 7580, Zona Centro, Tijuana, MX',
       phones: ['+52 664 685 3392'],
-      description: '<div>gratis lunes a viernes de 9am a 2pm</div>',
-      hours: '<div>SERVICIOS MEDICOS: Lunes a Viernes de 9am a 2pm</div>',
+      description: ['Gratis lunes a viernes de 9am a 2pm'],
+      hours: [' * SERVICIOS MEDICOS: Lunes a Viernes de 9am a 2pm'],
     },
     {
       region: 'Tijuana',
@@ -347,8 +368,7 @@ const tijuana = {
       coordinates: [-117.0247348, 32.5238298],
       address: 'International Border Col. Federal C.P. 22310 Tijuana, B.C.',
       phones: ['+52 664 683 6101', '+52 664 682 4947'],
-      notes:
-        '<div>Email: <a href="mailto:bcdrbc@inami.gob.mx">bcdrbc@inami.gob.mx</a></div>',
+      websites: ['mailto:bcdrbc@inami.gob.mx'],
     },
     {
       region: 'Tijuana',
@@ -359,8 +379,18 @@ const tijuana = {
       address:
         'Avenida Revolución No. 1129, Interior 215, Zona Centro, C.P. 22000, Tijuana, B.C.',
       phones: ['+526648218008'],
-      description:
-        '<div><h2>Solicitando Asilo en México</h2><h5>NOTA: Si recibe el estado de asilo en México, puede afectar negativamente su asilo en E U.</h5><div>Para solicitar asilo, debe entregar una solicitud por escrito (o verbalmente si no puede presentarlo por escrito), y proporcionar su identificación y los motivos para apoyar su solicitud. Puede solicitar la condición de refugiado en la Comisión Mexicana de Ayuda a Refugiados (COMAR) (Ciudad de México), Acayucan (Veracruz),Tenosique (Tabasco),Tapachula (Chiapas) o en las Oficinas Reguladoras de Inmigración del Instituto Nacional de Migración. Debe entregar la solicitud dentro de los 30 días hábiles a partir de la fecha de ingreso al país. Si ha estado en México por más de 30 días, debe explicar por qué no pudo solicitar antes. Si no habla español, se le proporcionará un traductor o intérprete. La solicitud será revisada y resuelta dentro de 45 días hábiles a partir de la fecha de entrego.</div><div><ul> Al recibir el estado de asilo, debe recibir los siguientes derechos:<li>Servicios de salud</li><li>Educación y reconocimiento de tus estudios</li><li>El derecho al trabajo</li><li>Identidad y documentos de viaje emitidos por el Ministerio de Relaciones Exteriores y la capacidad de solicitar la reunificación familiar</li><li>Documento de inmigración que acredite su condición de residente permanente<li></ul></div><h3>Si necesita ayuda o tiene preguntas, comuniqúese con Asylum Access.</h3></div>',
+      description: [
+        'Solicitando Asilo en México',
+        'NOTA: Si recibe el estado de asilo en México, puede afectar negativamente su asilo en E U.',
+        'Para solicitar asilo, debe entregar una solicitud por escrito (o verbalmente si no puede presentarlo por escrito), y proporcionar su identificación y los motivos para apoyar su solicitud. Puede solicitar la condición de refugiado en la Comisión Mexicana de Ayuda a Refugiados (COMAR) (Ciudad de México), Acayucan (Veracruz),Tenosique (Tabasco),Tapachula (Chiapas) o en las Oficinas Reguladoras de Inmigración del Instituto Nacional de Migración. Debe entregar la solicitud dentro de los 30 días hábiles a partir de la fecha de ingreso al país. Si ha estado en México por más de 30 días, debe explicar por qué no pudo solicitar antes. Si no habla español, se le proporcionará un traductor o intérprete. La solicitud será revisada y resuelta dentro de 45 días hábiles a partir de la fecha de entrego.',
+        'Al recibir el estado de asilo, debe recibir los siguientes derechos:',
+        ' * Servicios de salud',
+        ' * Educación y reconocimiento de tus estudios',
+        ' * El derecho al trabajo',
+        ' * Identidad y documentos de viaje emitidos por el Ministerio de Relaciones Exteriores y la capacidad de solicitar la reunificación familiar',
+        ' * Documento de inmigración que acredite su condición de residente permanente',
+        'Si necesita ayuda o tiene preguntas, comuniqúese con Asylum Access.',
+      ],
       websites: ['http://www.asylumaccess.org'],
     },
     /*    {
@@ -372,9 +402,7 @@ name: 'Border Angels',
       coordinates: [],
       address: '',
       phones: [],
-      description: '',
-      hours: '',
-    }, */
+                }, */
     {
       region: 'Tijuana',
       name: 'Consulado de la Republica de El Salvador en Tijuana',
@@ -385,8 +413,8 @@ name: 'Border Angels',
       address:
         'Brigoz Corporativo, Interior pb3, José María Velazco 2789, Zona Urbana Rio Tijua, Zona Urbana Rio Tijuana, 22010 Tijuana, B.C',
       phones: ['+52 664 900 7148', '+52 664 634 0087'],
-      description: 'Atención a ciudadanos salvadoreños',
-      hours: 'Lunes a viernes, 9:00 a.m. - 5:00 p.m.',
+      description: ['Atención a ciudadanos salvadoreños'],
+      hours: [' * Lunes a viernes, 9:00 a.m. - 5:00 p.m.'],
       websites: ['https://goo.gl/maps/L7HAVmtD9v32'],
     },
     {
@@ -399,8 +427,8 @@ name: 'Border Angels',
       address:
         'Brigoz Corporativo, interior 303, José María Velazco 2789, Zona Urbana Río Tijuana, 22010 Tijuana, B.C.',
       phones: ['+52 664 900 7148', '+52 664 634 0087'],
-      description: 'Atención a ciudadanos guatemaltecos',
-      hours: 'Lunes a viernes, 9:00 a.m. - 5:00 p.m.',
+      description: ['Atención a ciudadanos guatemaltecos'],
+      hours: [' * Lunes a viernes, 9:00 a.m. - 5:00 p.m.'],
       websites: ['https://goo.gl/maps/L7HAVmtD9v32'],
     },
     {
@@ -412,9 +440,10 @@ name: 'Border Angels',
       coordinates: [-116.9460408, 32.5220422],
       address: 'Paseo de las Culturas S/N, Otay Mesa, Bosque de las Araucarias',
       phones: ['+52 664 977 2000'],
-      description:
+      description: [
         'Información sobre ingreso regular a EUA y servicios migratorios para residentes temporales y permanentes en México.',
-      hours: 'Lunes a viernes, 11:00 a.m. - 3:00 p.m.',
+      ],
+      hours: ['* Lunes a viernes, 11:00 a.m. - 3:00 p.m.'],
       websites: ['https://goo.gl/maps/tTwV5SL7BYK2'],
     },
   ],

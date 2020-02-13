@@ -45,7 +45,7 @@ function PopupDetail({ shareable, shareableKey }) {
 
 PopupDetail.propTypes = {
   shareable: PropTypes.object,
-  shareableKey: PropTypes.string
+  shareableKey: PropTypes.number,
 };
 
 export default PopupDetail;

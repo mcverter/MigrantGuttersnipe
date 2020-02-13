@@ -12,7 +12,6 @@ const tapachula = {
       address:
         '21a Oriente  #22, entre 9a y 11a Avenida Norte, Colonia Lomas del Soconusco, Tapachula, Chiapas, MX',
       phones: ['+52 962 642 5198', '+52 962 642 5199'],
-      description: '',
       hours: 'Lunes a viernes, 8:30-16:00 hrs',
       route: 'Lomas del Soconusco, FOVISSTE',
     },
@@ -24,9 +23,7 @@ const tapachula = {
       address:
         'Gustavo Díaz Ordaz #11, Los Naranjos, Bonanza, 30779 Tapachula de Córdova y Ordoñez, Chis., MX',
       phones: ['+52 962 642 5674', ' +52  962 625 6311'],
-      description: '',
       websites: ['https://mexico.iom.int/oficina-en-tapachula-chiapas'],
-      hours: '',
       contacted: 'yes',
     },
     {
@@ -39,7 +36,6 @@ const tapachula = {
       address:
         '4a Avenida Sur #6, Colonia Centro, Tapachula de Córdova y Ordoñez, Chis.',
       phones: ['+52 962 642 5098'],
-      description: '',
       hours: 'Lunes a Viernes, 9 a 17 h.',
       contacted: 'yes',
     },
@@ -53,7 +49,6 @@ const tapachula = {
       address:
         'Calle 19a Oriente #38, Colonia Centro, 30700 Tapachula, Chiapas, MX',
       phones: ['+52 962 625 6961', '+52 962 196 3717'],
-      description: '',
       route: ['Lomas del Soconusco', 'FOVISSTE'],
       hours: 'Lunes a Viernes, 9 a 14 h',
       websites: [
@@ -72,8 +67,6 @@ const tapachula = {
       address:
         'Camino a Raymundo Enríquez, Solidaridad, Ojo de Agua, 30700 Tapachula de Córdova y Ordoñez, Chis., Mexico',
       phones: [],
-      description: '',
-      hours: '',
       websites: ['http://www.alberguebuenpastor.org.mx/'],
       contacted: 'yes',
     },
@@ -104,7 +97,6 @@ const tapachula = {
       address:
         'Calle 3a Norte Numero 1, entre Central y 1a Oriente, Colonia Centro, Tapachula, Chiapas, Mexico',
       phones: ['+52 962 628 7705', '+52 934 110 6095'],
-      description: '',
       hours: 'Lunes a Viernes, 8 a 16 h',
     },
     {
@@ -117,7 +109,6 @@ const tapachula = {
       address:
         '8A. Av. norte 16B, , entre 19a y 21a Poniente, Los Naranjos, 5 de Febrero, 30710 Tapachula de Córdova y Ordoñez, Chis., Mexico',
       phones: ['+52 962 626 5294'],
-      description: '',
       route: '5 de Febrero',
       hours: 'Diariamente, 8:00-20:00 hrs',
     },
@@ -131,7 +122,6 @@ const tapachula = {
       address:
         'Central Oriente y 3a Norte, camino al panteón, s/n, entre Los Pinos y Los Cafetales.',
       phones: [],
-      description: '',
       hours: '8 a 20h.',
     },
     {
@@ -144,7 +134,6 @@ const tapachula = {
       address:
         'Carretera a puerto Madero, s/n, Col. Feliciano Renauld, C.P. 30825, Chis. ',
       phones: [],
-      description: '',
       websites: ['http://www.hospitaltapachula.salud.gob.mx/'],
       hours: 'Emergencias. Abierto las 24 horas.',
     },
@@ -172,7 +161,6 @@ const tapachula = {
       address:
         'Avenida 13a Norte #87, entre 19 y 21 Calle Oriente.,  Barrio Nuevo, Tapachula, Chiapas, MX',
       phones: ['+52 962 626 1041'],
-      description: '',
       hours: 'Lunes a Viernes:  8-18 h, Sabado 8a-14h.',
       route: ['Bonanza por 3era', 'FOVISSTE'],
     },
@@ -201,7 +189,6 @@ const tapachula = {
       address:
         'Boulevard Díaz Ordáz #9, Colonia Lomas de Sayula, Tapachula, Mexico',
       phones: ['+52 962 626 7633'],
-      description: '',
       route: ['FOVISSTE', 'Bonanza por 3era'],
       hours: 'Lunes a Viernes: 9 a 21 h. Sábado: 10 a 14 h.',
     },
@@ -216,8 +203,6 @@ const tapachula = {
       address:
         'Segunda Calle Norte Poniente. 238, Entre 2a y 3o Av, Centro, 30140 Frontera Comalapa, Chiapas, Mexico',
       phones: [],
-      description: '',
-      hours: '',
     },
     {
       region: 'Tapachula',
@@ -235,7 +220,6 @@ const tapachula = {
         'https://www.facebook.com/Kaltsilaltik/',
       ],
       contacted: 'yes',
-      hours: '',
     },
     {
       region: 'Tapachula',
@@ -249,7 +233,6 @@ const tapachula = {
       phones: ['+52 963 632 8400 '],
       description: 'lamoradacomitan@gmail.com',
       websites: ['lamoradacomitan@gmail.com'],
-      hours: '',
     },
     {
       region: 'Tapachula',
@@ -263,7 +246,6 @@ const tapachula = {
       phones: ['+52 967 678 2776'],
       description:
         'El Servicio Pastoral a Migrantes San Martín de Porres es un centro de acogida para migrantes, donde se proporcione comida, apoyo espiritual, orientación así como defensa y promoción de los derechos humanos.',
-      hours: '',
       websites: [
         'https://www.facebook.com/Servicio-Pastoral-a-Migrantes-San-Mart%C3%ADn-de-Porres-1019423034811649/',
         'sepamismp@gmail.com',
@@ -285,7 +267,6 @@ const tapachula = {
         'https://www.facebook.com/Casa-del-Caminante-Jtatic-Samuel-Ruiz-Garc%C3%ADa-966647866711530/',
         'casadelcaminante@gmail.com',
       ],
-      hours: '',
     },
     {
       region: 'Tapachula',
@@ -296,8 +277,6 @@ const tapachula = {
       coordinates: [-91.992548, 17.543319],
       address: 'Barrio San Francisco, Col. Pakal-ná, Palenque, Chiapas, Mexico',
       phones: [],
-      description: '',
-      hours: '',
     },
     {
       region: 'Tapachula',
@@ -309,7 +288,6 @@ const tapachula = {
       address:
         '8a Avenida Sur esquina 4a Poniente, Los Naranjos, Centro, 30830 Tapachula de Córdova y Ordoñez, Chis., Mexico',
       phones: ['+52 962-642 5318', '+962 642 5319'],
-      description: '',
       hours: 'Lunes a viernes, 8:30-16:00 hrs.',
     },
     {
@@ -321,7 +299,6 @@ const tapachula = {
       coordinates: [-92.2858998, 14.8907758],
       address: 'No. 435, Col. Las Vegas, Tapachula, Chiapas, MX',
       phones: [],
-      description: '',
       hours: 'Lunes a viernes, 8:30-16:00 hrs.',
       route: ['COBACH', 'Solidaridad 2000'],
     },
@@ -334,7 +311,6 @@ const tapachula = {
       coordinates: [-91.4331462, 17.461921],
       address: 'Estación Nueva N° 86901, Tenosique de Pino Suárez, Tobasco, MX',
       phones: ['+52 934 342 1111'],
-      description: '',
       hours: 'Lunes a viernes, 8:30-16:00 hrs.',
       route: ['COBACH', 'Solidaridad 2000'],
     },
