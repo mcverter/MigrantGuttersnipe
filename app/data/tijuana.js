@@ -142,7 +142,7 @@ const tijuana = {
         'http://www.salesianostijuana.org/',
         'https://www.google.com/maps/d/viewer?mid=1nrt9x8tGdAqiw7vP_YdICSVrQdMTam7j&ll=32.53675590000001%2C-117.032126&z=9',
       ],
-      hours: 'COMIDA GRATIS:  Desayuno Lunes-Sabado',
+      hours: ['COMIDA GRATIS:  Desayuno Lunes-Sabado'],
     },
     {
       region: 'Tijuana',

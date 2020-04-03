@@ -50,25 +50,30 @@ const ListingPanel = ({
                         listingArray,
                         typography = {},
                         paper = { variant: 'outlined', elevation: 2 },
-                      }) => (
-  <Grid item>
-    <Paper {...paper}>
-      <FieldTitle title={title} />
-      <Typography {...typography}>
-        {listingArray.map((la, idx) => (
-          <li key={ idx }>{la}</li>
-        ))}
-      </Typography>
-    </Paper>
-  </Grid>
-);
+                      }) => {
+  if (!listingArray) {return ""}
+  return (
+    <Grid item>
+      <Paper {...paper}>
+        <FieldTitle title={title} />
+        <Typography {...typography}>
+          {listingArray.map((la, idx) => (
+            <li key={ idx }>{la}</li>
+          ))}
+        </Typography>
+      </Paper>
+    </Grid>
+  )
+};
 
 const LongTextPanel = ({
                          title,
                          textArray,
                          typography = {},
                          paper = { variant: 'outlined', elevation: 2 },
-                       }) => (
+                       }) => {
+  if (!textArray) return "";
+  return (
   <Grid item>
     <Paper {...paper}>
       <FieldTitle title={title} />
@@ -82,7 +87,7 @@ const LongTextPanel = ({
       </Typography>
     </Paper>
   </Grid>
-);
+)};
 
 const AddressPanel = ({ address, shareable }) => (
   <Grid item>
@@ -198,15 +203,15 @@ function ShareableDetailPage(props) {
           />
         )}
         {type && <TypePanel type={type} />}
-        {features && <ListingPanel listingArray={features} title="servicios" />}
+        {features && Array.isArray(features) && <ListingPanel listingArray={features} title="servicios" />}
         {address && <AddressPanel address={address} shareable={shareable} />}
         {phones && <PhonesPanel phones={phones} />}
         {websites && <WebsitesPanel websites={websites} />}
-        {hours && <ListingPanel listingArray={hours} title="horario" />}
-        {description && (
+        {hours && Array.isArray(hours) && <ListingPanel listingArray={hours} title="horario" />}
+        {description && Array.isArray(description) &&  (
           <LongTextPanel textArray={description} title="descripción" />
         )}
-        {notes && <LongTextPanel textArray={notes} title="notas adicionales" />}
+        {notes && Array.isArray(notes) && <LongTextPanel textArray={notes} title="notas adicionales" />}
         <Grid item>
           <Link to={`/${shareable.region}`}>
             <h1> Mapa de Recursos en {shareable.region}</h1>
