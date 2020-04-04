@@ -12,3 +12,7 @@ export function makeKeyFromShareable(shareable) {
   const { coordinates, name } = shareable;
   return stringToHash(`${coordinates[1]}${coordinates[0]}${name}`);
 }
+
+export function isNonEmptyArray(arr) {
+  return arr && Array.isArray(arr) && arr.length > 0;
+}
