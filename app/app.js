@@ -29,7 +29,7 @@ import 'global-styles.scss';
 import 'file-loader?name=.htaccess!./.htaccess';
 /* eslint-enable import/no-unresolved, import/extensions */
 
-import configureStore from './configureStore';
+import configureStore from './configureStoreLoFiRedux';
 
 // Import i18n messages
 import { translationMessages } from './i18n';
@@ -38,6 +38,7 @@ import { translationMessages } from './i18n';
 const initialState = {};
 const store = configureStore(initialState, history);
 const MOUNT_NODE = document.getElementById('app');
+console.log(store)
 const render = messages => {
   ReactDOM.render(
     <Provider store={store}>

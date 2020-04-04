@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ShareableDetail from '../../components/ShareableDetail';
+import { connect } from 'react-redux'
+import { fetchAllShareables } from '../../redux/actions';
 
-function ShareableDetailPage(props) {
-  const { shareableID, shareablesByKey } = props;
-  const shareable = shareablesByKey[shareableID];
 
-  return <ShareableDetail shareable={shareable} />;
+class ShareableDetailPage extends Component  {
+  constructor(props){
+    super(props)
+  }
+
+  componentDidMount() {
+    const { dispatch} = this.props;
+    dispatch(dispatch(fetchAllShareables))
+  }
+
+  render() {
+    const { shareableID, shareablesByKey } = this.props;
+    const shareable = shareablesByKey[shareableID];
+
+    return <ShareableDetail shareable={shareable} />;
+  }
 }
 
 ShareableDetailPage.propTypes = {
@@ -14,4 +28,9 @@ ShareableDetailPage.propTypes = {
   shareablesByKey: PropTypes.object,
 };
 
-export default ShareableDetailPage;
+function mapStateToProps(state) {
+  return {}
+
+}
+
+export default connect(mapStateToProps)(ShareableDetailPage);
