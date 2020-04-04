@@ -24,7 +24,7 @@
         "google_place_id": "ChIJZ1wZ4gBJ2YARWk0pwqi7jp8",
         "type": "Comida",
         "features": ["Accesso a Computadores", "Servicios Legales"],
-        "coordinates": [-117.036088, 32.537013],
+        "coordinates": ["-117.036088", "32.537013"],
         "address": "Calle Primera 8250, Zona Norte, Tijuana, MX",
         "phones": ["+52 664 379 1818"],
         "description": [
@@ -46,7 +46,7 @@
         "google_place_id": "",
         "type": "Comida",
         "features": ["Accesso a Computadores", "Donaciones"],
-        "coordinates": [-117.047227, 32.535897],
+        "coordinates": ["-117.047227", "32.535897"],
         "address": "7310-A, Calle Primera, Zona Centro, Tijuana, MX",
         "description": [
           " * Se sirve comida de 12 -1 pm y 5 - 7pm de lunes a sábado",
@@ -74,7 +74,7 @@
           " * Clases de computación",
           " * Clínica medica / servicios (2do piso, San Diego Border Dreamers) Lunes - viernes 9am- 2pm (provisionalmente se encuentran en Prevencasa)"
         ],
-        "coordinates": [-117.0343361, 32.538251],
+        "coordinates": ["-117.0343361", "32.538251"],
         "address": "Avenida Miguel Negrete 8350, Zona Urbana Rio, 22010, Tijuana, MX",
         "phones": ["+52 664 471 0178"],
         "websites": [
@@ -94,7 +94,7 @@
         "name": "Templo Embajadores De Jesús",
         "google_place_id": "ChIJUXSOpiBK2YARCDKVIHgSAeA",
         "type": "Albergue -- Familias",
-        "coordinates": [-117.0797079, 32.5078566],
+        "coordinates": ["-117.0797079", "32.5078566"],
         "address": "Calle Cañón del Alacrán 4094, Divina Providencia, 22000, Tijuana, MX",
         "phones": ["+52 664 172 3591"],
         "websites": [
@@ -106,7 +106,7 @@
         "name": "Ejercito De Salvación",
         "google_place_id": "ChIJKba3hV5I2YAR1iuXz6fCASM",
         "type": "Albergue -- Solteros",
-        "coordinates": [-117.0124358, 32.5353128],
+        "coordinates": ["-117.0124358", "32.5353128"],
         "address": "Av. Aquiles Serdan 11585, Colonia Libertad, Parte Baja, 22300, Tijuana, MX",
         "phones": ["+52 664 683 2694"],
         "websites": [
@@ -119,7 +119,7 @@
         "name": "Ejercito De Salvación Casa Puerta de Esperanza",
         "google_place_id": "ChIJ3fFDU9xJ2YARSeh2Zwn55ow",
         "type": "Albergue -- Mujeres",
-        "coordinates": [-117.009651, 32.530813],
+        "coordinates": ["-117.009651", "32.530813"],
         "address": "Calle 17 N 550, Buena Vista, Libertad, 22400, Tijuana, MX",
         "phones": ["+52 664 378 1748"],
         "websites": [
@@ -132,7 +132,7 @@
         "name": "Casa del Migrante",
         "google_place_id": "ChIJdUzFv2xI2YARi8QKUo4bLHY",
         "type": "Albergue -- Solteros",
-        "coordinates": [-117.0017001, 32.5228819],
+        "coordinates": ["-117.0017001", "32.5228819"],
         "address": "Calle Galileo 239, Postal López Leyva, 22416, Tijuana, MX",
         "phones": ["+52 664 682 5180"],
         "websites": [
@@ -146,7 +146,7 @@
         "google_place_id": "ChIJ_V8Px_NF8oURCRI87BP69cc",
         "type": "ONG",
         "features": [],
-        "coordinates": [-91.992548, 17.543319],
+        "coordinates": ["-91.992548", "17.543319"],
         "address": "Barrio San Francisco, Col. Pakal-ná, Palenque, Chiapas, Mexico",
         "phones": []
       },
@@ -156,7 +156,7 @@
         "google_place_id": "ChIJo7CjgAoPjoURSDe10lqYjJs",
         "type": "Oficial",
         "features": [],
-        "coordinates": [-92.2704458, 14.9060729],
+        "coordinates": ["-92.2704458", "14.9060729"],
         "address": "8a Avenida Sur esquina 4a Poniente, Los Naranjos, Centro, 30830 Tapachula de Córdova y Ordoñez, Chis., Mexico",
         "phones": ["+52 962-642 5318", "+962 642 5319"],
         "hours": ["Lunes a viernes, 8:30-16:00 hrs."]
@@ -167,7 +167,7 @@
         "google_place_id": "ChIJv4MutPoPjoURfM8pSqfIzgU",
         "type": "Oficial",
         "features": [],
-        "coordinates": [-92.2858998, 14.8907758],
+        "coordinates": ["-92.2858998", "14.8907758"],
         "address": "No. 435, Col. Las Vegas, Tapachula, Chiapas, MX",
         "phones": [],
         "hours": ["Lunes a viernes, 8:30-16:00 hrs."],
@@ -179,7 +179,7 @@
         "google_place_id": "ChIJs76NKQ6a84URqRK0pOXX1OM",
         "type": "Albergue -- Familias",
         "features": [],
-        "coordinates": [-91.4331462, 17.461921],
+        "coordinates": ["-91.4331462", "17.461921"],
         "address": "Estación Nueva N° 86901, Tenosique de Pino Suárez, Tobasco, MX",
         "phones": ["+52 934 342 1111"],
         "hours": ["Lunes a viernes, 8:30-16:00 hrs."],
@@ -190,7 +190,7 @@
         "name": "Albergue Jesús Esperanza en el Camino.",
         "google_place_id": "ChIJj27QEVbY7IURaiFiRnu9eN0",
         "type": "Albergue",
-        "coordinates": [-93.1646752, 16.7460768],
+        "coordinates": ["-93.1646752", "16.7460768"],
         "address": "Primera Calle Poniente y 16 Sur #1664, Tuxtla Gutierrez Chis MX",
         "websites": ["movilidadmt25@hotmail.com"]
       },
@@ -199,7 +199,7 @@
         "name": "Una Ayuda Para Ti Mujer Migrante A,C.",
         "type": "ONG",
         "google_place_id": "ChIJj27QEVbY7IURaiFiRnu9eN0",
-        "coordinates": [-93.1646752, 16.7460768],
+        "coordinates": ["-93.1646752", "16.7460768"],
         "phones": ["+52	961 61 67 903"]
       }
     ]
