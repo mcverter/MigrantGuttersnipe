@@ -15,6 +15,7 @@
       "zoom": 7
     }
   },
+
   "shareables": [
     {
       "region": "Tijuana",
@@ -71,115 +72,6 @@
       ]
     },
     {
-      "region": "Tijuana",
-      "name": "Espacio Migrante",
-      "google_place_id": "ChIJ4fG8sHtJ2YARFrfH8abHp2Q",
-      "type": "Albergue -- Familias",
-      "features": [
-        "Servicios Legales",
-        "Servicios Medicos",
-        "On parle FRANCAIS",
-        "Nou pale KREYOL"
-      ],
-      "description": [
-        " * Taller gratuito sobre derechos de los migrantes y cómo presentar quejas",
-        " * Acompañamiento legal por los migrantes en sus casos 9am - 5pm",
-        " * Clases de idiomas (español e inglés)",
-        " * Clases de computación",
-        " * Clínica medica / servicios (2do piso, San Diego Border Dreamers) Lunes - viernes 9am- 2pm (provisionalmente se encuentran en Prevencasa)"
-      ],
-      "coordinates": [
-        -117.0343361,
-        32.538251
-      ],
-      "address": "Avenida Miguel Negrete 8350, Zona Urbana Rio, 22010, Tijuana, MX",
-      "phones": [
-        "+52 664 471 0178"
-      ],
-      "websites": [
-        "http://www.facebook.com/Espacio-Migrante-175756395879089",
-        "https://www.google.com/maps/d/viewer?mid=1nrt9x8tGdAqiw7vP_YdICSVrQdMTam7j&ll=32.53825100000002%2C-117.03433610000002&z=9",
-        "https://www.espaciomigrante.org/"
-      ],
-      "hours": [
-        "Lunes - Viernes de7AM-6PM y Sábado de 9AM-6PM ",
-        " * REFUGIO: Lunes - Viernes de7AM-6PM y Sábado de 9AM-6PM",
-        " * SERVICIOS LEGALES: Lunes - Viernes 9am-5pm",
-        " * SERVICIOS MEDICALES: Lunes-Viernes 9am-2pm"
-      ]
-    },
-    {
-      "region": "Tijuana",
-      "name": "Templo Embajadores De Jesús",
-      "google_place_id": "ChIJUXSOpiBK2YARCDKVIHgSAeA",
-      "type": "Albergue -- Familias",
-      "coordinates": [
-        -117.0797079,
-        32.5078566
-      ],
-      "address": "Calle Cañón del Alacrán 4094, Divina Providencia, 22000, Tijuana, MX",
-      "phones": [
-        "+52 664 172 3591"
-      ],
-      "websites": [
-        "https://www.google.com/maps/d/viewer?mid=1nrt9x8tGdAqiw7vP_YdICSVrQdMTam7j&ll=32.5078566%2C-117.07970790000002&z=10"
-      ]
-    },
-    {
-      "region": "Tijuana",
-      "name": "Ejercito De Salvación",
-      "google_place_id": "ChIJKba3hV5I2YAR1iuXz6fCASM",
-      "type": "Albergue -- Solteros",
-      "coordinates": [
-        -117.0124358,
-        32.5353128
-      ],
-      "address": "Av. Aquiles Serdan 11585, Colonia Libertad, Parte Baja, 22300, Tijuana, MX",
-      "phones": [
-        "+52 664 683 2694"
-      ],
-      "websites": [
-        "http://www.ejercitodesalvacion.mx/",
-        "https://www.google.com/maps/d/viewer?mid=1nrt9x8tGdAqiw7vP_YdICSVrQdMTam7j&ll=32.53531280000001%2C-117.01243579999999&z=9"
-      ]
-    },
-    {
-      "region": "Tijuana",
-      "name": "Ejercito De Salvación Casa Puerta de Esperanza",
-      "google_place_id": "ChIJ3fFDU9xJ2YARSeh2Zwn55ow",
-      "type": "Albergue -- Mujeres",
-      "coordinates": [
-        -117.009651,
-        32.530813
-      ],
-      "address": "Calle 17 N 550, Buena Vista, Libertad, 22400, Tijuana, MX",
-      "phones": [
-        "+52 664 378 1748"
-      ],
-      "websites": [
-        "http://www.ejercitodesalvacion.mx/",
-        "https://www.google.com/maps/d/viewer?mid=1nrt9x8tGdAqiw7vP_YdICSVrQdMTam7j&ll=32.530812999999995%2C-117.00965100000002&z=9"
-      ]
-    },
-    {
-      "region": "Tijuana",
-      "name": "Casa del Migrante",
-      "google_place_id": "ChIJdUzFv2xI2YARi8QKUo4bLHY",
-      "type": "Albergue -- Solteros",
-      "coordinates": [
-        -117.0017001,
-        32.5228819
-      ],
-      "address": "Calle Galileo 239, Postal López Leyva, 22416, Tijuana, MX",
-      "phones": [
-        "+52 664 682 5180"
-      ],
-      "websites": [
-        "http://www.migrante.com.mx/",
-        "https://www.google.com/maps/d/viewer?mid=1nrt9x8tGdAqiw7vP_YdICSVrQdMTam7j&ll=32.522881900000016%2C-117.0017001&z=9"
-      ]
-    },
-    {
       "region": "Tapachula",
       "name": "Casa del Caminante",
       "google_place_id": "ChIJ_V8Px_NF8oURCRI87BP69cc",
@@ -230,58 +122,8 @@
         "COBACH",
         "Solidaridad 2000"
       ]
-    },
-    {
-      "region": "Tapachula",
-      "name": "La 72, Hogar Refugio para Personas Migrantes.",
-      "google_place_id": "ChIJs76NKQ6a84URqRK0pOXX1OM",
-      "type": "Albergue -- Familias",
-      "features": [],
-      "coordinates": [
-        -91.4331462,
-        17.461921
-      ],
-      "address": "Estación Nueva N° 86901, Tenosique de Pino Suárez, Tobasco, MX",
-      "phones": [
-        "+52 934 342 1111"
-      ],
-      "hours": [
-        "Lunes a viernes, 8:30-16:00 hrs."
-      ],
-      "route": [
-        "COBACH",
-        "Solidaridad 2000"
-      ]
-    },
-    {
-      "region": "Tapachula",
-      "name": "Albergue Jesús Esperanza en el Camino.",
-      "google_place_id": "ChIJj27QEVbY7IURaiFiRnu9eN0",
-      "type": "Albergue",
-      "coordinates": [
-        -93.1646752,
-        16.7460768
-      ],
-      "address": "Primera Calle Poniente y 16 Sur #1664, Tuxtla Gutierrez Chis MX",
-      "websites": [
-        "movilidadmt25@hotmail.com"
-      ]
-    },
-    {
-      "region": "Tapachula",
-      "name": "Una Ayuda Para Ti Mujer Migrante A,C.",
-      "type": "ONG",
-      "google_place_id": "ChIJj27QEVbY7IURaiFiRnu9eN0",
-      "coordinates": [
-        -93.1646752,
-        16.7460768
-      ],
-      "phones": [
-        "+52	961 61 67 903"
-      ]
     }
   ],
-
   "posts": [
     { "id": 1, "title": "Post 1" },
     { "id": 2, "title": "Post 2" },
