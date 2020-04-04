@@ -15,12 +15,67 @@
       "zoom": 7
     }
   },
+  "shareables": [
+    {
+      "region": "Tijuana",
+      "name": "Enclave Caracol",
+      "google_place_id": "ChIJZ1wZ4gBJ2YARWk0pwqi7jp8",
+      "type": "Comida",
+      "features": [
+        "Accesso a Computadores",
+        "Servicios Legales"
+      ],
+      "coordinates": [
+        -117.036088,
+        32.537013
+      ],
+      "address": "Calle Primera 8250, Zona Norte, Tijuana, MX",
+      "phones": [
+        "+52 664 379 1818"
+      ],
+      "description": [
+        "Lunes - Sábado de 10AM-8PM",
+        " * Se sirve comida de Lunes - Jueves a las 5pm (1 er piso. Comida no Bombas)",
+        " * Acceso a la computadora (1 er piso)",
+        " * Talleres de asilo en los Estados Unidos Martes - Jueves a las 10:00 am (español) y 12:30 taller en inglés. (3er piso, Al Otro Lado)",
+        " * Consultas legales Martes - Jueves después de la charla conforme llegaron (3er piso, AOL)."
+      ],
+      "hours": [
+        " * COMPUTADORES, CAFE: Lunes - Sábado de 10AM-8PM ",
+        " * COMIDA GRATIS: Lunes - Jueves a las 5pm ",
+        " * LEGAL: Martes - Jueves a las 10:00 am (español) y 12:30 (otras idiomas)"
+      ]
+    },
+    {
+      "region": "Tijuana",
+      "name": "Comedor Contra Viento y Marea",
+      "google_place_id": "",
+      "type": "Comida",
+      "features": [
+        "Accesso a Computadores",
+        "Donaciones"
+      ],
+      "coordinates": [
+        -117.047227,
+        32.535897
+      ],
+      "address": "7310-A, Calle Primera, Zona Centro, Tijuana, MX",
+      "description": [
+        " * Se sirve comida de 12 -1 pm y 5 - 7pm de lunes a sábado",
+        " * Acceso a la computadora en horarios de comida",
+        " * Donaciones disponibles: Ropa, Cobija, Kits de Higiene, Juguetes, etc. Lunes - Sábado durante las comidas (preguntar al llegar)",
+        " * Selección de donaciones cada Viernes a las 5pm"
+      ],
+      "hours": [
+        "* Lunes a Sábado, 12 -1 pm y 5 - 7pm"
+      ]
+    }],
   "posts": [
     { "id": 1, "title": "Post 1" },
     { "id": 2, "title": "Post 2" },
     { "id": 3, "title": "Post 3" }
   ],
-  "shareables": [
+  "comments": [
     { "id": 1, "body": "some comment", "postId": 1 },
     { "id": 2, "body": "some comment", "postId": 1 }
   ],
