@@ -9,8 +9,12 @@ import history from 'utils/history';
 import languageProviderReducer from 'containers/LanguageProvider/reducer';
 import AppReducer from 'containers/App/reducer';
 // import { shareablesByKey, shareablesByRegion } from './data/index';
-import {RECEIVE_ALL_SHAREABLES, REQUEST_ALL_SHAREABLES, RECEIVE_ALL_REGIONS, REQUEST_ALL_REGIONS} from "./redux/actions";
-
+import {
+  RECEIVE_ALL_SHAREABLES,
+  REQUEST_ALL_SHAREABLES,
+  RECEIVE_ALL_REGIONS,
+  REQUEST_ALL_REGIONS,
+} from './redux/actions';
 
 const shareablesReducer = (
   state = {

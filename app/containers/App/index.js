@@ -9,24 +9,23 @@
 
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
+import { connect } from 'react-redux';
 import HomePage from '../HomePage';
 import RegionPage from '../RegionPage';
 import ShareableDetailPage from '../ShareableDetailPage';
 import GlobalStyle from '../../global-styles';
 import { shareablesByRegion, shareablesByKey } from '../../data';
-import { connect } from 'react-redux'
 import { fetchAllShareables, fetchAllRegions } from '../../redux/actions';
-
 
 class App extends Component {
   componentDidMount() {
-    const { dispatch} = this.props;
-    dispatch(dispatch(fetchAllShareables))
+    const { dispatch } = this.props;
+    dispatch(dispatch(fetchAllShareables));
     dispatch(dispatch(fetchAllRegions));
   }
 
   render() {
-    console.log('props', this.props.shareables, this.props.regions)
+    console.log('props', this.props.shareables, this.props.regions);
     return (
       <div>
         <Switch>
@@ -37,8 +36,8 @@ class App extends Component {
               return null;
             }}
           />
-          <Route path="/region/:id" component={RegionPage}/>
-          <Route path="/shareable/:id" component={ShareableDetailPage}/>
+          <Route path="/region/:id" component={RegionPage} />
+          <Route path="/shareable/:id" component={ShareableDetailPage} />
           <Route
             path="/:id"
             render={props => {
@@ -77,8 +76,8 @@ class App extends Component {
 function mapStateToProps(state) {
   return {
     shareables: state.shareablesReducer.shareables,
-    regions: state.regionsReducer.regions
-  }
+    regions: state.regionsReducer.regions,
+  };
 }
 
 export default connect(mapStateToProps)(App);

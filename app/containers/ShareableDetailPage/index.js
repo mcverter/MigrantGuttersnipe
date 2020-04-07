@@ -1,27 +1,27 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ShareableDetail from '../../components/ShareableDetail';
-import {makeKeyFromShareable} from "../../utils/utils";
+import { makeKeyFromShareable } from '../../utils/utils';
 
-class ShareableDetailPage extends Component  {
-  constructor(props){
-    super(props)
+class ShareableDetailPage extends Component {
+  constructor(props) {
+    super(props);
   }
 
   render() {
     const { shareableID, shareablesByKey } = this.props;
     const shareable = shareablesByKey[shareableID];
 
-    let {shareables } = this.props;
+    const { shareables } = this.props;
     const shareableId = this.props.match.params.id;
 
-    shareable = shareables.filter(s=>{
-      const key = makeKeyFromShareable(s)
-      console.log(key)
-      return key === shareableId
-    })[0]
+    shareable = shareables.filter(s => {
+      const key = makeKeyFromShareable(s);
+      console.log(key);
+      return key === shareableId;
+    })[0];
 
-    console.log(shareable)
+    console.log(shareable);
     return <ShareableDetail shareable={shareable} />;
   }
 }

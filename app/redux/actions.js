@@ -4,8 +4,10 @@ export const RECEIVE_ALL_SHAREABLES = 'RECEIVE_ALL_SHAREABLES';
 export const REQUEST_ALL_REGIONS = 'REQUEST_ALL_REGIONS';
 export const RECEIVE_ALL_REGIONS = 'RECEIVE_ALL_REGIONS';
 
-const SHAREABLES_URL = 'https://my-json-server.typicode.com/mcverter/MigrantGuttersnipe/shareables';
-const REGIONS_URL = 'https://my-json-server.typicode.com/mcverter/MigrantGuttersnipe/regions';
+const SHAREABLES_URL =
+  'https://my-json-server.typicode.com/mcverter/MigrantGuttersnipe/shareables';
+const REGIONS_URL =
+  'https://my-json-server.typicode.com/mcverter/MigrantGuttersnipe/regions';
 
 export const requestAllShareables = () => ({
   type: REQUEST_ALL_SHAREABLES,
@@ -22,7 +24,7 @@ export const fetchAllShareables = () => dispatch => {
     .then(response => response.json())
     .then(json => {
       console.log(json);
-      dispatch(recieveAllShareables(json))
+      dispatch(recieveAllShareables(json));
     });
 };
 
@@ -41,7 +43,6 @@ export const fetchAllRegions = () => dispatch => {
     .then(response => response.json())
     .then(json => {
       console.log(json);
-      dispatch(recieveAllRegions(json))
+      dispatch(recieveAllRegions(json));
     });
 };
-
