@@ -33,7 +33,7 @@ function PopupDetail({ shareable, shareableKey }) {
         </Card>
       </Grid>
       <Grid item>
-        <Link to={`/${shareableKey}`} style={{ textDecoration: 'none' }}>
+        <Link to={`/shareable/${shareableKey}`} style={{ textDecoration: 'none' }}>
           <Button variant="contained" color="primary" startIcon={<Details />}>
             Mas Informacion
           </Button>

@@ -14,7 +14,32 @@ import {
   REQUEST_ALL_SHAREABLES,
   RECEIVE_ALL_REGIONS,
   REQUEST_ALL_REGIONS,
+  RECEIVE_ALL_DATA,
+  REQUEST_ALL_DATA
 } from './redux/actions';
+
+const app = (state = {}, action) => {
+  switch (action.type) {
+    case RECEIVE_ALL_DATA:
+      console.log('data', action)
+      return {
+        ...state,
+        isFetching: false,
+        regions: action.data.regions,
+        shareables: action.data.shareables
+      };
+    case REQUEST_ALL_DATA:
+      return {
+        ...state,
+        isFetching: true,
+      };
+
+    default:
+      return state;
+  }
+}
+
+
 
 const shareablesReducer = (
   state = {
@@ -70,6 +95,7 @@ export default function createReducer(injectedReducers = {}) {
   const rootReducer = combineReducers({
     shareablesReducer,
     regionsReducer,
+    app,
     language: languageProviderReducer,
     router: connectRouter(history),
     App: AppReducer,

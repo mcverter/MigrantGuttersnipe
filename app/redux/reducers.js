@@ -2,6 +2,7 @@ import { combineReducers } from 'redux';
 
 import { RECEIVE_ALL_SHAREABLES, REQUEST_ALL_SHAREABLES } from './actions';
 
+/*
 const regionsReducer = (
   state = {
     isFetching: false,
@@ -49,9 +50,9 @@ const shareablesReducer = (
       return state;
   }
 };
-
+*/
 const rootReducer = combineReducers({
-  shareablesReducer,
+  // shareablesReducer,
 });
 
 export default rootReducer;

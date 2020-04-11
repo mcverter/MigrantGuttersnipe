@@ -75,7 +75,7 @@ export function ShareableDetail(props) {
           <LongTextPanel textArray={notes} title="notas adicionales" />
         )}
         <Grid item>
-          <Link to={`/${shareable.region}`}>
+          <Link to={`/region/${shareable.region}`}>
             <h1> Mapa de Recursos en {shareable.region}</h1>
           </Link>
         </Grid>

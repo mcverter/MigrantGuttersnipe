@@ -14,14 +14,13 @@ import HomePage from '../HomePage';
 import RegionPage from '../RegionPage';
 import ShareableDetailPage from '../ShareableDetailPage';
 import GlobalStyle from '../../global-styles';
-import { shareablesByRegion, shareablesByKey } from '../../data';
-import { fetchAllShareables, fetchAllRegions } from '../../redux/actions';
+import { fetchAllData } from '../../redux/actions';
 
 class App extends Component {
   componentDidMount() {
+    debugger;
     const { dispatch } = this.props;
-    dispatch(dispatch(fetchAllShareables));
-    dispatch(dispatch(fetchAllRegions));
+    dispatch(dispatch(fetchAllData));
   }
 
   render() {

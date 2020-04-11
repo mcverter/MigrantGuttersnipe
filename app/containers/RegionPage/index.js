@@ -4,18 +4,53 @@
  *
  */
 
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import GuttersnipeMap from '../GuttersnipeMap';
-import { makeKeyFromShareable } from '../../utils/utils';
+import { fetchRegionDataIfNeeded } from '../../redux/actions';
 
-class RegionPage extends Component {
+/*
+ import React, {useEffect} from 'react';
+ import {useSelector, useDispatch} from 'react-redux'
+ import './App.css';
+ import allActions from './actions'
+
+
+ const App = () => {
+ const counter = useSelector(state => state.counter)
+ const currentUser = useSelector(state => state.currentUser)
+
+ const dispatch = useDispatch()
+
+ const user = {name: "Rei"}
+
+ useEffect(() => {
+ dispatch(allActions.userActions.setUser(user))
+ }, [])
+
+ */
+const RegionPage = () => {
   constructor(props) {
     super(props);
   }
 
+  componentWillMount() {
+    debugger;
+    const { dispatch } = this.props;
+    const regionId = this.props.match.params.id
+    dispatch(fetchRegionDataIfNeeded(regionId));
+  }
+
+  componentDidMount() {
+    debugger;
+    const { dispatch } = this.props;
+    const regionId = this.props.match.params.id
+    dispatch(fetchRegionDataIfNeeded(regionId));
+  }
+
   render() {
+    console.log('this props', this.props)
     let { shareables, regions } = this.props;
     const regionId = this.props.match.params.id;
     const coordinates = regions[regionId.toLowerCase()];
@@ -39,9 +74,10 @@ RegionPage.propTypes = {
 };
 
 function mapStateToProps(state) {
+  console.log('state', state)
   return {
-    shareables: state.shareablesReducer.shareables,
-    regions: state.regionsReducer.regions,
+    shareables: state.app.shareables,
+    regions: state.app.regions,
   };
 }
 
