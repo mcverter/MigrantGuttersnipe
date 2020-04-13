@@ -2,22 +2,33 @@ import initialState from './initialState';
 import {
   RECEIVE_ALL_DATA,
   REQUEST_ALL_DATA
-} from '../actions/global';
+} from '../actions/globalActions';
 import {
   RECEIVE_REGION,
   REQUEST_REGION
-} from '../actions/regions';
+} from '../actions/regionActions';
 import {
   RECEIVE_SINGLE_SHAREABLE,
   REQUEST_SINGLE_SHAREABLE
-} from '../actions/shareables';
+} from '../actions/shareableActions';
 
-export default function app(
-  state = initialState, action) {
-  console.log('state', state)
+function extractShareablesFromSingleRegion(region) {
+  return region.shareables;
+}
+
+// can replace with a functional Object.entries.reduce[]
+function extractShareablesFromMultipleRegions(manyRegions) {
+  let shareables = [];
+  for (let region in manyRegions) {
+    shareables = [...shareables, ...manyRegions[region].shareables]
+  }
+  return shareables;
+}
+
+export default function app(state = initialState, action) {
   switch (action.type) {
     case RECEIVE_SINGLE_SHAREABLE:
-      const shareable = action.shareable
+      const shareable = action.shareable;
       return {
         ...state,
         currentShareable: shareable,
@@ -26,6 +37,7 @@ export default function app(
           [shareable['id']]: shareable
         }
       }
+
     case RECEIVE_REGION: {
       const region = action.region;
       const additionalShareables = region.shareables.reduce((acc, curr)=>{
@@ -44,13 +56,18 @@ export default function app(
         }
       }
     }
+
     case RECEIVE_ALL_DATA:
+      let allSh = extractShareablesFromMultipleRegions(action.regions)
+  console.log(allSh)
+      debugger
       return {
         ...state,
         isFetching: false,
         cachedRegions: action.regions,
-        cachedShareables: action.shareables.reduce((acc, curr)=>{
-          return {...acc, [curr.id]: curr}}, {})
+        cachedShareables: extractShareablesFromMultipleRegions(action.regions)
+          .reduce((acc, curr)=>{
+            return {...acc, [curr.id]: curr}}, {})
       };
     case REQUEST_ALL_DATA:
       return {

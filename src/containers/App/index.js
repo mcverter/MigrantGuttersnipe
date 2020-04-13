@@ -14,7 +14,7 @@ import { connect } from 'react-redux';
 import HomePage from '../HomePage';
 import RegionPage from '../RegionPage';
 import ShareableDetailPage from '../ShareableDetailPage';
-import { fetchAllData } from '../../actions/global';
+import { fetchAllData } from '../../actions/globalActions';
 
 class App extends Component {
   componentDidMount() {

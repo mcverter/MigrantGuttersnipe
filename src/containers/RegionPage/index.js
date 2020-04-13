@@ -8,7 +8,7 @@ import React, {useEffect} from 'react';
 import { useSelector, useDispatch } from 'react-redux'
 import PropTypes from 'prop-types';
 import GuttersnipeMap from '../GuttersnipeMap';
-import { loadRegion } from '../../actions/regions'
+import { loadRegion } from '../../actions/regionActions'
 
 
 function RegionPage(props) {

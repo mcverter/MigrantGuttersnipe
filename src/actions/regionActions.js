@@ -1,8 +1,10 @@
+import { SERVER_URL } from '../../config';
+
 export const REQUEST_REGION = 'REQUEST_REGION';
 export const RECEIVE_REGION = 'RECEIVE_REGION';
 export const LOAD_REGION_COORDINATES = 'LOAD_REGION_COORDINATES';
 
-const REGION_URL = 'https://migrant-guttersnipe-backend.herokuapp.com/region'
+const REGION_URL = `${SERVER_URL}/region`;
 
 export const requestRegion = () => ({
   type: REQUEST_REGION,

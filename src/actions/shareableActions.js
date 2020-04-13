@@ -1,11 +1,12 @@
 import axios from 'axios';
+import { SERVER_URL } from '../../config';
 
 export const REQUEST_SINGLE_SHAREABLE = 'REQUEST_SINGLE_SHAREABLE';
 export const RECEIVE_SINGLE_SHAREABLE = 'RECEIVE_SINGLE_SHAREABLE';
 export const LOAD_CURRENT_SHAREABLE_ARRAY = 'LOAD_CURRENT_SHAREABLE_ARRAY';
 export const LOAD_CURRENT_SINGLE_SHAREABLE = 'LOAD_CURRENT_SINGLE_SHAREABLE';
 
-const SINGLE_SHAREABLE_URL = 'https://migrant-guttersnipe-backend.herokuapp.com/shareable'
+const SINGLE_SHAREABLE_URL = `${SERVER_URL}/shareable`
 
 export const requestSingleShareable = () => ({
   type: REQUEST_SINGLE_SHAREABLE,

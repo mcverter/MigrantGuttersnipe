@@ -1,9 +1,10 @@
 import axios from 'axios';
+import { SERVER_URL } from '../../config';
 
 export const REQUEST_ALL_DATA = 'REQUEST_ALL_DATA';
 export const RECEIVE_ALL_DATA = 'RECEIVE_ALL_DATA';
 
-const ALL_DATA_URL = 'https://migrant-guttersnipe-backend.herokuapp.com/'
+const ALL_DATA_URL = `${SERVER_URL}`;
 
 export const requestAllData = () => ({
   type: REQUEST_ALL_DATA,

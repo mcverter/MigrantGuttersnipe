@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import ShareableDetail from '../../components/ShareableDetail';
 import { useSelector, useDispatch } from 'react-redux'
-import { loadSingleShareable } from '../../actions/shareables';
+import { loadSingleShareable } from '../../actions/shareableActions';
 
 function ShareableDetailPage (props) {
   const dispatch = useDispatch();
