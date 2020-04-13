@@ -4,68 +4,27 @@
  *
  */
 
-import React from 'react';
+import React, {useEffect} from 'react';
+import { useSelector, useDispatch } from 'react-redux'
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
 import GuttersnipeMap from '../GuttersnipeMap';
-import { fetchRegionDataIfNeeded } from '../../redux/actions';
+import loadRegion from '../../redux/actions'
 
-/*
- import React, {useEffect} from 'react';
- import {useSelector, useDispatch} from 'react-redux'
- import './App.css';
- import allActions from './actions'
+const dispatch = useDispatch();
+useEffect(() => {dispatch(loadRegion)}, [])
+const regionShareables = useSelector(state => state.regionShareables)
+const regionCoordinates = useSelector(state => state.regionCoordinates)
 
-
- const App = () => {
- const counter = useSelector(state => state.counter)
- const currentUser = useSelector(state => state.currentUser)
-
- const dispatch = useDispatch()
-
- const user = {name: "Rei"}
-
- useEffect(() => {
- dispatch(allActions.userActions.setUser(user))
- }, [])
-
- */
-const RegionPage = () => {
-  constructor(props) {
-    super(props);
-  }
-
-  componentWillMount() {
-    debugger;
-    const { dispatch } = this.props;
-    const regionId = this.props.match.params.id
-    dispatch(fetchRegionDataIfNeeded(regionId));
-  }
-
-  componentDidMount() {
-    debugger;
-    const { dispatch } = this.props;
-    const regionId = this.props.match.params.id
-    dispatch(fetchRegionDataIfNeeded(regionId));
-  }
-
-  render() {
-    console.log('this props', this.props)
-    let { shareables, regions } = this.props;
-    const regionId = this.props.match.params.id;
-    const coordinates = regions[regionId.toLowerCase()];
-    shareables = shareables.filter(s => s.region === regionId);
-
-    return (
-      <GuttersnipeMap
-        style={{ height: '100%', width: '100%' }}
-        shareables={shareables}
-        center={coordinates.center}
-        zoom={coordinates.zoom}
-        title={`Recursos en ${regionId}`}
-      />
-    );
-  }
+function RegionPage(props) {
+  return (
+    <GuttersnipeMap
+      style={{ height: '100%', width: '100%' }}
+      shareables={regionShareables}
+      center={regionCoordinates.center}
+      zoom={regionCoordinates.zoom}
+      title={`Recursos en ${props.match.params.id}`}
+    />
+  );
 }
 
 RegionPage.propTypes = {
@@ -73,16 +32,13 @@ RegionPage.propTypes = {
   shareablesByRegion: PropTypes.object,
 };
 
-function mapStateToProps(state) {
-  console.log('state', state)
-  return {
-    shareables: state.app.shareables,
-    regions: state.app.regions,
-  };
-}
-
-export default connect(mapStateToProps)(RegionPage);
-
+export default RegionPage;
 /*
+  render() {
+    console.log('this props', this.props)
+    let { shareables, regions } = this.props;
+    const regionId = this.props.match.params.id;
+    const coordinates = regions[regionId.toLowerCase()];
+    shareables = shareables.filter(s => s.region === regionId);
 
  */
