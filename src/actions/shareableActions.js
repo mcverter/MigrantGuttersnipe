@@ -3,10 +3,8 @@ import { SERVER_URL } from '../../config';
 
 export const REQUEST_SINGLE_SHAREABLE = 'REQUEST_SINGLE_SHAREABLE';
 export const RECEIVE_SINGLE_SHAREABLE = 'RECEIVE_SINGLE_SHAREABLE';
-export const LOAD_CURRENT_SHAREABLE_ARRAY = 'LOAD_CURRENT_SHAREABLE_ARRAY';
-export const LOAD_CURRENT_SINGLE_SHAREABLE = 'LOAD_CURRENT_SINGLE_SHAREABLE';
 
-const SINGLE_SHAREABLE_URL = `${SERVER_URL}/shareable`
+const SINGLE_SHAREABLE_URL = `${SERVER_URL}/shareable`;
 
 export const requestSingleShareable = () => ({
   type: REQUEST_SINGLE_SHAREABLE,
@@ -17,10 +15,9 @@ export const recieveSingleShareable = shareable => ({
   shareable
 });
 
-export const fetchSingleShareable = () => dispatch => {
+export const fetchSingleShareable = id => dispatch => {
   dispatch(requestSingleShareable());
-  return axios.get(SINGLE_SHAREABLE_URL)
-    .then(response => response.json())
+  return axios.get(`${SINGLE_SHAREABLE_URL}/${id}`)
     .then(shareable => {
       return dispatch(recieveSingleShareable(shareable));
     });
@@ -28,7 +25,6 @@ export const fetchSingleShareable = () => dispatch => {
 
 export const loadSingleShareable = (id) => {
   return (dispatch, getState) => {
-    debugger;
     const shareable = getState().app.cachedShareables[id];
     if (!shareable) {
       return dispatch(fetchSingleShareable(id));
@@ -37,16 +33,3 @@ export const loadSingleShareable = (id) => {
     }
   }
 };
-
-
-/*
-
-export function fetchPostsIfNeeded(subreddit) {
-  return (dispatch, getState) => {
-    if (shouldFetchPosts(getState(), subreddit)) {
-      return dispatch(fetchPosts(subreddit))
-    }
-  }
-}
-
- */

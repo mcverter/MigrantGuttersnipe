@@ -12,11 +12,17 @@ import { loadRegion } from '../../actions/regionActions'
 
 
 function RegionPage(props) {
+  let id = props.match.params.id
+  const region = useSelector(state => state.app.currentRegion);
+debugger
   const dispatch = useDispatch();
-  useEffect(() => {dispatch(loadRegion)}, []);
-  const shareables = useSelector(state => state.currentRegion.shareables);
-  const center = useSelector(state => state.currentRegion.coordinates);
-  const zoom = useSelector(state => state.currentRegion.zoom);
+  useEffect(() => {dispatch(loadRegion(id.toLowerCase()))}, []);
+
+  if (!region) {
+    return <div>Loading</div>;
+  }
+  const {shareables, zoom} = region;
+  const center = region.coordinates;
 
   let propsMatchId = props.match.params.id || props.propsMatchId;
 

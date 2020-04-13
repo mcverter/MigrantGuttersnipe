@@ -1,8 +1,8 @@
 import { SERVER_URL } from '../../config';
+import axios from 'axios';
 
 export const REQUEST_REGION = 'REQUEST_REGION';
 export const RECEIVE_REGION = 'RECEIVE_REGION';
-export const LOAD_REGION_COORDINATES = 'LOAD_REGION_COORDINATES';
 
 const REGION_URL = `${SERVER_URL}/region`;
 
@@ -15,18 +15,19 @@ export const recieveRegion = json => ({
   data: json,
 });
 
-export const fetchRegion = () => dispatch => {
+export const fetchRegion = (id) => dispatch => {
   dispatch(requestRegion());
-  return fetch(REGION_URL)
-    .then(response => response.json())
+  return axios.get(`${REGION_URL}/${id}`)
     .then(region => {
-      dispatch(recieveRegion(region));
+      console.log(region.data)
+      debugger;
+      dispatch(recieveRegion(region.data));
     });
 };
 
 export const loadRegion = (regionName) => {
   return (dispatch, getState) => {
-    if (! getState().regionsCache[regionName]) {
+    if (! getState().app.cachedRegions[regionName]) {
       return dispatch(fetchRegion(regionName));
     } else {
       return dispatch(recieveRegion(regionName));
