@@ -28,7 +28,6 @@ function extractShareablesFromMultipleRegions(manyRegions) {
 export default function app(state = initialState, action) {
   switch (action.type) {
     case RECEIVE_SINGLE_SHAREABLE:
-      debugger;
       const shareable = action.shareable;
       return {
         ...state,
@@ -40,11 +39,15 @@ export default function app(state = initialState, action) {
       }
 
     case RECEIVE_REGION: {
-      debugger
-      const region = action.region;
+      const region = action.data;
+      if (!region || ! region.shareables) {
+        return state;
+      }
+
       const additionalShareables = region.shareables.reduce((acc, curr)=>{
         return {...acc, [curr.id]: curr}}, {})
 
+      console.log('receive region', region)
       return {
         ...state,
         currentRegion: region,

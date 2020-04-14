@@ -7,22 +7,22 @@
 import React, {useEffect} from 'react';
 import { useSelector, useDispatch } from 'react-redux'
 import PropTypes from 'prop-types';
-import GuttersnipeMap from '../GuttersnipeMap';
+import GuttersnipeMap from '../../containers/GuttersnipeMap/index';
 import { loadRegion } from '../../actions/regionActions'
 
 
 function RegionPage(props) {
-  let id = props.match.params.id
-  const region = useSelector(state => state.app.currentRegion);
-debugger
+  let id = props.match.params.id;
   const dispatch = useDispatch();
   useEffect(() => {dispatch(loadRegion(id.toLowerCase()))}, []);
 
+  const region = useSelector(state => state.app.currentRegion);
+
+  console.log('region page region', region)
   if (!region) {
     return <div>Loading</div>;
   }
-  const {shareables, zoom} = region;
-  const center = region.coordinates;
+  const {shareables, zoom, center} = region;
 
   let propsMatchId = props.match.params.id || props.propsMatchId;
 

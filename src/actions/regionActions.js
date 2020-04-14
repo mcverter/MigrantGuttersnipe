@@ -20,14 +20,15 @@ export const fetchRegion = (id) => dispatch => {
   return axios.get(`${REGION_URL}/${id}`)
     .then(region => {
       console.log(region.data)
-      debugger;
       dispatch(recieveRegion(region.data));
     });
 };
 
 export const loadRegion = (regionName) => {
   return (dispatch, getState) => {
-    if (! getState().app.cachedRegions[regionName]) {
+    const state = getState();
+//    if (state.app.currentRegion) {}
+    if (! state.app.cachedRegions[regionName]) {
       return dispatch(fetchRegion(regionName));
     } else {
       return dispatch(recieveRegion(regionName));

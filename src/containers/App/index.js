@@ -11,9 +11,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Switch, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
-import HomePage from '../HomePage';
-import RegionPage from '../RegionPage';
-import ShareableDetailPage from '../ShareableDetailPage';
+import HomePage from '../../pages/HomePage';
+import RegionPage from '../../pages/RegionPage';
+import ShareableDetailPage from '../../pages/ShareableDetailPage';
 import { fetchAllData } from '../../actions/globalActions';
 
 class App extends Component {

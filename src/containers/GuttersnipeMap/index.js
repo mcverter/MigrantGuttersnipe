@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Map, TileLayer } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
 import { makeKeyFromShareable } from '../../utils/index';
 import ShareablesMenu from '../../components/ShareablesMenu';
 import GuttersnipeMarker from '../../components/GuttersnipeMarker';
@@ -13,6 +14,7 @@ class GuttersnipeMap extends Component {
 
   constructor(props) {
     super(props);
+
     const { shareables, center, zoom } = props;
     this.state = {
       shareables,
@@ -69,27 +71,30 @@ class GuttersnipeMap extends Component {
   render() {
     const { title } = this.props;
 
+    const { lat, lng, zoom, tileUrl, shareables} = this.state;
+    console.log('mapping', lat, lng, zoom, tileUrl, shareables);
     return (
       <div>
         <ShareablesMenu
           onListItemClicked={this.showMarkerPopup}
-          shareables={this.state.shareables}
+          shareables={shareables}
           title={title}
         />
         <Map
           className="Map"
           ref={mapRef}
-          center={[this.state.lat, this.state.lng]}
-          zoom={this.state.zoom}
+          center={[lat, lng]}
+          zoom={zoom}
           style={{ width: '100vw', height: '70vh' }}
         >
-          <TileLayer url={this.state.tileUrl} />
-          {this.state.shareables.map(shareable => {
-            const { coordinates } = shareable;
+          <TileLayer url={tileUrl} />
+          {shareables.map(shareable => {
+            const { center } = shareable;
             const markerKey = makeKeyFromShareable(shareable);
-            const markerPosition = [coordinates[1], coordinates[0]];
+            const markerPosition = [center[1], center[0]];
             const ref = React.createRef();
             this.addMarkerRef(ref, markerKey);
+           // console.log('mapping', shareable);
             return (
               <GuttersnipeMarker
                 markerRef={ref}

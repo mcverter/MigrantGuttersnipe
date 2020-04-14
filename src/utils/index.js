@@ -9,8 +9,9 @@ export function stringToHash(s) {
 }
 
 export function makeKeyFromShareable(shareable) {
-  const { coordinates, name } = shareable;
-  return stringToHash(`${coordinates[1]}${coordinates[0]}${name}`);
+  return shareable.id;
+ // const { coordinates, name } = shareable;
+ // return stringToHash(`${coordinates[1]}${coordinates[0]}${name}`);
 }
 
 export function isNonEmptyArray(arr) {
