@@ -8,9 +8,7 @@ const GoogleMapsOpener = ({ shareable }) => {
   const { coordinates, google_place_id, name, address } = shareable;
   const openGoogleMaps = () => {
     const placeOnly = () => {
-      let placeURL = `https://www.google.com/maps/search/?api=1&query=${
-        coordinates[1]
-      },${coordinates[0]}`;
+      let placeURL = `https://www.google.com/maps/search/?api=1&query=${coordinates[1]},${coordinates[0]}`;
       if (google_place_id) {
         placeURL += `&query_place_id=${encodeURIComponent(google_place_id)}`;
       }

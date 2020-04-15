@@ -10,29 +10,27 @@ export const requestRegion = () => ({
   type: REQUEST_REGION,
 });
 
-export const recieveRegion = json => ({
+export const recieveRegion = (json) => ({
   type: RECEIVE_REGION,
   data: json,
 });
 
-export const fetchRegion = (id) => dispatch => {
+export const fetchRegion = (id) => (dispatch) => {
   dispatch(requestRegion());
-  return axios.get(`${REGION_URL}/${id}`)
-    .then(region => {
-      console.log(region.data)
-      dispatch(recieveRegion(region.data));
-    });
+  return axios.get(`${REGION_URL}/${id}`).then((region) => {
+    console.log(region.data);
+    dispatch(recieveRegion(region.data));
+  });
 };
 
 export const loadRegion = (regionName) => {
   return (dispatch, getState) => {
     const state = getState();
-//    if (state.app.currentRegion) {}
-    if (! state.app.cachedRegions[regionName]) {
+    const region = state.app.cachedRegions[regionName];
+    if (!region) {
       return dispatch(fetchRegion(regionName));
     } else {
-      return dispatch(recieveRegion(regionName));
+      return dispatch(recieveRegion(region));
     }
-  }
-}
-
+  };
+};

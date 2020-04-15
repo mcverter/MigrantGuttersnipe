@@ -17,7 +17,7 @@ const LongTextPanel = ({
       <Paper {...paper}>
         <FieldTitle title={title} />
         <Typography {...typography}>
-          {textArray.map(ta => (
+          {textArray.map((ta) => (
             <span key={ta.substring(0, 32)}>
               {ta}
               <br />

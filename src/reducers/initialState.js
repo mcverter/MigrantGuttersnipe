@@ -3,5 +3,5 @@ export default {
   currentShareable: undefined,
   cachedShareables: {},
   currentRegion: undefined,
-  cachedRegions: {}
-}
+  cachedRegions: {},
+};

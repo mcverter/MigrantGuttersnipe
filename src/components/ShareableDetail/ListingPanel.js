@@ -19,7 +19,7 @@ const ListingPanel = ({
       <Paper {...paper}>
         <FieldTitle title={title} />
         <Typography {...typography}>
-          {listingArray.map(la => (
+          {listingArray.map((la) => (
             <li key={la.substring(0, 32)}>{la}</li>
           ))}
         </Typography>

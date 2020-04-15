@@ -11,10 +11,10 @@ const WebsitesPanel = ({ websites }) =>
       <Paper variant="outlined" elevation={2}>
         <FieldTitle title="sitios de web" />
         <ul>
-          {websites.map(w => (
+          {websites.map((w) => (
             <li key={w.substring(0, 32)}>
               {w.search('@') === -1 ? (
-                <a href={w} target="_blank"  rel="noopener noreferrer">
+                <a href={w} target="_blank" rel="noopener noreferrer">
                   {w}
                 </a>
               ) : (

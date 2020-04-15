@@ -10,18 +10,16 @@ export const requestAllData = () => ({
   type: REQUEST_ALL_DATA,
 });
 
-export const recieveAllData = allData => ({
+export const recieveAllData = (allData) => ({
   type: RECEIVE_ALL_DATA,
   regions: allData.regions,
-  shareables: allData.shareables
+  shareables: allData.shareables,
 });
 
-export const fetchAllData = () => dispatch => {
+export const fetchAllData = () => (dispatch) => {
   dispatch(requestAllData());
-  return axios.get(ALL_DATA_URL)
-    .then(response => {
-      const allData = response.data;
-      dispatch(recieveAllData(allData));
-    });
+  return axios.get(ALL_DATA_URL).then((response) => {
+    const allData = response.data;
+    dispatch(recieveAllData(allData));
+  });
 };
-

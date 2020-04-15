@@ -9,13 +9,13 @@ import React from 'react';
 // import styled from 'styled-components';
 
 function PopupCloseButton(props) {
-  console.log('pcb probs', props)
+  console.log('pcb probs', props);
   return (
     <div
       style={Styles.popupCloseButton}
       onClick={() => {
         self.closePopup();
-//        self.closePopup(markerKey);
+        //        self.closePopup(markerKey);
       }}
     >
       x

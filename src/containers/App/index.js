@@ -18,7 +18,6 @@ import { fetchAllData } from '../../actions/globalActions';
 
 class App extends Component {
   componentDidMount() {
-  //  debugger;
     const { dispatch } = this.props;
     dispatch(dispatch(fetchAllData));
   }
@@ -38,24 +37,16 @@ class App extends Component {
           <Route path="/shareable/:id" component={ShareableDetailPage} />
           <Route
             path="/:id"
-            render={props => {
+            render={(props) => {
               /* Alphabetical = Region
 								 Numeric = ShareableDetail */
               let { url: propsMatchId } = props.match;
               propsMatchId = propsMatchId.substr(1);
               if (propsMatchId.match(/^[a-zA-Z]*$/)) {
-                return (
-                  <RegionPage
-                    regionID={propsMatchId}
-                  />
-                );
+                return <RegionPage regionID={propsMatchId} />;
               }
               if (propsMatchId.match(/^[0-9]*$/)) {
-                return (
-                  <ShareableDetailPage
-                    shareableID={propsMatchId}
-                  />
-                );
+                return <ShareableDetailPage shareableID={propsMatchId} />;
               }
               return <HomePage {...props} />;
             }}
@@ -73,8 +64,8 @@ function mapStateToProps(state) {
 }
 
 App.propTypes = {
-  dispatch: PropTypes.func
-}
+  dispatch: PropTypes.func,
+};
 
 export default connect(mapStateToProps)(App);
 

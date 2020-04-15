@@ -29,7 +29,7 @@ class GuttersnipeMap extends Component {
   }
 
   componentDidMount() {
-    this.state.shareables.forEach(s => {
+    this.state.shareables.forEach((s) => {
       this.shareablesMap[makeKeyFromShareable(s)] = s;
     });
   }
@@ -71,7 +71,7 @@ class GuttersnipeMap extends Component {
   render() {
     const { title } = this.props;
 
-    const { lat, lng, zoom, tileUrl, shareables} = this.state;
+    const { lat, lng, zoom, tileUrl, shareables } = this.state;
     console.log('mapping', lat, lng, zoom, tileUrl, shareables);
     return (
       <div>
@@ -88,13 +88,13 @@ class GuttersnipeMap extends Component {
           style={{ width: '100vw', height: '70vh' }}
         >
           <TileLayer url={tileUrl} />
-          {shareables.map(shareable => {
+          {shareables.map((shareable) => {
             const { center } = shareable;
             const markerKey = makeKeyFromShareable(shareable);
             const markerPosition = [center[1], center[0]];
             const ref = React.createRef();
             this.addMarkerRef(ref, markerKey);
-           // console.log('mapping', shareable);
+            // console.log('mapping', shareable);
             return (
               <GuttersnipeMarker
                 markerRef={ref}

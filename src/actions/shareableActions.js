@@ -10,17 +10,16 @@ export const requestSingleShareable = () => ({
   type: REQUEST_SINGLE_SHAREABLE,
 });
 
-export const recieveSingleShareable = shareable => ({
+export const recieveSingleShareable = (shareable) => ({
   type: RECEIVE_SINGLE_SHAREABLE,
-  shareable
+  shareable,
 });
 
-export const fetchSingleShareable = id => dispatch => {
+export const fetchSingleShareable = (id) => (dispatch) => {
   dispatch(requestSingleShareable());
-  return axios.get(`${SINGLE_SHAREABLE_URL}/${id}`)
-    .then(shareable => {
-      return dispatch(recieveSingleShareable(shareable));
-    });
+  return axios.get(`${SINGLE_SHAREABLE_URL}/${id}`).then((shareable) => {
+    return dispatch(recieveSingleShareable(shareable));
+  });
 };
 
 export const loadSingleShareable = (id) => {
@@ -31,5 +30,5 @@ export const loadSingleShareable = (id) => {
     } else {
       return dispatch(recieveSingleShareable(shareable));
     }
-  }
+  };
 };

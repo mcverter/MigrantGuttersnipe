@@ -15,7 +15,7 @@ import LongTextPanel from './LongTextPanel';
 
 import './styles.css';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     margin: theme.spacing(2),

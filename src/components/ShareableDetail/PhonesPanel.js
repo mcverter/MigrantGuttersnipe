@@ -11,7 +11,7 @@ const PhonesPanel = ({ phones }) =>
     <Grid item>
       <Paper variant="outlined" elevation={2}>
         <FieldTitle title="telefones" />
-        {phones.map(p => (
+        {phones.map((p) => (
           <PhoneItem phone={p} key={p} />
         ))}
       </Paper>

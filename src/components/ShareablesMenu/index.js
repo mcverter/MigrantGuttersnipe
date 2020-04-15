@@ -21,7 +21,7 @@ const StyledMenu = withStyles({
   paper: {
     border: '1px solid #d3d4d5',
   },
-})(props => (
+})((props) => (
   <Menu
     elevation={0}
     getContentAnchorEl={null}
@@ -37,7 +37,7 @@ const StyledMenu = withStyles({
   />
 ));
 
-const StyledMenuItem = withStyles(theme => ({
+const StyledMenuItem = withStyles((theme) => ({
   root: {
     '&:focus': {
       backgroundColor: theme.palette.primary.main,
@@ -53,7 +53,7 @@ export default function ShareableMenu(props) {
 
   const [anchorEl, setAnchorEl] = React.useState(null);
 
-  const handleMenuClick = event => {
+  const handleMenuClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
 
@@ -79,7 +79,7 @@ export default function ShareableMenu(props) {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        {shareables.map(shareable => {
+        {shareables.map((shareable) => {
           const shareableKey = makeKeyFromShareable(shareable);
           return (
             <StyledMenuItem
