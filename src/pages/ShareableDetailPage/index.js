@@ -11,7 +11,7 @@ function ShareableDetailPage(props) {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(loadSingleShareable(id));
-  });
+  }, []);
 
   return shareable ? (
     <ShareableDetail shareable={shareable} />
